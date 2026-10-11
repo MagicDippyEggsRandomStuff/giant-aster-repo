@@ -1670,6 +1670,141 @@ APPS = [
                 }
             }
         }
+    },
+    {
+        "name": "difftastic",
+        "version": "0.60.0",
+        "description": "A structural diff tool that compares files based on their syntax",
+        "homepage": "https://github.com/Wilfred/difftastic",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/Wilfred/difftastic/releases/download/0.60.0/difft-x86_64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Wilfred/difftastic.git",
+                "ref": "0.60.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["difft"]
+        }
+    },
+    {
+        "name": "silicon",
+        "version": "0.5.2",
+        "description": "Create beautiful images of your source code",
+        "homepage": "https://github.com/Aloxaf/silicon",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/Aloxaf/silicon/releases/download/v0.5.2/silicon-v0.5.2-x86_64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Aloxaf/silicon.git",
+                "ref": "v0.5.2"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["silicon"]
+        }
+    },
+    {
+        "name": "zellij-runner",
+        "version": "0.1.0",
+        "description": "Runner helper for Zellij workspace terminal",
+        "homepage": "https://github.com/zellij-org/zellij",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zellij-org/zellij.git",
+                "ref": "main"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True
+            },
+            "executables": ["zellij"]
+        }
+    },
+    {
+        "name": "yq-go",
+        "version": "4.44.5",
+        "description": "Go implementation of yq yaml processor",
+        "homepage": "https://github.com/mikefarah/yq",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikefarah/yq.git",
+                "ref": "v4.44.5"
+            },
+            "build": {
+                "steps": ["go build -v -o yq"]
+            }
+        }
+    },
+    {
+        "name": "actionlint",
+        "version": "1.7.4",
+        "description": "Static checker for GitHub Actions workflow files",
+        "homepage": "https://github.com/rhysd/actionlint",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/rhysd/actionlint/releases/download/v1.7.4/actionlint_1.7.4_linux_amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/rhysd/actionlint/releases/download/v1.7.4/actionlint_1.7.4_linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rhysd/actionlint.git",
+                "ref": "v1.7.4"
+            },
+            "build": {
+                "steps": ["go build -v -o actionlint ./cmd/actionlint"]
+            }
+        }
+    },
+    {
+        "name": "superfile",
+        "version": "1.1.5",
+        "description": "Fancy and modern terminal file manager",
+        "homepage": "https://github.com/yorukot/superfile",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/yorukot/superfile/releases/download/v1.1.5/superfile-linux-amd64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yorukot/superfile.git",
+                "ref": "v1.1.5"
+            },
+            "build": {
+                "steps": ["go build -v -o spf"]
+            }
+        }
     }
 ]
 

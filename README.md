@@ -4,7 +4,7 @@ This repository contains a comprehensive set of packages for the [Aster](docs.md
 
 ## Repository Contents
 
-This repository hosts over 110 package definitions covering popular CLI software, including:
+This repository hosts 128 package definitions covering popular CLI software, including:
 
 - **bat** (`bat-bin`, `bat-src`) - A cat clone with syntax highlighting and Git integration
 - **eza** (`eza-bin`, `eza-src`) - Modern replacement for `ls`
@@ -24,7 +24,10 @@ This repository hosts over 110 package definitions covering popular CLI software
 - **atuin** (`atuin-bin`, `atuin-src`) - Shell history sync and search
 - **ast-grep** (`ast-grep-bin`, `ast-grep-src`) - AST-based code search and linting
 - **biome** (`biome-bin`, `biome-src`) - Web toolchain
-- **shellcheck** (`shellcheck-bin`) - Shell script static analysis tool
+- **difftastic** (`difftastic-bin`, `difftastic-src`) - Syntax-aware diff tool
+- **silicon** (`silicon-bin`, `silicon-src`) - Code screenshot CLI tool
+- **actionlint** (`actionlint-bin`, `actionlint-src`) - GitHub Actions workflow linter
+- **superfile** (`superfile-bin`, `superfile-src`) - Modern terminal file manager
 - ...and many more!
 
 ## Usage Instructions

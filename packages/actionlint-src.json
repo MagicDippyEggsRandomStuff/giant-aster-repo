@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "actionlint-src",
+    "name": "actionlint",
+    "version": "1.7.4",
+    "type": "source",
+    "description": "Static checker for GitHub Actions workflow files (source build)",
+    "homepage": "https://github.com/rhysd/actionlint",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/rhysd/actionlint.git",
+        "ref": "v1.7.4"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o actionlint ./cmd/actionlint"
+        ]
+    }
+}

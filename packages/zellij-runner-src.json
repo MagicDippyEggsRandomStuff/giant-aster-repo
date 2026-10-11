@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "zellij-runner-src",
+    "name": "zellij-runner",
+    "version": "0.1.0",
+    "type": "source",
+    "description": "Runner helper for Zellij workspace terminal (source build)",
+    "homepage": "https://github.com/zellij-org/zellij",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/zellij-org/zellij.git",
+        "ref": "main"
+    },
+    "build": {
+        "system": "cargo",
+        "release": true
+    },
+    "executables": [
+        "zellij"
+    ]
+}

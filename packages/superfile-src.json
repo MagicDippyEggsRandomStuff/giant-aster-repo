@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "superfile-src",
+    "name": "superfile",
+    "version": "1.1.5",
+    "type": "source",
+    "description": "Fancy and modern terminal file manager (source build)",
+    "homepage": "https://github.com/yorukot/superfile",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/yorukot/superfile.git",
+        "ref": "v1.1.5"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o spf"
+        ]
+    }
+}

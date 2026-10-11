@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "actionlint-bin",
+    "name": "actionlint",
+    "version": "1.7.4",
+    "type": "binary",
+    "description": "Static checker for GitHub Actions workflow files",
+    "homepage": "https://github.com/rhysd/actionlint",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/rhysd/actionlint/releases/download/v1.7.4/actionlint_1.7.4_linux_amd64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/rhysd/actionlint/releases/download/v1.7.4/actionlint_1.7.4_linux_arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}
