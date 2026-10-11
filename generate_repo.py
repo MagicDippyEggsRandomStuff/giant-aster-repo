@@ -1791,7 +1791,7 @@ APPS = [
         "bin": {
             "downloads": {
                 "linux-x86_64": {
-                    "url": "https://github.com/yorukot/superfile/releases/download/v1.1.5/superfile-linux-amd64.tar.gz"
+                    "url": "https://github.com/yorukot/superfile/releases/download/v1.6.0/superfile-linux-v1.6.0-amd64.tar.gz"
                 }
             }
         },
