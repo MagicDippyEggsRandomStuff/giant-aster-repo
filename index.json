@@ -450,6 +450,151 @@
             "definition": "packages/tree-src.json",
             "type": "source",
             "description": "Recursive directory listing program (source build)"
+        },
+        "btop-bin": {
+            "definition": "packages/btop-bin.json",
+            "type": "binary",
+            "description": "A monitor of resources that displays usage and stats for processor, memory, disks, network and processes"
+        },
+        "btop-src": {
+            "definition": "packages/btop-src.json",
+            "type": "source",
+            "description": "A monitor of resources that displays usage and stats for processor, memory, disks, network and processes (source build)"
+        },
+        "gitui-bin": {
+            "definition": "packages/gitui-bin.json",
+            "type": "binary",
+            "description": "Blazing \ud83d\ude80 fast terminal-ui for git written in rust \ud83e\udd80"
+        },
+        "gitui-src": {
+            "definition": "packages/gitui-src.json",
+            "type": "source",
+            "description": "Blazing \ud83d\ude80 fast terminal-ui for git written in rust \ud83e\udd80 (source build)"
+        },
+        "atuin-bin": {
+            "definition": "packages/atuin-bin.json",
+            "type": "binary",
+            "description": "Magical shell history"
+        },
+        "atuin-src": {
+            "definition": "packages/atuin-src.json",
+            "type": "source",
+            "description": "Magical shell history (source build)"
+        },
+        "sd-bin": {
+            "definition": "packages/sd-bin.json",
+            "type": "binary",
+            "description": "Intuitive find & replace CLI (sed alternative)"
+        },
+        "sd-src": {
+            "definition": "packages/sd-src.json",
+            "type": "source",
+            "description": "Intuitive find & replace CLI (sed alternative) (source build)"
+        },
+        "choose-bin": {
+            "definition": "packages/choose-bin.json",
+            "type": "binary",
+            "description": "A human-friendly and fast alternative to cut and (sometimes) awk"
+        },
+        "choose-src": {
+            "definition": "packages/choose-src.json",
+            "type": "source",
+            "description": "A human-friendly and fast alternative to cut and (sometimes) awk (source build)"
+        },
+        "onefetch-bin": {
+            "definition": "packages/onefetch-bin.json",
+            "type": "binary",
+            "description": "Command-line Git information tool"
+        },
+        "onefetch-src": {
+            "definition": "packages/onefetch-src.json",
+            "type": "source",
+            "description": "Command-line Git information tool (source build)"
+        },
+        "bacon-bin": {
+            "definition": "packages/bacon-bin.json",
+            "type": "binary",
+            "description": "Background rust code checker"
+        },
+        "bacon-src": {
+            "definition": "packages/bacon-src.json",
+            "type": "source",
+            "description": "Background rust code checker (source build)"
+        },
+        "trippy-bin": {
+            "definition": "packages/trippy-bin.json",
+            "type": "binary",
+            "description": "A network diagnostic tool (trip)"
+        },
+        "trippy-src": {
+            "definition": "packages/trippy-src.json",
+            "type": "source",
+            "description": "A network diagnostic tool (trip) (source build)"
+        },
+        "gping-bin": {
+            "definition": "packages/gping-bin.json",
+            "type": "binary",
+            "description": "Ping, but with a graph"
+        },
+        "gping-src": {
+            "definition": "packages/gping-src.json",
+            "type": "source",
+            "description": "Ping, but with a graph (source build)"
+        },
+        "numbat-bin": {
+            "definition": "packages/numbat-bin.json",
+            "type": "binary",
+            "description": "A statically typed programming language for scientific computations with first-class support for physical dimensions and units"
+        },
+        "numbat-src": {
+            "definition": "packages/numbat-src.json",
+            "type": "source",
+            "description": "A statically typed programming language for scientific computations with first-class support for physical dimensions and units (source build)"
+        },
+        "ast-grep-bin": {
+            "definition": "packages/ast-grep-bin.json",
+            "type": "binary",
+            "description": "A CLI tool for code structural search, lint and rewriting"
+        },
+        "ast-grep-src": {
+            "definition": "packages/ast-grep-src.json",
+            "type": "source",
+            "description": "A CLI tool for code structural search, lint and rewriting (source build)"
+        },
+        "biome-bin": {
+            "definition": "packages/biome-bin.json",
+            "type": "binary",
+            "description": "A toolchain for web projects (linter, formatter, and more)"
+        },
+        "biome-src": {
+            "definition": "packages/biome-src.json",
+            "type": "source",
+            "description": "A toolchain for web projects (linter, formatter, and more) (source build)"
+        },
+        "taplo-bin": {
+            "definition": "packages/taplo-bin.json",
+            "type": "binary",
+            "description": "A versatile TOML toolkit"
+        },
+        "taplo-src": {
+            "definition": "packages/taplo-src.json",
+            "type": "source",
+            "description": "A versatile TOML toolkit (source build)"
+        },
+        "shfmt-bin": {
+            "definition": "packages/shfmt-bin.json",
+            "type": "binary",
+            "description": "A shell parser, formatter, and interpreter"
+        },
+        "shfmt-src": {
+            "definition": "packages/shfmt-src.json",
+            "type": "source",
+            "description": "A shell parser, formatter, and interpreter (source build)"
+        },
+        "shellcheck-bin": {
+            "definition": "packages/shellcheck-bin.json",
+            "type": "binary",
+            "description": "ShellCheck, a static analysis tool for shell scripts"
         }
     }
 }

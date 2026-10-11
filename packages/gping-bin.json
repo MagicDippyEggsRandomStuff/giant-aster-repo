@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "gping-bin",
+    "name": "gping",
+    "version": "1.17.3",
+    "type": "binary",
+    "description": "Ping, but with a graph",
+    "homepage": "https://github.com/orf/gping",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/orf/gping/releases/download/gping-v1.17.3/gping-Linux-x86_64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/orf/gping/releases/download/gping-v1.17.3/gping-Linux-arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

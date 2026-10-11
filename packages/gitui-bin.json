@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "gitui-bin",
+    "name": "gitui",
+    "version": "0.26.3",
+    "type": "binary",
+    "description": "Blazing \ud83d\ude80 fast terminal-ui for git written in rust \ud83e\udd80",
+    "homepage": "https://github.com/extrawurst/gitui",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/extrawurst/gitui/releases/download/v0.26.3/gitui-linux-x86_64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/extrawurst/gitui/releases/download/v0.26.3/gitui-linux-aarch64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

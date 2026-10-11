@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "onefetch-bin",
+    "name": "onefetch",
+    "version": "2.22.0",
+    "type": "binary",
+    "description": "Command-line Git information tool",
+    "homepage": "https://github.com/o2sh/onefetch",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/o2sh/onefetch/releases/download/2.22.0/onefetch-linux-x86_64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/o2sh/onefetch/releases/download/2.22.0/onefetch-linux-aarch64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

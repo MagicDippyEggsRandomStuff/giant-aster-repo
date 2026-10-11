@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "sd-bin",
+    "name": "sd",
+    "version": "1.0.0",
+    "type": "binary",
+    "description": "Intuitive find & replace CLI (sed alternative)",
+    "homepage": "https://github.com/chmln/sd",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/chmln/sd/releases/download/v1.0.0/sd-v1.0.0-x86_64-unknown-linux-musl.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64"
+    ]
+}

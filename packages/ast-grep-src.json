@@ -1,0 +1,23 @@
+{
+    "schema_version": 1,
+    "id": "ast-grep-src",
+    "name": "ast-grep",
+    "version": "0.33.0",
+    "type": "source",
+    "description": "A CLI tool for code structural search, lint and rewriting (source build)",
+    "homepage": "https://ast-grep.github.io",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/ast-grep/ast-grep.git",
+        "ref": "v0.33.0"
+    },
+    "build": {
+        "system": "cargo",
+        "release": true,
+        "locked": true
+    },
+    "executables": [
+        "ast-grep",
+        "sg"
+    ]
+}

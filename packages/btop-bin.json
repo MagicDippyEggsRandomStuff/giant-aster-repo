@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "btop-bin",
+    "name": "btop",
+    "version": "1.3.2",
+    "type": "binary",
+    "description": "A monitor of resources that displays usage and stats for processor, memory, disks, network and processes",
+    "homepage": "https://github.com/aristocratos/btop",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/aristocratos/btop/releases/download/v1.3.2/btop-x86_64-linux-musl.tbz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/aristocratos/btop/releases/download/v1.3.2/btop-aarch64-linux-musl.tbz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

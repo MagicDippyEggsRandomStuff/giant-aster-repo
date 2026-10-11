@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "shfmt-bin",
+    "name": "shfmt",
+    "version": "3.10.0",
+    "type": "binary",
+    "description": "A shell parser, formatter, and interpreter",
+    "homepage": "https://github.com/mvdan/sh",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/mvdan/sh/releases/download/v3.10.0/shfmt_v3.10.0_linux_amd64"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/mvdan/sh/releases/download/v3.10.0/shfmt_v3.10.0_linux_arm64"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

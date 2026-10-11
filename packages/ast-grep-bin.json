@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "ast-grep-bin",
+    "name": "ast-grep",
+    "version": "0.33.0",
+    "type": "binary",
+    "description": "A CLI tool for code structural search, lint and rewriting",
+    "homepage": "https://ast-grep.github.io",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/ast-grep/ast-grep/releases/download/v0.33.0/ast-grep-x86_64-unknown-linux-gnu.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/ast-grep/ast-grep/releases/download/v0.33.0/ast-grep-aarch64-unknown-linux-gnu.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

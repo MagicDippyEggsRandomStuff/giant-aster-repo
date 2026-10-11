@@ -1,0 +1,22 @@
+{
+    "schema_version": 1,
+    "id": "biome-src",
+    "name": "biome",
+    "version": "1.9.4",
+    "type": "source",
+    "description": "A toolchain for web projects (linter, formatter, and more) (source build)",
+    "homepage": "https://biomejs.dev",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/biomejs/biome.git",
+        "ref": "cli/v1.9.4"
+    },
+    "build": {
+        "system": "cargo",
+        "release": true,
+        "locked": true
+    },
+    "executables": [
+        "biome"
+    ]
+}

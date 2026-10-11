@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "shellcheck-bin",
+    "name": "shellcheck",
+    "version": "0.10.0",
+    "type": "binary",
+    "description": "ShellCheck, a static analysis tool for shell scripts",
+    "homepage": "https://www.shellcheck.net",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/koalaman/shellcheck/releases/download/v0.10.0/shellcheck-v0.10.0.linux.x86_64.tar.xz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/koalaman/shellcheck/releases/download/v0.10.0/shellcheck-v0.10.0.linux.aarch64.tar.xz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}
