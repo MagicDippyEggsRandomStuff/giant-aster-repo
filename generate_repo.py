@@ -1785,7 +1785,7 @@ APPS = [
     },
     {
         "name": "superfile",
-        "version": "1.1.5",
+        "version": "1.6.0",
         "description": "Fancy and modern terminal file manager",
         "homepage": "https://github.com/yorukot/superfile",
         "bin": {
@@ -1799,7 +1799,7 @@ APPS = [
             "source": {
                 "type": "git",
                 "url": "https://github.com/yorukot/superfile.git",
-                "ref": "v1.1.5"
+                "ref": "v1.6.0"
             },
             "build": {
                 "steps": ["go build -v -o spf"]
