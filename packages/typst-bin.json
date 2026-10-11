@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "typst-bin",
+    "name": "typst",
+    "version": "0.12.0",
+    "type": "binary",
+    "description": "A new markup-based typesetting system that is powerful and easy to learn",
+    "homepage": "https://typst.app",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/typst/typst/releases/download/v0.12.0/typst-x86_64-unknown-linux-musl.tar.xz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/typst/typst/releases/download/v0.12.0/typst-aarch64-unknown-linux-musl.tar.xz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

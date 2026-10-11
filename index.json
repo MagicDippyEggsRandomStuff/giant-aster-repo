@@ -1,0 +1,455 @@
+{
+    "schema_version": 1,
+    "packages": {
+        "bat-bin": {
+            "definition": "packages/bat-bin.json",
+            "type": "binary",
+            "description": "A cat(1) clone with syntax highlighting and Git integration"
+        },
+        "bat-src": {
+            "definition": "packages/bat-src.json",
+            "type": "source",
+            "description": "A cat(1) clone with syntax highlighting and Git integration (source build)"
+        },
+        "eza-bin": {
+            "definition": "packages/eza-bin.json",
+            "type": "binary",
+            "description": "A modern, maintained replacement for ls"
+        },
+        "eza-src": {
+            "definition": "packages/eza-src.json",
+            "type": "source",
+            "description": "A modern, maintained replacement for ls (source build)"
+        },
+        "fastfetch-bin": {
+            "definition": "packages/fastfetch-bin.json",
+            "type": "binary",
+            "description": "An opinionated, fast and lightweight system information tool"
+        },
+        "fastfetch-src": {
+            "definition": "packages/fastfetch-src.json",
+            "type": "source",
+            "description": "An opinionated, fast and lightweight system information tool (source build)"
+        },
+        "glow-bin": {
+            "definition": "packages/glow-bin.json",
+            "type": "binary",
+            "description": "Render markdown on the CLI, with pizzazz!"
+        },
+        "glow-src": {
+            "definition": "packages/glow-src.json",
+            "type": "source",
+            "description": "Render markdown on the CLI, with pizzazz! (source build)"
+        },
+        "neofetch-src": {
+            "definition": "packages/neofetch-src.json",
+            "type": "source",
+            "description": "A command-line system information tool written in bash 3.2+ (source build)"
+        },
+        "ripgrep-bin": {
+            "definition": "packages/ripgrep-bin.json",
+            "type": "binary",
+            "description": "A line-oriented search tool that recursively searches current directory for a regex pattern"
+        },
+        "ripgrep-src": {
+            "definition": "packages/ripgrep-src.json",
+            "type": "source",
+            "description": "A line-oriented search tool that recursively searches current directory for a regex pattern (source build)"
+        },
+        "fd-bin": {
+            "definition": "packages/fd-bin.json",
+            "type": "binary",
+            "description": "A simple, fast and user-friendly alternative to find"
+        },
+        "fd-src": {
+            "definition": "packages/fd-src.json",
+            "type": "source",
+            "description": "A simple, fast and user-friendly alternative to find (source build)"
+        },
+        "yazi-bin": {
+            "definition": "packages/yazi-bin.json",
+            "type": "binary",
+            "description": "Blazing fast terminal file manager written in Rust, based on async I/O"
+        },
+        "yazi-src": {
+            "definition": "packages/yazi-src.json",
+            "type": "source",
+            "description": "Blazing fast terminal file manager written in Rust, based on async I/O (source build)"
+        },
+        "starship-bin": {
+            "definition": "packages/starship-bin.json",
+            "type": "binary",
+            "description": "The minimal, blazing-fast, and infinitely customizable prompt for any shell!"
+        },
+        "starship-src": {
+            "definition": "packages/starship-src.json",
+            "type": "source",
+            "description": "The minimal, blazing-fast, and infinitely customizable prompt for any shell! (source build)"
+        },
+        "zoxide-bin": {
+            "definition": "packages/zoxide-bin.json",
+            "type": "binary",
+            "description": "A smarter cd command, inspired by z and autojump"
+        },
+        "zoxide-src": {
+            "definition": "packages/zoxide-src.json",
+            "type": "source",
+            "description": "A smarter cd command, inspired by z and autojump (source build)"
+        },
+        "delta-bin": {
+            "definition": "packages/delta-bin.json",
+            "type": "binary",
+            "description": "A viewer for git and diff output"
+        },
+        "delta-src": {
+            "definition": "packages/delta-src.json",
+            "type": "source",
+            "description": "A viewer for git and diff output (source build)"
+        },
+        "dust-bin": {
+            "definition": "packages/dust-bin.json",
+            "type": "binary",
+            "description": "A more intuitive version of du in rust"
+        },
+        "dust-src": {
+            "definition": "packages/dust-src.json",
+            "type": "source",
+            "description": "A more intuitive version of du in rust (source build)"
+        },
+        "bottom-bin": {
+            "definition": "packages/bottom-bin.json",
+            "type": "binary",
+            "description": "A customizable cross-platform graphical process/system monitor for the terminal"
+        },
+        "bottom-src": {
+            "definition": "packages/bottom-src.json",
+            "type": "source",
+            "description": "A customizable cross-platform graphical process/system monitor for the terminal (source build)"
+        },
+        "procs-bin": {
+            "definition": "packages/procs-bin.json",
+            "type": "binary",
+            "description": "A modern replacement for ps written in Rust"
+        },
+        "procs-src": {
+            "definition": "packages/procs-src.json",
+            "type": "source",
+            "description": "A modern replacement for ps written in Rust (source build)"
+        },
+        "tealdeer-bin": {
+            "definition": "packages/tealdeer-bin.json",
+            "type": "binary",
+            "description": "A very fast implementation of tldr in Rust"
+        },
+        "tealdeer-src": {
+            "definition": "packages/tealdeer-src.json",
+            "type": "source",
+            "description": "A very fast implementation of tldr in Rust (source build)"
+        },
+        "hyperfine-bin": {
+            "definition": "packages/hyperfine-bin.json",
+            "type": "binary",
+            "description": "A command-line benchmarking tool"
+        },
+        "hyperfine-src": {
+            "definition": "packages/hyperfine-src.json",
+            "type": "source",
+            "description": "A command-line benchmarking tool (source build)"
+        },
+        "tokei-bin": {
+            "definition": "packages/tokei-bin.json",
+            "type": "binary",
+            "description": "A program that displays statistics about your code"
+        },
+        "tokei-src": {
+            "definition": "packages/tokei-src.json",
+            "type": "source",
+            "description": "A program that displays statistics about your code (source build)"
+        },
+        "zellij-bin": {
+            "definition": "packages/zellij-bin.json",
+            "type": "binary",
+            "description": "A terminal workspace with batteries included"
+        },
+        "zellij-src": {
+            "definition": "packages/zellij-src.json",
+            "type": "source",
+            "description": "A terminal workspace with batteries included (source build)"
+        },
+        "lazygit-bin": {
+            "definition": "packages/lazygit-bin.json",
+            "type": "binary",
+            "description": "Simple terminal UI for git commands"
+        },
+        "lazygit-src": {
+            "definition": "packages/lazygit-src.json",
+            "type": "source",
+            "description": "Simple terminal UI for git commands (source build)"
+        },
+        "lazydocker-bin": {
+            "definition": "packages/lazydocker-bin.json",
+            "type": "binary",
+            "description": "A simple terminal UI for docker and docker-compose"
+        },
+        "lazydocker-src": {
+            "definition": "packages/lazydocker-src.json",
+            "type": "source",
+            "description": "A simple terminal UI for docker and docker-compose (source build)"
+        },
+        "gh-bin": {
+            "definition": "packages/gh-bin.json",
+            "type": "binary",
+            "description": "GitHub\u2019s official command line tool"
+        },
+        "gh-src": {
+            "definition": "packages/gh-src.json",
+            "type": "source",
+            "description": "GitHub\u2019s official command line tool (source build)"
+        },
+        "fzf-bin": {
+            "definition": "packages/fzf-bin.json",
+            "type": "binary",
+            "description": "A command-line fuzzy finder"
+        },
+        "fzf-src": {
+            "definition": "packages/fzf-src.json",
+            "type": "source",
+            "description": "A command-line fuzzy finder (source build)"
+        },
+        "yq-bin": {
+            "definition": "packages/yq-bin.json",
+            "type": "binary",
+            "description": "a portable command-line YAML, JSON, XML, CSV, TOML and properties processor"
+        },
+        "yq-src": {
+            "definition": "packages/yq-src.json",
+            "type": "source",
+            "description": "a portable command-line YAML, JSON, XML, CSV, TOML and properties processor (source build)"
+        },
+        "gum-bin": {
+            "definition": "packages/gum-bin.json",
+            "type": "binary",
+            "description": "A tool for glamorous shell scripts"
+        },
+        "gum-src": {
+            "definition": "packages/gum-src.json",
+            "type": "source",
+            "description": "A tool for glamorous shell scripts (source build)"
+        },
+        "vhs-bin": {
+            "definition": "packages/vhs-bin.json",
+            "type": "binary",
+            "description": "Your CLI home video recorder"
+        },
+        "vhs-src": {
+            "definition": "packages/vhs-src.json",
+            "type": "source",
+            "description": "Your CLI home video recorder (source build)"
+        },
+        "lsd-bin": {
+            "definition": "packages/lsd-bin.json",
+            "type": "binary",
+            "description": "The next generation ls command"
+        },
+        "lsd-src": {
+            "definition": "packages/lsd-src.json",
+            "type": "source",
+            "description": "The next generation ls command (source build)"
+        },
+        "age-bin": {
+            "definition": "packages/age-bin.json",
+            "type": "binary",
+            "description": "A simple, modern and secure file encryption tool"
+        },
+        "age-src": {
+            "definition": "packages/age-src.json",
+            "type": "source",
+            "description": "A simple, modern and secure file encryption tool (source build)"
+        },
+        "scc-bin": {
+            "definition": "packages/scc-bin.json",
+            "type": "binary",
+            "description": "Sloc, Cloc and Code: a fast language counter"
+        },
+        "scc-src": {
+            "definition": "packages/scc-src.json",
+            "type": "source",
+            "description": "Sloc, Cloc and Code: a fast language counter (source build)"
+        },
+        "duf-bin": {
+            "definition": "packages/duf-bin.json",
+            "type": "binary",
+            "description": "Disk Usage/Free Utility - a better 'df' alternative"
+        },
+        "duf-src": {
+            "definition": "packages/duf-src.json",
+            "type": "source",
+            "description": "Disk Usage/Free Utility - a better 'df' alternative (source build)"
+        },
+        "croc-bin": {
+            "definition": "packages/croc-bin.json",
+            "type": "binary",
+            "description": "Easily and securely transfer stuff from one computer to another"
+        },
+        "croc-src": {
+            "definition": "packages/croc-src.json",
+            "type": "source",
+            "description": "Easily and securely transfer stuff from one computer to another (source build)"
+        },
+        "navi-bin": {
+            "definition": "packages/navi-bin.json",
+            "type": "binary",
+            "description": "An interactive cheatsheet tool for the command-line"
+        },
+        "navi-src": {
+            "definition": "packages/navi-src.json",
+            "type": "source",
+            "description": "An interactive cheatsheet tool for the command-line (source build)"
+        },
+        "watchexec-bin": {
+            "definition": "packages/watchexec-bin.json",
+            "type": "binary",
+            "description": "Executes commands in response to file modifications"
+        },
+        "watchexec-src": {
+            "definition": "packages/watchexec-src.json",
+            "type": "source",
+            "description": "Executes commands in response to file modifications (source build)"
+        },
+        "typst-bin": {
+            "definition": "packages/typst-bin.json",
+            "type": "binary",
+            "description": "A new markup-based typesetting system that is powerful and easy to learn"
+        },
+        "typst-src": {
+            "definition": "packages/typst-src.json",
+            "type": "source",
+            "description": "A new markup-based typesetting system that is powerful and easy to learn (source build)"
+        },
+        "ruff-bin": {
+            "definition": "packages/ruff-bin.json",
+            "type": "binary",
+            "description": "An extremely fast Python linter and code formatter, written in Rust"
+        },
+        "ruff-src": {
+            "definition": "packages/ruff-src.json",
+            "type": "source",
+            "description": "An extremely fast Python linter and code formatter, written in Rust (source build)"
+        },
+        "uv-bin": {
+            "definition": "packages/uv-bin.json",
+            "type": "binary",
+            "description": "An extremely fast Python package and project manager, written in Rust"
+        },
+        "uv-src": {
+            "definition": "packages/uv-src.json",
+            "type": "source",
+            "description": "An extremely fast Python package and project manager, written in Rust (source build)"
+        },
+        "just-bin": {
+            "definition": "packages/just-bin.json",
+            "type": "binary",
+            "description": "Just a command runner"
+        },
+        "just-src": {
+            "definition": "packages/just-src.json",
+            "type": "source",
+            "description": "Just a command runner (source build)"
+        },
+        "helix-bin": {
+            "definition": "packages/helix-bin.json",
+            "type": "binary",
+            "description": "A post-modern modal text editor"
+        },
+        "helix-src": {
+            "definition": "packages/helix-src.json",
+            "type": "source",
+            "description": "A post-modern modal text editor (source build)"
+        },
+        "nushell-bin": {
+            "definition": "packages/nushell-bin.json",
+            "type": "binary",
+            "description": "A new type of shell"
+        },
+        "nushell-src": {
+            "definition": "packages/nushell-src.json",
+            "type": "source",
+            "description": "A new type of shell (source build)"
+        },
+        "git-cliff-bin": {
+            "definition": "packages/git-cliff-bin.json",
+            "type": "binary",
+            "description": "A highly customizable changelog generator that follows Conventional Commits specifications"
+        },
+        "git-cliff-src": {
+            "definition": "packages/git-cliff-src.json",
+            "type": "source",
+            "description": "A highly customizable changelog generator that follows Conventional Commits specifications (source build)"
+        },
+        "bandwhich-bin": {
+            "definition": "packages/bandwhich-bin.json",
+            "type": "binary",
+            "description": "Terminal bandwidth utilization tool"
+        },
+        "bandwhich-src": {
+            "definition": "packages/bandwhich-src.json",
+            "type": "source",
+            "description": "Terminal bandwidth utilization tool (source build)"
+        },
+        "grex-bin": {
+            "definition": "packages/grex-bin.json",
+            "type": "binary",
+            "description": "A command-line tool and library for generating regular expressions from user-provided test cases"
+        },
+        "grex-src": {
+            "definition": "packages/grex-src.json",
+            "type": "source",
+            "description": "A command-line tool and library for generating regular expressions from user-provided test cases (source build)"
+        },
+        "xh-bin": {
+            "definition": "packages/xh-bin.json",
+            "type": "binary",
+            "description": "Friendly and fast tool for sending HTTP requests"
+        },
+        "xh-src": {
+            "definition": "packages/xh-src.json",
+            "type": "source",
+            "description": "Friendly and fast tool for sending HTTP requests (source build)"
+        },
+        "doggo-bin": {
+            "definition": "packages/doggo-bin.json",
+            "type": "binary",
+            "description": "Command-line DNS client for Humans"
+        },
+        "doggo-src": {
+            "definition": "packages/doggo-src.json",
+            "type": "source",
+            "description": "Command-line DNS client for Humans (source build)"
+        },
+        "htop-src": {
+            "definition": "packages/htop-src.json",
+            "type": "source",
+            "description": "An interactive process viewer (source build)"
+        },
+        "tmux-src": {
+            "definition": "packages/tmux-src.json",
+            "type": "source",
+            "description": "A terminal multiplexer (source build)"
+        },
+        "jq-bin": {
+            "definition": "packages/jq-bin.json",
+            "type": "binary",
+            "description": "Command-line JSON processor"
+        },
+        "jq-src": {
+            "definition": "packages/jq-src.json",
+            "type": "source",
+            "description": "Command-line JSON processor (source build)"
+        },
+        "tree-src": {
+            "definition": "packages/tree-src.json",
+            "type": "source",
+            "description": "Recursive directory listing program (source build)"
+        }
+    }
+}

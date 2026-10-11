@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "git-cliff-bin",
+    "name": "git-cliff",
+    "version": "2.6.1",
+    "type": "binary",
+    "description": "A highly customizable changelog generator that follows Conventional Commits specifications",
+    "homepage": "https://git-cliff.org",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/orhun/git-cliff/releases/download/v2.6.1/git-cliff-2.6.1-x86_64-unknown-linux-gnu.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/orhun/git-cliff/releases/download/v2.6.1/git-cliff-2.6.1-aarch64-unknown-linux-gnu.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

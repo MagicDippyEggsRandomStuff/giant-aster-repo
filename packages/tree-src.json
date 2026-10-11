@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "tree-src",
+    "name": "tree",
+    "version": "2.1.1",
+    "type": "source",
+    "description": "Recursive directory listing program (source build)",
+    "homepage": "https://oldmanhook.github.io/unix-tree/",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/OldManHook/unix-tree.git",
+        "ref": "2.1.1"
+    },
+    "build": {
+        "system": "make"
+    }
+}

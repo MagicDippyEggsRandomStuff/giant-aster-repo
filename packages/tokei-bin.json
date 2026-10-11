@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "tokei-bin",
+    "name": "tokei",
+    "version": "12.1.2",
+    "type": "binary",
+    "description": "A program that displays statistics about your code",
+    "homepage": "https://github.com/Xaeroxe/tokei",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/Xaeroxe/tokei/releases/download/v12.1.2/tokei-x86_64-unknown-linux-gnu.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/Xaeroxe/tokei/releases/download/v12.1.2/tokei-aarch64-unknown-linux-gnu.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

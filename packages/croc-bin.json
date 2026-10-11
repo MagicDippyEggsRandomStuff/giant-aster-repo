@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "croc-bin",
+    "name": "croc",
+    "version": "10.0.12",
+    "type": "binary",
+    "description": "Easily and securely transfer stuff from one computer to another",
+    "homepage": "https://github.com/schollz/croc",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/schollz/croc/releases/download/v10.0.12/croc_v10.0.12_Linux-64bit.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/schollz/croc/releases/download/v10.0.12/croc_v10.0.12_Linux-ARM64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

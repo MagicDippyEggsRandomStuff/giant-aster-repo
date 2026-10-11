@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "lazygit-src",
+    "name": "lazygit",
+    "version": "0.44.1",
+    "type": "source",
+    "description": "Simple terminal UI for git commands (source build)",
+    "homepage": "https://github.com/jesseduffield/lazygit",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/jesseduffield/lazygit.git",
+        "ref": "v0.44.1"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o lazygit"
+        ]
+    }
+}

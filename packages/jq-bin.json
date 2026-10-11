@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "jq-bin",
+    "name": "jq",
+    "version": "1.7.1",
+    "type": "binary",
+    "description": "Command-line JSON processor",
+    "homepage": "https://jqlang.github.io/jq/",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/jqlang/jq/releases/download/jq-1.7.1/jq-linux-amd64"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/jqlang/jq/releases/download/jq-1.7.1/jq-linux-arm64"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

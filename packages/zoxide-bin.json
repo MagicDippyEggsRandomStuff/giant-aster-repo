@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "zoxide-bin",
+    "name": "zoxide",
+    "version": "0.9.6",
+    "type": "binary",
+    "description": "A smarter cd command, inspired by z and autojump",
+    "homepage": "https://github.com/ajeetdsouza/zoxide",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.6/zoxide-0.9.6-x86_64-unknown-linux-musl.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.6/zoxide-0.9.6-aarch64-unknown-linux-musl.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

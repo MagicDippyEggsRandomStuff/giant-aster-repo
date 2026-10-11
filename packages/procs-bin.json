@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "procs-bin",
+    "name": "procs",
+    "version": "0.14.8",
+    "type": "binary",
+    "description": "A modern replacement for ps written in Rust",
+    "homepage": "https://github.com/dalance/procs",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/dalance/procs/releases/download/v0.14.8/procs-v0.14.8-x86_64-linux.zip"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/dalance/procs/releases/download/v0.14.8/procs-v0.14.8-aarch64-linux.zip"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

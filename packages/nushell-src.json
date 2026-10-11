@@ -1,0 +1,22 @@
+{
+    "schema_version": 1,
+    "id": "nushell-src",
+    "name": "nushell",
+    "version": "0.99.1",
+    "type": "source",
+    "description": "A new type of shell (source build)",
+    "homepage": "https://www.nushell.sh",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/nushell/nushell.git",
+        "ref": "0.99.1"
+    },
+    "build": {
+        "system": "cargo",
+        "release": true,
+        "locked": true
+    },
+    "executables": [
+        "nu"
+    ]
+}

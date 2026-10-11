@@ -1,0 +1,22 @@
+{
+    "schema_version": 1,
+    "id": "navi-src",
+    "name": "navi",
+    "version": "2.23.0",
+    "type": "source",
+    "description": "An interactive cheatsheet tool for the command-line (source build)",
+    "homepage": "https://github.com/denisidoro/navi",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/denisidoro/navi.git",
+        "ref": "v2.23.0"
+    },
+    "build": {
+        "system": "cargo",
+        "release": true,
+        "locked": true
+    },
+    "executables": [
+        "navi"
+    ]
+}

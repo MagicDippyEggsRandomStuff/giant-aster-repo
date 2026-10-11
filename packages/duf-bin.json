@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "duf-bin",
+    "name": "duf",
+    "version": "0.8.1",
+    "type": "binary",
+    "description": "Disk Usage/Free Utility - a better 'df' alternative",
+    "homepage": "https://github.com/muesli/duf",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/muesli/duf/releases/download/v0.8.1/duf_0.8.1_linux_x86_64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/muesli/duf/releases/download/v0.8.1/duf_0.8.1_linux_arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

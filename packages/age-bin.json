@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "age-bin",
+    "name": "age",
+    "version": "1.2.0",
+    "type": "binary",
+    "description": "A simple, modern and secure file encryption tool",
+    "homepage": "https://github.com/FiloSottile/age",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/FiloSottile/age/releases/download/v1.2.0/age-v1.2.0-linux-amd64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/FiloSottile/age/releases/download/v1.2.0/age-v1.2.0-linux-arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

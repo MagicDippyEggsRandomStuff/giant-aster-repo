@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "htop-src",
+    "name": "htop",
+    "version": "3.3.0",
+    "type": "source",
+    "description": "An interactive process viewer (source build)",
+    "homepage": "https://htop.dev",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/htop-dev/htop.git",
+        "ref": "3.3.0"
+    },
+    "build": {
+        "steps": [
+            "./autogen.sh",
+            "./configure",
+            "make"
+        ]
+    }
+}
