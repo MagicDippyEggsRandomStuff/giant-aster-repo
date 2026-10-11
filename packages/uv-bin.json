@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "uv-bin",
+    "name": "uv",
+    "version": "0.4.30",
+    "type": "binary",
+    "description": "An extremely fast Python package and project manager, written in Rust",
+    "homepage": "https://github.com/astral-sh/uv",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/astral-sh/uv/releases/download/0.4.30/uv-x86_64-unknown-linux-gnu.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/astral-sh/uv/releases/download/0.4.30/uv-aarch64-unknown-linux-gnu.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

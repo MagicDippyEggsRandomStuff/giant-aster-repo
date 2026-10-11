@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "bat-bin",
+    "name": "bat",
+    "version": "0.24.0",
+    "type": "binary",
+    "description": "A cat(1) clone with syntax highlighting and Git integration",
+    "homepage": "https://github.com/sharkdp/bat",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/sharkdp/bat/releases/download/v0.24.0/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/sharkdp/bat/releases/download/v0.24.0/bat-v0.24.0-aarch64-unknown-linux-gnu.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

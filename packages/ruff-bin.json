@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "ruff-bin",
+    "name": "ruff",
+    "version": "0.7.3",
+    "type": "binary",
+    "description": "An extremely fast Python linter and code formatter, written in Rust",
+    "homepage": "https://github.com/astral-sh/ruff",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/astral-sh/ruff/releases/download/0.7.3/ruff-x86_64-unknown-linux-gnu.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/astral-sh/ruff/releases/download/0.7.3/ruff-aarch64-unknown-linux-gnu.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

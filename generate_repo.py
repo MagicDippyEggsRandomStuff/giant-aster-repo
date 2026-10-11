@@ -1,0 +1,1357 @@
+#!/usr/bin/env python3
+import json
+import os
+
+# Definition of apps with metadata
+APPS = [
+    {
+        "name": "bat",
+        "version": "0.24.0",
+        "description": "A cat(1) clone with syntax highlighting and Git integration",
+        "homepage": "https://github.com/sharkdp/bat",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/sharkdp/bat/releases/download/v0.24.0/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/sharkdp/bat/releases/download/v0.24.0/bat-v0.24.0-aarch64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sharkdp/bat.git",
+                "ref": "v0.24.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["bat"]
+        }
+    },
+    {
+        "name": "eza",
+        "version": "0.20.1",
+        "description": "A modern, maintained replacement for ls",
+        "homepage": "https://eza.rocks",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/eza-community/eza/releases/download/v0.20.1/eza_x86_64-unknown-linux-gnu.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/eza-community/eza/releases/download/v0.20.1/eza_aarch64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eza-community/eza.git",
+                "ref": "v0.20.1"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["eza"]
+        }
+    },
+    {
+        "name": "fastfetch",
+        "version": "2.30.0",
+        "description": "An opinionated, fast and lightweight system information tool",
+        "homepage": "https://github.com/fastfetch-cli/fastfetch",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/fastfetch-cli/fastfetch/releases/download/2.30.0/fastfetch-linux-amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/fastfetch-cli/fastfetch/releases/download/2.30.0/fastfetch-linux-aarch64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fastfetch-cli/fastfetch.git",
+                "ref": "2.30.0"
+            },
+            "build": {
+                "system": "cmake"
+            }
+        }
+    },
+    {
+        "name": "glow",
+        "version": "2.0.0",
+        "description": "Render markdown on the CLI, with pizzazz!",
+        "homepage": "https://github.com/charmbracelet/glow",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/charmbracelet/glow/releases/download/v2.0.0/glow_2.0.0_Linux_x86_64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/charmbracelet/glow/releases/download/v2.0.0/glow_2.0.0_Linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/charmbracelet/glow.git",
+                "ref": "v2.0.0"
+            },
+            "build": {
+                "steps": ["go build -v -o glow"]
+            }
+        }
+    },
+    {
+        "name": "neofetch",
+        "version": "7.1.0",
+        "description": "A command-line system information tool written in bash 3.2+",
+        "homepage": "https://github.com/dylanaraps/neofetch",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dylanaraps/neofetch.git",
+                "ref": "7.1.0"
+            },
+            "build": {
+                "system": "make"
+            }
+        }
+    },
+    {
+        "name": "ripgrep",
+        "version": "14.1.0",
+        "description": "A line-oriented search tool that recursively searches current directory for a regex pattern",
+        "homepage": "https://github.com/BurntSushi/ripgrep",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep-14.1.0-x86_64-unknown-linux-musl.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep-14.1.0-aarch64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BurntSushi/ripgrep.git",
+                "ref": "14.1.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["rg"]
+        }
+    },
+    {
+        "name": "fd",
+        "version": "10.2.0",
+        "description": "A simple, fast and user-friendly alternative to find",
+        "homepage": "https://github.com/sharkdp/fd",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/sharkdp/fd/releases/download/v10.2.0/fd-v10.2.0-x86_64-unknown-linux-gnu.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/sharkdp/fd/releases/download/v10.2.0/fd-v10.2.0-aarch64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sharkdp/fd.git",
+                "ref": "v10.2.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["fd"]
+        }
+    },
+    {
+        "name": "yazi",
+        "version": "0.4.0",
+        "description": "Blazing fast terminal file manager written in Rust, based on async I/O",
+        "homepage": "https://github.com/sxyazi/yazi",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/sxyazi/yazi/releases/download/v0.4.0/yazi-x86_64-unknown-linux-gnu.zip"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/sxyazi/yazi/releases/download/v0.4.0/yazi-aarch64-unknown-linux-gnu.zip"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sxyazi/yazi.git",
+                "ref": "v0.4.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["yazi", "ya"]
+        }
+    },
+    {
+        "name": "starship",
+        "version": "1.21.0",
+        "description": "The minimal, blazing-fast, and infinitely customizable prompt for any shell!",
+        "homepage": "https://starship.rs",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/starship/starship/releases/download/v1.21.0/starship-x86_64-unknown-linux-gnu.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/starship/starship/releases/download/v1.21.0/starship-aarch64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/starship/starship.git",
+                "ref": "v1.21.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["starship"]
+        }
+    },
+    {
+        "name": "zoxide",
+        "version": "0.9.6",
+        "description": "A smarter cd command, inspired by z and autojump",
+        "homepage": "https://github.com/ajeetdsouza/zoxide",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.6/zoxide-0.9.6-x86_64-unknown-linux-musl.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.6/zoxide-0.9.6-aarch64-unknown-linux-musl.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ajeetdsouza/zoxide.git",
+                "ref": "v0.9.6"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["zoxide"]
+        }
+    },
+    {
+        "name": "delta",
+        "version": "0.18.2",
+        "description": "A viewer for git and diff output",
+        "homepage": "https://github.com/dandavison/delta",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/dandavison/delta/releases/download/0.18.2/delta-0.18.2-x86_64-unknown-linux-gnu.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/dandavison/delta/releases/download/0.18.2/delta-0.18.2-aarch64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dandavison/delta.git",
+                "ref": "0.18.2"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["delta"]
+        }
+    },
+    {
+        "name": "dust",
+        "version": "1.1.1",
+        "description": "A more intuitive version of du in rust",
+        "homepage": "https://github.com/bootandy/dust",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/bootandy/dust/releases/download/v1.1.1/dust-v1.1.1-x86_64-unknown-linux-gnu.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/bootandy/dust/releases/download/v1.1.1/dust-v1.1.1-aarch64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bootandy/dust.git",
+                "ref": "v1.1.1"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["dust"]
+        }
+    },
+    {
+        "name": "bottom",
+        "version": "0.10.2",
+        "description": "A customizable cross-platform graphical process/system monitor for the terminal",
+        "homepage": "https://github.com/ClementTsang/bottom",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/ClementTsang/bottom/releases/download/0.10.2/bottom_x86_64-unknown-linux-gnu.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/ClementTsang/bottom/releases/download/0.10.2/bottom_aarch64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ClementTsang/bottom.git",
+                "ref": "0.10.2"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["btm"]
+        }
+    },
+    {
+        "name": "procs",
+        "version": "0.14.8",
+        "description": "A modern replacement for ps written in Rust",
+        "homepage": "https://github.com/dalance/procs",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/dalance/procs/releases/download/v0.14.8/procs-v0.14.8-x86_64-linux.zip"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/dalance/procs/releases/download/v0.14.8/procs-v0.14.8-aarch64-linux.zip"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dalance/procs.git",
+                "ref": "v0.14.8"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["procs"]
+        }
+    },
+    {
+        "name": "tealdeer",
+        "version": "1.7.1",
+        "description": "A very fast implementation of tldr in Rust",
+        "homepage": "https://github.com/dbrgn/tealdeer",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/dbrgn/tealdeer/releases/download/v1.7.1/tldr-x86_64-unknown-linux-musl"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/dbrgn/tealdeer/releases/download/v1.7.1/tldr-aarch64-unknown-linux-musl"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dbrgn/tealdeer.git",
+                "ref": "v1.7.1"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["tldr"]
+        }
+    },
+    {
+        "name": "hyperfine",
+        "version": "1.18.0",
+        "description": "A command-line benchmarking tool",
+        "homepage": "https://github.com/sharkdp/hyperfine",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/sharkdp/hyperfine/releases/download/v1.18.0/hyperfine-v1.18.0-x86_64-unknown-linux-gnu.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/sharkdp/hyperfine/releases/download/v1.18.0/hyperfine-v1.18.0-aarch64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sharkdp/hyperfine.git",
+                "ref": "v1.18.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["hyperfine"]
+        }
+    },
+    {
+        "name": "tokei",
+        "version": "12.1.2",
+        "description": "A program that displays statistics about your code",
+        "homepage": "https://github.com/Xaeroxe/tokei",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/Xaeroxe/tokei/releases/download/v12.1.2/tokei-x86_64-unknown-linux-gnu.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/Xaeroxe/tokei/releases/download/v12.1.2/tokei-aarch64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Xaeroxe/tokei.git",
+                "ref": "v12.1.2"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["tokei"]
+        }
+    },
+    {
+        "name": "zellij",
+        "version": "0.41.2",
+        "description": "A terminal workspace with batteries included",
+        "homepage": "https://zellij.dev",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/zellij-org/zellij/releases/download/v0.41.2/zellij-x86_64-unknown-linux-musl.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/zellij-org/zellij/releases/download/v0.41.2/zellij-aarch64-unknown-linux-musl.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zellij-org/zellij.git",
+                "ref": "v0.41.2"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["zellij"]
+        }
+    },
+    {
+        "name": "lazygit",
+        "version": "0.44.1",
+        "description": "Simple terminal UI for git commands",
+        "homepage": "https://github.com/jesseduffield/lazygit",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.44.1/lazygit_0.44.1_Linux_x86_64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.44.1/lazygit_0.44.1_Linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jesseduffield/lazygit.git",
+                "ref": "v0.44.1"
+            },
+            "build": {
+                "steps": ["go build -v -o lazygit"]
+            }
+        }
+    },
+    {
+        "name": "lazydocker",
+        "version": "0.23.1",
+        "description": "A simple terminal UI for docker and docker-compose",
+        "homepage": "https://github.com/jesseduffield/lazydocker",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/jesseduffield/lazydocker/releases/download/v0.23.1/lazydocker_0.23.1_Linux_x86_64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/jesseduffield/lazydocker/releases/download/v0.23.1/lazydocker_0.23.1_Linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jesseduffield/lazydocker.git",
+                "ref": "v0.23.1"
+            },
+            "build": {
+                "steps": ["go build -v -o lazydocker"]
+            }
+        }
+    },
+    {
+        "name": "gh",
+        "version": "2.61.0",
+        "description": "GitHub’s official command line tool",
+        "homepage": "https://cli.github.com",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/cli/cli/releases/download/v2.61.0/gh_2.61.0_linux_amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/cli/cli/releases/download/v2.61.0/gh_2.61.0_linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cli/cli.git",
+                "ref": "v2.61.0"
+            },
+            "build": {
+                "steps": ["make"]
+            }
+        }
+    },
+    {
+        "name": "fzf",
+        "version": "0.56.0",
+        "description": "A command-line fuzzy finder",
+        "homepage": "https://github.com/junegunn/fzf",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/junegunn/fzf/releases/download/v0.56.0/fzf-0.56.0-linux_amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/junegunn/fzf/releases/download/v0.56.0/fzf-0.56.0-linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/junegunn/fzf.git",
+                "ref": "v0.56.0"
+            },
+            "build": {
+                "steps": ["go build -v -o fzf"]
+            }
+        }
+    },
+    {
+        "name": "yq",
+        "version": "4.44.5",
+        "description": "a portable command-line YAML, JSON, XML, CSV, TOML and properties processor",
+        "homepage": "https://github.com/mikefarah/yq",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/mikefarah/yq/releases/download/v4.44.5/yq_linux_amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/mikefarah/yq/releases/download/v4.44.5/yq_linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikefarah/yq.git",
+                "ref": "v4.44.5"
+            },
+            "build": {
+                "steps": ["go build -v -o yq"]
+            }
+        }
+    },
+    {
+        "name": "gum",
+        "version": "0.14.5",
+        "description": "A tool for glamorous shell scripts",
+        "homepage": "https://github.com/charmbracelet/gum",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/charmbracelet/gum/releases/download/v0.14.5/gum_0.14.5_Linux_x86_64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/charmbracelet/gum/releases/download/v0.14.5/gum_0.14.5_Linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/charmbracelet/gum.git",
+                "ref": "v0.14.5"
+            },
+            "build": {
+                "steps": ["go build -v -o gum"]
+            }
+        }
+    },
+    {
+        "name": "vhs",
+        "version": "0.8.0",
+        "description": "Your CLI home video recorder",
+        "homepage": "https://github.com/charmbracelet/vhs",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/charmbracelet/vhs/releases/download/v0.8.0/vhs_0.8.0_Linux_x86_64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/charmbracelet/vhs/releases/download/v0.8.0/vhs_0.8.0_Linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/charmbracelet/vhs.git",
+                "ref": "v0.8.0"
+            },
+            "build": {
+                "steps": ["go build -v -o vhs"]
+            }
+        }
+    },
+    {
+        "name": "lsd",
+        "version": "1.1.5",
+        "description": "The next generation ls command",
+        "homepage": "https://github.com/lsd-rs/lsd",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/lsd-rs/lsd/releases/download/v1.1.5/lsd-v1.1.5-x86_64-unknown-linux-gnu.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/lsd-rs/lsd/releases/download/v1.1.5/lsd-v1.1.5-aarch64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lsd-rs/lsd.git",
+                "ref": "v1.1.5"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["lsd"]
+        }
+    },
+    {
+        "name": "age",
+        "version": "1.2.0",
+        "description": "A simple, modern and secure file encryption tool",
+        "homepage": "https://github.com/FiloSottile/age",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/FiloSottile/age/releases/download/v1.2.0/age-v1.2.0-linux-amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/FiloSottile/age/releases/download/v1.2.0/age-v1.2.0-linux-arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FiloSottile/age.git",
+                "ref": "v1.2.0"
+            },
+            "build": {
+                "steps": ["go build -v -o age ./cmd/age", "go build -v -o age-keygen ./cmd/age-keygen"]
+            }
+        }
+    },
+    {
+        "name": "scc",
+        "version": "3.3.5",
+        "description": "Sloc, Cloc and Code: a fast language counter",
+        "homepage": "https://github.com/boyter/scc",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/boyter/scc/releases/download/v3.3.5/scc_Linux_x86_64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/boyter/scc/releases/download/v3.3.5/scc_Linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/boyter/scc.git",
+                "ref": "v3.3.5"
+            },
+            "build": {
+                "steps": ["go build -v -o scc"]
+            }
+        }
+    },
+    {
+        "name": "duf",
+        "version": "0.8.1",
+        "description": "Disk Usage/Free Utility - a better 'df' alternative",
+        "homepage": "https://github.com/muesli/duf",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/muesli/duf/releases/download/v0.8.1/duf_0.8.1_linux_x86_64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/muesli/duf/releases/download/v0.8.1/duf_0.8.1_linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/muesli/duf.git",
+                "ref": "v0.8.1"
+            },
+            "build": {
+                "steps": ["go build -v -o duf"]
+            }
+        }
+    },
+    {
+        "name": "croc",
+        "version": "10.0.12",
+        "description": "Easily and securely transfer stuff from one computer to another",
+        "homepage": "https://github.com/schollz/croc",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/schollz/croc/releases/download/v10.0.12/croc_v10.0.12_Linux-64bit.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/schollz/croc/releases/download/v10.0.12/croc_v10.0.12_Linux-ARM64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schollz/croc.git",
+                "ref": "v10.0.12"
+            },
+            "build": {
+                "steps": ["go build -v -o croc"]
+            }
+        }
+    },
+    {
+        "name": "navi",
+        "version": "2.23.0",
+        "description": "An interactive cheatsheet tool for the command-line",
+        "homepage": "https://github.com/denisidoro/navi",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/denisidoro/navi/releases/download/v2.23.0/navi-v2.23.0-x86_64-unknown-linux-musl.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/denisidoro/navi/releases/download/v2.23.0/navi-v2.23.0-aarch64-unknown-linux-musl.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/denisidoro/navi.git",
+                "ref": "v2.23.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["navi"]
+        }
+    },
+    {
+        "name": "watchexec",
+        "version": "2.1.2",
+        "description": "Executes commands in response to file modifications",
+        "homepage": "https://github.com/watchexec/watchexec",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/watchexec/watchexec/releases/download/v2.1.2/watchexec-2.1.2-x86_64-unknown-linux-gnu.tar.xz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/watchexec/watchexec/releases/download/v2.1.2/watchexec-2.1.2-aarch64-unknown-linux-gnu.tar.xz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/watchexec/watchexec.git",
+                "ref": "v2.1.2"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["watchexec"]
+        }
+    },
+    {
+        "name": "typst",
+        "version": "0.12.0",
+        "description": "A new markup-based typesetting system that is powerful and easy to learn",
+        "homepage": "https://typst.app",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/typst/typst/releases/download/v0.12.0/typst-x86_64-unknown-linux-musl.tar.xz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/typst/typst/releases/download/v0.12.0/typst-aarch64-unknown-linux-musl.tar.xz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/typst/typst.git",
+                "ref": "v0.12.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["typst"]
+        }
+    },
+    {
+        "name": "ruff",
+        "version": "0.7.3",
+        "description": "An extremely fast Python linter and code formatter, written in Rust",
+        "homepage": "https://github.com/astral-sh/ruff",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/astral-sh/ruff/releases/download/0.7.3/ruff-x86_64-unknown-linux-gnu.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/astral-sh/ruff/releases/download/0.7.3/ruff-aarch64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/astral-sh/ruff.git",
+                "ref": "0.7.3"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["ruff"]
+        }
+    },
+    {
+        "name": "uv",
+        "version": "0.4.30",
+        "description": "An extremely fast Python package and project manager, written in Rust",
+        "homepage": "https://github.com/astral-sh/uv",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/astral-sh/uv/releases/download/0.4.30/uv-x86_64-unknown-linux-gnu.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/astral-sh/uv/releases/download/0.4.30/uv-aarch64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/astral-sh/uv.git",
+                "ref": "0.4.30"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["uv", "uvx"]
+        }
+    },
+    {
+        "name": "just",
+        "version": "1.36.0",
+        "description": "Just a command runner",
+        "homepage": "https://github.com/casey/just",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/casey/just/releases/download/1.36.0/just-1.36.0-x86_64-unknown-linux-musl.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/casey/just/releases/download/1.36.0/just-1.36.0-aarch64-unknown-linux-musl.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/casey/just.git",
+                "ref": "1.36.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["just"]
+        }
+    },
+    {
+        "name": "helix",
+        "version": "25.01",
+        "description": "A post-modern modal text editor",
+        "homepage": "https://helix-editor.com",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/helix-editor/helix/releases/download/25.01/helix-25.01-x86_64-linux.tar.xz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/helix-editor/helix/releases/download/25.01/helix-25.01-aarch64-linux.tar.xz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/helix-editor/helix.git",
+                "ref": "25.01"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["hx"]
+        }
+    },
+    {
+        "name": "nushell",
+        "version": "0.99.1",
+        "description": "A new type of shell",
+        "homepage": "https://www.nushell.sh",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/nushell/nushell/releases/download/0.99.1/nu-0.99.1-x86_64-unknown-linux-musl.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/nushell/nushell/releases/download/0.99.1/nu-0.99.1-aarch64-unknown-linux-musl.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nushell/nushell.git",
+                "ref": "0.99.1"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["nu"]
+        }
+    },
+    {
+        "name": "git-cliff",
+        "version": "2.6.1",
+        "description": "A highly customizable changelog generator that follows Conventional Commits specifications",
+        "homepage": "https://git-cliff.org",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/orhun/git-cliff/releases/download/v2.6.1/git-cliff-2.6.1-x86_64-unknown-linux-gnu.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/orhun/git-cliff/releases/download/v2.6.1/git-cliff-2.6.1-aarch64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orhun/git-cliff.git",
+                "ref": "v2.6.1"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["git-cliff"]
+        }
+    },
+    {
+        "name": "bandwhich",
+        "version": "0.23.0",
+        "description": "Terminal bandwidth utilization tool",
+        "homepage": "https://github.com/imsnif/bandwhich",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/imsnif/bandwhich/releases/download/v0.23.0/bandwhich-v0.23.0-x86_64-unknown-linux-musl.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/imsnif/bandwhich/releases/download/v0.23.0/bandwhich-v0.23.0-aarch64-unknown-linux-musl.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/imsnif/bandwhich.git",
+                "ref": "v0.23.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["bandwhich"]
+        }
+    },
+    {
+        "name": "grex",
+        "version": "1.4.5",
+        "description": "A command-line tool and library for generating regular expressions from user-provided test cases",
+        "homepage": "https://github.com/pemistahl/grex",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/pemistahl/grex/releases/download/v1.4.5/grex-v1.4.5-x86_64-unknown-linux-musl.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/pemistahl/grex/releases/download/v1.4.5/grex-v1.4.5-aarch64-unknown-linux-musl.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pemistahl/grex.git",
+                "ref": "v1.4.5"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["grex"]
+        }
+    },
+    {
+        "name": "xh",
+        "version": "0.23.0",
+        "description": "Friendly and fast tool for sending HTTP requests",
+        "homepage": "https://github.com/ducaale/xh",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/ducaale/xh/releases/download/v0.23.0/xh-v0.23.0-x86_64-unknown-linux-musl.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/ducaale/xh/releases/download/v0.23.0/xh-v0.23.0-aarch64-unknown-linux-musl.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ducaale/xh.git",
+                "ref": "v0.23.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["xh"]
+        }
+    },
+    {
+        "name": "doggo",
+        "version": "1.0.5",
+        "description": "Command-line DNS client for Humans",
+        "homepage": "https://github.com/mr-karan/doggo",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/mr-karan/doggo/releases/download/v1.0.5/doggo_1.0.5_Linux_x86_64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/mr-karan/doggo/releases/download/v1.0.5/doggo_1.0.5_Linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mr-karan/doggo.git",
+                "ref": "v1.0.5"
+            },
+            "build": {
+                "steps": ["go build -v -o doggo ./cmd/doggo"]
+            }
+        }
+    },
+    {
+        "name": "htop",
+        "version": "3.3.0",
+        "description": "An interactive process viewer",
+        "homepage": "https://htop.dev",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/htop-dev/htop.git",
+                "ref": "3.3.0"
+            },
+            "build": {
+                "steps": ["./autogen.sh", "./configure", "make"]
+            }
+        }
+    },
+    {
+        "name": "tmux",
+        "version": "3.5a",
+        "description": "A terminal multiplexer",
+        "homepage": "https://github.com/tmux/tmux",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tmux/tmux.git",
+                "ref": "3.5a"
+            },
+            "build": {
+                "steps": ["autogen.sh", "./configure", "make"]
+            }
+        }
+    },
+    {
+        "name": "jq",
+        "version": "1.7.1",
+        "description": "Command-line JSON processor",
+        "homepage": "https://jqlang.github.io/jq/",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/jqlang/jq/releases/download/jq-1.7.1/jq-linux-amd64"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/jqlang/jq/releases/download/jq-1.7.1/jq-linux-arm64"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jqlang/jq.git",
+                "ref": "jq-1.7.1"
+            },
+            "build": {
+                "steps": ["./autoreconf -i", "./configure", "make"]
+            }
+        }
+    },
+    {
+        "name": "tree",
+        "version": "2.1.1",
+        "description": "Recursive directory listing program",
+        "homepage": "https://oldmanhook.github.io/unix-tree/",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OldManHook/unix-tree.git",
+                "ref": "2.1.1"
+            },
+            "build": {
+                "system": "make"
+            }
+        }
+    }
+]
+
+def main():
+    packages_dir = "packages"
+    os.makedirs(packages_dir, exist_ok=True)
+
+    index_packages = {}
+
+    for app in APPS:
+        name = app["name"]
+        version = app["version"]
+        desc = app["description"]
+        homepage = app.get("homepage", "")
+
+        # Binary package if present
+        if "bin" in app:
+            pkg_id = f"{name}-bin"
+            def_path = f"packages/{pkg_id}.json"
+
+            supported_platforms = list(app["bin"]["downloads"].keys())
+
+            bin_pkg = {
+                "schema_version": 1,
+                "id": pkg_id,
+                "name": name,
+                "version": version,
+                "type": "binary",
+                "description": desc,
+                "homepage": homepage,
+                "downloads": app["bin"]["downloads"],
+                "supported_platforms": supported_platforms
+            }
+
+            with open(def_path, "w") as f:
+                json.dump(bin_pkg, f, indent=4)
+                f.write("\n")
+
+            index_packages[pkg_id] = {
+                "definition": def_path,
+                "type": "binary",
+                "description": desc
+            }
+
+        # Source package if present
+        if "src" in app:
+            pkg_id = f"{name}-src"
+            def_path = f"packages/{pkg_id}.json"
+
+            src_pkg = {
+                "schema_version": 1,
+                "id": pkg_id,
+                "name": name,
+                "version": version,
+                "type": "source",
+                "description": f"{desc} (source build)",
+                "homepage": homepage,
+                "source": app["src"]["source"],
+                "build": app["src"]["build"]
+            }
+            if "executables" in app["src"]:
+                src_pkg["executables"] = app["src"]["executables"]
+
+            with open(def_path, "w") as f:
+                json.dump(src_pkg, f, indent=4)
+                f.write("\n")
+
+            index_packages[pkg_id] = {
+                "definition": def_path,
+                "type": "source",
+                "description": f"{desc} (source build)"
+            }
+
+    index_data = {
+        "schema_version": 1,
+        "packages": index_packages
+    }
+
+    with open("index.json", "w") as f:
+        json.dump(index_data, f, indent=4)
+        f.write("\n")
+
+    print(f"Generated {len(index_packages)} packages in index.json and {packages_dir}/")
+
+if __name__ == "__main__":
+    main()

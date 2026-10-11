@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "dust-bin",
+    "name": "dust",
+    "version": "1.1.1",
+    "type": "binary",
+    "description": "A more intuitive version of du in rust",
+    "homepage": "https://github.com/bootandy/dust",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/bootandy/dust/releases/download/v1.1.1/dust-v1.1.1-x86_64-unknown-linux-gnu.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/bootandy/dust/releases/download/v1.1.1/dust-v1.1.1-aarch64-unknown-linux-gnu.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

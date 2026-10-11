@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "hyperfine-bin",
+    "name": "hyperfine",
+    "version": "1.18.0",
+    "type": "binary",
+    "description": "A command-line benchmarking tool",
+    "homepage": "https://github.com/sharkdp/hyperfine",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/sharkdp/hyperfine/releases/download/v1.18.0/hyperfine-v1.18.0-x86_64-unknown-linux-gnu.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/sharkdp/hyperfine/releases/download/v1.18.0/hyperfine-v1.18.0-aarch64-unknown-linux-gnu.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

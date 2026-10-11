@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "fzf-bin",
+    "name": "fzf",
+    "version": "0.56.0",
+    "type": "binary",
+    "description": "A command-line fuzzy finder",
+    "homepage": "https://github.com/junegunn/fzf",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/junegunn/fzf/releases/download/v0.56.0/fzf-0.56.0-linux_amd64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/junegunn/fzf/releases/download/v0.56.0/fzf-0.56.0-linux_arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

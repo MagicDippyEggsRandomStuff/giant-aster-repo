@@ -1,0 +1,22 @@
+{
+    "schema_version": 1,
+    "id": "bottom-src",
+    "name": "bottom",
+    "version": "0.10.2",
+    "type": "source",
+    "description": "A customizable cross-platform graphical process/system monitor for the terminal (source build)",
+    "homepage": "https://github.com/ClementTsang/bottom",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/ClementTsang/bottom.git",
+        "ref": "0.10.2"
+    },
+    "build": {
+        "system": "cargo",
+        "release": true,
+        "locked": true
+    },
+    "executables": [
+        "btm"
+    ]
+}

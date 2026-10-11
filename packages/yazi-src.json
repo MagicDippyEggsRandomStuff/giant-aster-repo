@@ -1,0 +1,23 @@
+{
+    "schema_version": 1,
+    "id": "yazi-src",
+    "name": "yazi",
+    "version": "0.4.0",
+    "type": "source",
+    "description": "Blazing fast terminal file manager written in Rust, based on async I/O (source build)",
+    "homepage": "https://github.com/sxyazi/yazi",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/sxyazi/yazi.git",
+        "ref": "v0.4.0"
+    },
+    "build": {
+        "system": "cargo",
+        "release": true,
+        "locked": true
+    },
+    "executables": [
+        "yazi",
+        "ya"
+    ]
+}

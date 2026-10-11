@@ -1,0 +1,22 @@
+{
+    "schema_version": 1,
+    "id": "ripgrep-src",
+    "name": "ripgrep",
+    "version": "14.1.0",
+    "type": "source",
+    "description": "A line-oriented search tool that recursively searches current directory for a regex pattern (source build)",
+    "homepage": "https://github.com/BurntSushi/ripgrep",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/BurntSushi/ripgrep.git",
+        "ref": "14.1.0"
+    },
+    "build": {
+        "system": "cargo",
+        "release": true,
+        "locked": true
+    },
+    "executables": [
+        "rg"
+    ]
+}

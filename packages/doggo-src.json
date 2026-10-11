@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "doggo-src",
+    "name": "doggo",
+    "version": "1.0.5",
+    "type": "source",
+    "description": "Command-line DNS client for Humans (source build)",
+    "homepage": "https://github.com/mr-karan/doggo",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/mr-karan/doggo.git",
+        "ref": "v1.0.5"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o doggo ./cmd/doggo"
+        ]
+    }
+}

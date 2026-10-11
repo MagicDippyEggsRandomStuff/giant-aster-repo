@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "scc-bin",
+    "name": "scc",
+    "version": "3.3.5",
+    "type": "binary",
+    "description": "Sloc, Cloc and Code: a fast language counter",
+    "homepage": "https://github.com/boyter/scc",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/boyter/scc/releases/download/v3.3.5/scc_Linux_x86_64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/boyter/scc/releases/download/v3.3.5/scc_Linux_arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

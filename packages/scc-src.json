@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "scc-src",
+    "name": "scc",
+    "version": "3.3.5",
+    "type": "source",
+    "description": "Sloc, Cloc and Code: a fast language counter (source build)",
+    "homepage": "https://github.com/boyter/scc",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/boyter/scc.git",
+        "ref": "v3.3.5"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o scc"
+        ]
+    }
+}

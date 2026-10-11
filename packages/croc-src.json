@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "croc-src",
+    "name": "croc",
+    "version": "10.0.12",
+    "type": "source",
+    "description": "Easily and securely transfer stuff from one computer to another (source build)",
+    "homepage": "https://github.com/schollz/croc",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/schollz/croc.git",
+        "ref": "v10.0.12"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o croc"
+        ]
+    }
+}

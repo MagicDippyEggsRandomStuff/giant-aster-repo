@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "helix-bin",
+    "name": "helix",
+    "version": "25.01",
+    "type": "binary",
+    "description": "A post-modern modal text editor",
+    "homepage": "https://helix-editor.com",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/helix-editor/helix/releases/download/25.01/helix-25.01-x86_64-linux.tar.xz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/helix-editor/helix/releases/download/25.01/helix-25.01-aarch64-linux.tar.xz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}
