@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "silicon-bin",
+    "name": "silicon",
+    "version": "0.5.2",
+    "type": "binary",
+    "description": "Create beautiful images of your source code",
+    "homepage": "https://github.com/Aloxaf/silicon",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/Aloxaf/silicon/releases/download/v0.5.2/silicon-v0.5.2-x86_64-unknown-linux-gnu.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64"
+    ]
+}

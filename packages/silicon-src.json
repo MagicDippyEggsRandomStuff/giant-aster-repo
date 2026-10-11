@@ -1,0 +1,22 @@
+{
+    "schema_version": 1,
+    "id": "silicon-src",
+    "name": "silicon",
+    "version": "0.5.2",
+    "type": "source",
+    "description": "Create beautiful images of your source code (source build)",
+    "homepage": "https://github.com/Aloxaf/silicon",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/Aloxaf/silicon.git",
+        "ref": "v0.5.2"
+    },
+    "build": {
+        "system": "cargo",
+        "release": true,
+        "locked": true
+    },
+    "executables": [
+        "silicon"
+    ]
+}

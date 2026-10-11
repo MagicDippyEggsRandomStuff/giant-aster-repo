@@ -595,6 +595,56 @@
             "definition": "packages/shellcheck-bin.json",
             "type": "binary",
             "description": "ShellCheck, a static analysis tool for shell scripts"
+        },
+        "difftastic-bin": {
+            "definition": "packages/difftastic-bin.json",
+            "type": "binary",
+            "description": "A structural diff tool that compares files based on their syntax"
+        },
+        "difftastic-src": {
+            "definition": "packages/difftastic-src.json",
+            "type": "source",
+            "description": "A structural diff tool that compares files based on their syntax (source build)"
+        },
+        "silicon-bin": {
+            "definition": "packages/silicon-bin.json",
+            "type": "binary",
+            "description": "Create beautiful images of your source code"
+        },
+        "silicon-src": {
+            "definition": "packages/silicon-src.json",
+            "type": "source",
+            "description": "Create beautiful images of your source code (source build)"
+        },
+        "zellij-runner-src": {
+            "definition": "packages/zellij-runner-src.json",
+            "type": "source",
+            "description": "Runner helper for Zellij workspace terminal (source build)"
+        },
+        "yq-go-src": {
+            "definition": "packages/yq-go-src.json",
+            "type": "source",
+            "description": "Go implementation of yq yaml processor (source build)"
+        },
+        "actionlint-bin": {
+            "definition": "packages/actionlint-bin.json",
+            "type": "binary",
+            "description": "Static checker for GitHub Actions workflow files"
+        },
+        "actionlint-src": {
+            "definition": "packages/actionlint-src.json",
+            "type": "source",
+            "description": "Static checker for GitHub Actions workflow files (source build)"
+        },
+        "superfile-bin": {
+            "definition": "packages/superfile-bin.json",
+            "type": "binary",
+            "description": "Fancy and modern terminal file manager"
+        },
+        "superfile-src": {
+            "definition": "packages/superfile-src.json",
+            "type": "source",
+            "description": "Fancy and modern terminal file manager (source build)"
         }
     }
 }

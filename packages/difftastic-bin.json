@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "difftastic-bin",
+    "name": "difftastic",
+    "version": "0.60.0",
+    "type": "binary",
+    "description": "A structural diff tool that compares files based on their syntax",
+    "homepage": "https://github.com/Wilfred/difftastic",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/Wilfred/difftastic/releases/download/0.60.0/difft-x86_64-unknown-linux-gnu.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64"
+    ]
+}
