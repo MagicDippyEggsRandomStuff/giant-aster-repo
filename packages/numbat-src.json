@@ -1,0 +1,22 @@
+{
+    "schema_version": 1,
+    "id": "numbat-src",
+    "name": "numbat",
+    "version": "1.14.0",
+    "type": "source",
+    "description": "A statically typed programming language for scientific computations with first-class support for physical dimensions and units (source build)",
+    "homepage": "https://numbat.dev",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/sharkdp/numbat.git",
+        "ref": "v1.14.0"
+    },
+    "build": {
+        "system": "cargo",
+        "release": true,
+        "locked": true
+    },
+    "executables": [
+        "numbat"
+    ]
+}

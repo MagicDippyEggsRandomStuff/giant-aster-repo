@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "taplo-bin",
+    "name": "taplo",
+    "version": "0.9.3",
+    "type": "binary",
+    "description": "A versatile TOML toolkit",
+    "homepage": "https://taplo.tamasfe.dev",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/tamasfe/taplo/releases/download/0.9.3/taplo-full-linux-x86_64.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64"
+    ]
+}

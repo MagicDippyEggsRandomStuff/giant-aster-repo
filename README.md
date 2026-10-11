@@ -1,10 +1,10 @@
-# Aster Package Repository
+# Aster Package Repository (`MagicDippyEggsRandomStuff/giant-aster-repo`)
 
 This repository contains a comprehensive set of packages for the [Aster](docs.md) package manager, providing both pre-compiled binary (`-bin`) and source (`-src`) versions for popular command-line tools.
 
 ## Repository Contents
 
-This repository hosts 90 package definitions covering popular CLI software, including:
+This repository hosts over 110 package definitions covering popular CLI software, including:
 
 - **bat** (`bat-bin`, `bat-src`) - A cat clone with syntax highlighting and Git integration
 - **eza** (`eza-bin`, `eza-src`) - Modern replacement for `ls`
@@ -19,6 +19,12 @@ This repository hosts 90 package definitions covering popular CLI software, incl
 - **zellij** (`zellij-bin`, `zellij-src`) - Terminal workspace and multiplexer
 - **uv** (`uv-bin`, `uv-src`) & **ruff** (`ruff-bin`, `ruff-src`) - Fast Python tooling
 - **helix** (`helix-bin`, `helix-src`) - Post-modern modal text editor
+- **btop** (`btop-bin`, `btop-src`) - Resource monitor for terminal
+- **gitui** (`gitui-bin`, `gitui-src`) - Terminal UI for Git
+- **atuin** (`atuin-bin`, `atuin-src`) - Shell history sync and search
+- **ast-grep** (`ast-grep-bin`, `ast-grep-src`) - AST-based code search and linting
+- **biome** (`biome-bin`, `biome-src`) - Web toolchain
+- **shellcheck** (`shellcheck-bin`) - Shell script static analysis tool
 - ...and many more!
 
 ## Usage Instructions
@@ -29,10 +35,10 @@ To add this repository to Aster, run:
 
 ```sh
 # Remote HTTP/HTTPS URL
-aster repo add main-repo https://raw.githubusercontent.com/user/aster-repo/main --priority 100
+aster repo add main-repo https://raw.githubusercontent.com/MagicDippyEggsRandomStuff/giant-aster-repo/main --priority 100
 
 # Local Directory
-aster repo add local-repo file:///path/to/repo --priority 100
+aster repo add local-repo file:///path/to/giant-aster-repo --priority 100
 ```
 
 ### 2. Update Repository Catalog

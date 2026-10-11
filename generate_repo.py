@@ -1269,6 +1269,407 @@ APPS = [
                 "system": "make"
             }
         }
+    },
+    {
+        "name": "btop",
+        "version": "1.3.2",
+        "description": "A monitor of resources that displays usage and stats for processor, memory, disks, network and processes",
+        "homepage": "https://github.com/aristocratos/btop",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/aristocratos/btop/releases/download/v1.3.2/btop-x86_64-linux-musl.tbz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/aristocratos/btop/releases/download/v1.3.2/btop-aarch64-linux-musl.tbz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aristocratos/btop.git",
+                "ref": "v1.3.2"
+            },
+            "build": {
+                "system": "make"
+            }
+        }
+    },
+    {
+        "name": "gitui",
+        "version": "0.26.3",
+        "description": "Blazing 🚀 fast terminal-ui for git written in rust 🦀",
+        "homepage": "https://github.com/extrawurst/gitui",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/extrawurst/gitui/releases/download/v0.26.3/gitui-linux-x86_64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/extrawurst/gitui/releases/download/v0.26.3/gitui-linux-aarch64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/extrawurst/gitui.git",
+                "ref": "v0.26.3"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["gitui"]
+        }
+    },
+    {
+        "name": "atuin",
+        "version": "18.3.0",
+        "description": "Magical shell history",
+        "homepage": "https://github.com/atuinsh/atuin",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/atuinsh/atuin/releases/download/v18.3.0/atuin-x86_64-unknown-linux-gnu.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/atuinsh/atuin/releases/download/v18.3.0/atuin-aarch64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/atuinsh/atuin.git",
+                "ref": "v18.3.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["atuin"]
+        }
+    },
+    {
+        "name": "sd",
+        "version": "1.0.0",
+        "description": "Intuitive find & replace CLI (sed alternative)",
+        "homepage": "https://github.com/chmln/sd",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/chmln/sd/releases/download/v1.0.0/sd-v1.0.0-x86_64-unknown-linux-musl.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chmln/sd.git",
+                "ref": "v1.0.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["sd"]
+        }
+    },
+    {
+        "name": "choose",
+        "version": "1.3.4",
+        "description": "A human-friendly and fast alternative to cut and (sometimes) awk",
+        "homepage": "https://github.com/theryangeary/choose",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/theryangeary/choose/releases/download/v1.3.4/choose-x86_64-unknown-linux-gnu"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/theryangeary/choose.git",
+                "ref": "v1.3.4"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["choose"]
+        }
+    },
+    {
+        "name": "onefetch",
+        "version": "2.22.0",
+        "description": "Command-line Git information tool",
+        "homepage": "https://github.com/o2sh/onefetch",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/o2sh/onefetch/releases/download/2.22.0/onefetch-linux-x86_64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/o2sh/onefetch/releases/download/2.22.0/onefetch-linux-aarch64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/o2sh/onefetch.git",
+                "ref": "2.22.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["onefetch"]
+        }
+    },
+    {
+        "name": "bacon",
+        "version": "3.4.0",
+        "description": "Background rust code checker",
+        "homepage": "https://github.com/Canop/bacon",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/Canop/bacon/releases/download/v3.4.0/bacon-v3.4.0-x86_64-linux.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Canop/bacon.git",
+                "ref": "v3.4.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["bacon"]
+        }
+    },
+    {
+        "name": "trippy",
+        "version": "0.12.0",
+        "description": "A network diagnostic tool (trip)",
+        "homepage": "https://github.com/fujiapple852/trippy",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/fujiapple852/trippy/releases/download/0.12.0/trippy-0.12.0-x86_64-unknown-linux-musl.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/fujiapple852/trippy/releases/download/0.12.0/trippy-0.12.0-aarch64-unknown-linux-musl.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fujiapple852/trippy.git",
+                "ref": "0.12.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["trip"]
+        }
+    },
+    {
+        "name": "gping",
+        "version": "1.17.3",
+        "description": "Ping, but with a graph",
+        "homepage": "https://github.com/orf/gping",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/orf/gping/releases/download/gping-v1.17.3/gping-Linux-x86_64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/orf/gping/releases/download/gping-v1.17.3/gping-Linux-arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orf/gping.git",
+                "ref": "gping-v1.17.3"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["gping"]
+        }
+    },
+    {
+        "name": "numbat",
+        "version": "1.14.0",
+        "description": "A statically typed programming language for scientific computations with first-class support for physical dimensions and units",
+        "homepage": "https://numbat.dev",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/sharkdp/numbat/releases/download/v1.14.0/numbat-v1.14.0-x86_64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sharkdp/numbat.git",
+                "ref": "v1.14.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["numbat"]
+        }
+    },
+    {
+        "name": "ast-grep",
+        "version": "0.33.0",
+        "description": "A CLI tool for code structural search, lint and rewriting",
+        "homepage": "https://ast-grep.github.io",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/ast-grep/ast-grep/releases/download/v0.33.0/ast-grep-x86_64-unknown-linux-gnu.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/ast-grep/ast-grep/releases/download/v0.33.0/ast-grep-aarch64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ast-grep/ast-grep.git",
+                "ref": "v0.33.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["ast-grep", "sg"]
+        }
+    },
+    {
+        "name": "biome",
+        "version": "1.9.4",
+        "description": "A toolchain for web projects (linter, formatter, and more)",
+        "homepage": "https://biomejs.dev",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/biomejs/biome/releases/download/cli%2Fv1.9.4/biome-linux-x64"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/biomejs/biome/releases/download/cli%2Fv1.9.4/biome-linux-arm64"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/biomejs/biome.git",
+                "ref": "cli/v1.9.4"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["biome"]
+        }
+    },
+    {
+        "name": "taplo",
+        "version": "0.9.3",
+        "description": "A versatile TOML toolkit",
+        "homepage": "https://taplo.tamasfe.dev",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/tamasfe/taplo/releases/download/0.9.3/taplo-full-linux-x86_64.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tamasfe/taplo.git",
+                "ref": "0.9.3"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["taplo"]
+        }
+    },
+    {
+        "name": "shfmt",
+        "version": "3.10.0",
+        "description": "A shell parser, formatter, and interpreter",
+        "homepage": "https://github.com/mvdan/sh",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/mvdan/sh/releases/download/v3.10.0/shfmt_v3.10.0_linux_amd64"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/mvdan/sh/releases/download/v3.10.0/shfmt_v3.10.0_linux_arm64"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvdan/sh.git",
+                "ref": "v3.10.0"
+            },
+            "build": {
+                "steps": ["go build -v -o shfmt ./cmd/shfmt"]
+            }
+        }
+    },
+    {
+        "name": "shellcheck",
+        "version": "0.10.0",
+        "description": "ShellCheck, a static analysis tool for shell scripts",
+        "homepage": "https://www.shellcheck.net",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/koalaman/shellcheck/releases/download/v0.10.0/shellcheck-v0.10.0.linux.x86_64.tar.xz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/koalaman/shellcheck/releases/download/v0.10.0/shellcheck-v0.10.0.linux.aarch64.tar.xz"
+                }
+            }
+        }
     }
 ]
 

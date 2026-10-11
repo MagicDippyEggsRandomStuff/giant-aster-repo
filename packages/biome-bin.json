@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "biome-bin",
+    "name": "biome",
+    "version": "1.9.4",
+    "type": "binary",
+    "description": "A toolchain for web projects (linter, formatter, and more)",
+    "homepage": "https://biomejs.dev",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/biomejs/biome/releases/download/cli%2Fv1.9.4/biome-linux-x64"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/biomejs/biome/releases/download/cli%2Fv1.9.4/biome-linux-arm64"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}
