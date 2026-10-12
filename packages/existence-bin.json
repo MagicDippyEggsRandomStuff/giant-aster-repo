@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "existence-bin",
+    "name": "existence",
+    "version": "latest",
+    "type": "binary",
+    "description": "We are existing.",
+    "homepage": "https://github.com/existence-REAL/existence",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/existence-REAL/existence/releases/download/latest/existence-linux-x86_64"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64"
+    ]
+}

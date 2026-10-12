@@ -1805,6 +1805,29 @@ APPS = [
                 "steps": ["go build -v -o spf"]
             }
         }
+    },
+    {
+        "name": "existence",
+        "version": "latest",
+        "description": "We are existing.",
+        "homepage": "https://github.com/existence-REAL/existence",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/existence-REAL/existence/releases/download/latest/existence-linux-x86_64"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/existence-REAL/existence.git",
+                "ref": "main"
+            },
+            "build": {
+                "steps": ["pyinstaller --onefile existence.py --name existence"]
+            }
+        }
     }
 ]
 
