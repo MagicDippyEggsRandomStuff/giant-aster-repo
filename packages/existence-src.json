@@ -13,7 +13,9 @@
     },
     "build": {
         "steps": [
-            "pyinstaller --onefile existence.py --name existence"
+            "python3 -m venv .venv",
+            ".venv/bin/pip install pyinstaller",
+            ".venv/bin/pyinstaller --onefile existence.py --name existence"
         ]
     }
 }

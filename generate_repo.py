@@ -1825,7 +1825,11 @@ APPS = [
                 "ref": "main"
             },
             "build": {
-                "steps": ["pyinstaller --onefile existence.py --name existence"]
+                "steps": [
+                    "python3 -m venv .venv",
+                    ".venv/bin/pip install pyinstaller",
+                    ".venv/bin/pyinstaller --onefile existence.py --name existence"
+                ]
             }
         }
     }
