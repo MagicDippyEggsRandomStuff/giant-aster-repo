@@ -645,6 +645,16 @@
             "definition": "packages/superfile-src.json",
             "type": "source",
             "description": "Fancy and modern terminal file manager (source build)"
+        },
+        "existence-bin": {
+            "definition": "packages/existence-bin.json",
+            "type": "binary",
+            "description": "We are existing."
+        },
+        "existence-src": {
+            "definition": "packages/existence-src.json",
+            "type": "source",
+            "description": "We are existing. (source build)"
         }
     }
 }

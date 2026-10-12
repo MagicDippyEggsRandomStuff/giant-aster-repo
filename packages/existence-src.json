@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "existence-src",
+    "name": "existence",
+    "version": "latest",
+    "type": "source",
+    "description": "We are existing. (source build)",
+    "homepage": "https://github.com/existence-REAL/existence",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/existence-REAL/existence.git",
+        "ref": "main"
+    },
+    "build": {
+        "steps": [
+            "python3 -m venv .venv",
+            ".venv/bin/pip install pyinstaller",
+            ".venv/bin/pyinstaller --onefile existence.py --name existence"
+        ]
+    }
+}
