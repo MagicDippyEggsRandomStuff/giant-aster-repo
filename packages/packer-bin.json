@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "packer-bin",
+    "name": "packer",
+    "version": "1.11.2",
+    "type": "binary",
+    "description": "Packer is a tool for creating identical machine images for multiple platforms",
+    "homepage": "https://www.packer.io",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://releases.hashicorp.com/packer/1.11.2/packer_1.11.2_linux_amd64.zip"
+        },
+        "linux-aarch64": {
+            "url": "https://releases.hashicorp.com/packer/1.11.2/packer_1.11.2_linux_arm64.zip"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "schema_version": 1,
+    "id": "bob-src",
+    "name": "bob",
+    "version": "3.0.1",
+    "type": "source",
+    "description": "A simple Neovim version manager (source build)",
+    "homepage": "https://github.com/MordechaiHadad/bob",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/MordechaiHadad/bob.git",
+        "ref": "v3.0.1"
+    },
+    "build": {
+        "system": "cargo",
+        "release": true,
+        "locked": true
+    },
+    "executables": [
+        "bob"
+    ]
+}

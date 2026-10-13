@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "grype-src",
+    "name": "grype",
+    "version": "0.84.0",
+    "type": "source",
+    "description": "A vulnerability scanner for container images and filesystems (source build)",
+    "homepage": "https://github.com/anchore/grype",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/anchore/grype.git",
+        "ref": "v0.84.0"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o grype ./cmd/grype"
+        ]
+    }
+}

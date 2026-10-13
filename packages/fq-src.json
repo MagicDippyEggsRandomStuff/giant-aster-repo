@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "fq-src",
+    "name": "fq",
+    "version": "0.13.0",
+    "type": "source",
+    "description": "jq for binary formats (source build)",
+    "homepage": "https://github.com/wader/fq",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/wader/fq.git",
+        "ref": "v0.13.0"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o fq"
+        ]
+    }
+}

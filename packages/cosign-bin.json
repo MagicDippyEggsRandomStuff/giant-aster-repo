@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "cosign-bin",
+    "name": "cosign",
+    "version": "2.4.1",
+    "type": "binary",
+    "description": "Container Signing, Verification and Storage in an OCI registry",
+    "homepage": "https://github.com/sigstore/cosign",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/sigstore/cosign/releases/download/v2.4.1/cosign-linux-amd64"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/sigstore/cosign/releases/download/v2.4.1/cosign-linux-arm64"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "television-bin",
+    "name": "television",
+    "version": "0.8.2",
+    "type": "binary",
+    "description": "A fast, customizable, and versatile fuzzy finder TUI",
+    "homepage": "https://github.com/alexpasmantier/television",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/alexpasmantier/television/releases/download/0.8.2/tv-0.8.2-x86_64-unknown-linux-musl.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64"
+    ]
+}

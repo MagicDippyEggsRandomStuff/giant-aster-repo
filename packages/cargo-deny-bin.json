@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "cargo-deny-bin",
+    "name": "cargo-deny",
+    "version": "0.16.1",
+    "type": "binary",
+    "description": "Cargo plugin for linting your dependencies",
+    "homepage": "https://github.com/EmbarkStudios/cargo-deny",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/EmbarkStudios/cargo-deny/releases/download/0.16.1/cargo-deny-0.16.1-x86_64-unknown-linux-musl.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64"
+    ]
+}

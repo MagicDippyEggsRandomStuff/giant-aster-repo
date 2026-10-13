@@ -847,6 +847,246 @@
             "definition": "packages/sysz-src.json",
             "type": "source",
             "description": "An interactive systemctl terminal UI (source build)"
+        },
+        "terraform-bin": {
+            "definition": "packages/terraform-bin.json",
+            "type": "binary",
+            "description": "Terraform enables you to safely and predictably create, change, and improve infrastructure"
+        },
+        "packer-bin": {
+            "definition": "packages/packer-bin.json",
+            "type": "binary",
+            "description": "Packer is a tool for creating identical machine images for multiple platforms"
+        },
+        "vault-bin": {
+            "definition": "packages/vault-bin.json",
+            "type": "binary",
+            "description": "A tool for managing secrets, keys, and sensitive data"
+        },
+        "kubectl-bin": {
+            "definition": "packages/kubectl-bin.json",
+            "type": "binary",
+            "description": "Production-Grade Container Scheduling and Management CLI"
+        },
+        "k3d-bin": {
+            "definition": "packages/k3d-bin.json",
+            "type": "binary",
+            "description": "Little helper to run Rancher Lab's k3s in docker"
+        },
+        "k3d-src": {
+            "definition": "packages/k3d-src.json",
+            "type": "source",
+            "description": "Little helper to run Rancher Lab's k3s in docker (source build)"
+        },
+        "kind-bin": {
+            "definition": "packages/kind-bin.json",
+            "type": "binary",
+            "description": "Kubernetes IN Docker - local clusters for testing Kubernetes"
+        },
+        "kind-src": {
+            "definition": "packages/kind-src.json",
+            "type": "source",
+            "description": "Kubernetes IN Docker - local clusters for testing Kubernetes (source build)"
+        },
+        "minikube-bin": {
+            "definition": "packages/minikube-bin.json",
+            "type": "binary",
+            "description": "Run Kubernetes locally"
+        },
+        "argocd-bin": {
+            "definition": "packages/argocd-bin.json",
+            "type": "binary",
+            "description": "Declarative GitOps CD tool for Kubernetes"
+        },
+        "cosign-bin": {
+            "definition": "packages/cosign-bin.json",
+            "type": "binary",
+            "description": "Container Signing, Verification and Storage in an OCI registry"
+        },
+        "cosign-src": {
+            "definition": "packages/cosign-src.json",
+            "type": "source",
+            "description": "Container Signing, Verification and Storage in an OCI registry (source build)"
+        },
+        "syft-bin": {
+            "definition": "packages/syft-bin.json",
+            "type": "binary",
+            "description": "CLI tool for generating a Software Bill of Materials (SBOM)"
+        },
+        "syft-src": {
+            "definition": "packages/syft-src.json",
+            "type": "source",
+            "description": "CLI tool for generating a Software Bill of Materials (SBOM) (source build)"
+        },
+        "grype-bin": {
+            "definition": "packages/grype-bin.json",
+            "type": "binary",
+            "description": "A vulnerability scanner for container images and filesystems"
+        },
+        "grype-src": {
+            "definition": "packages/grype-src.json",
+            "type": "source",
+            "description": "A vulnerability scanner for container images and filesystems (source build)"
+        },
+        "trivy-bin": {
+            "definition": "packages/trivy-bin.json",
+            "type": "binary",
+            "description": "Comprehensive security scanner for vulnerabilities and misconfigurations"
+        },
+        "trivy-src": {
+            "definition": "packages/trivy-src.json",
+            "type": "source",
+            "description": "Comprehensive security scanner for vulnerabilities and misconfigurations (source build)"
+        },
+        "zola-bin": {
+            "definition": "packages/zola-bin.json",
+            "type": "binary",
+            "description": "A fast static site generator in a single binary"
+        },
+        "zola-src": {
+            "definition": "packages/zola-src.json",
+            "type": "source",
+            "description": "A fast static site generator in a single binary (source build)"
+        },
+        "mdbook-bin": {
+            "definition": "packages/mdbook-bin.json",
+            "type": "binary",
+            "description": "Create book from markdown files"
+        },
+        "mdbook-src": {
+            "definition": "packages/mdbook-src.json",
+            "type": "source",
+            "description": "Create book from markdown files (source build)"
+        },
+        "wasm-pack-bin": {
+            "definition": "packages/wasm-pack-bin.json",
+            "type": "binary",
+            "description": "Your favorite rust -> wasm workflow tool"
+        },
+        "wasm-pack-src": {
+            "definition": "packages/wasm-pack-src.json",
+            "type": "source",
+            "description": "Your favorite rust -> wasm workflow tool (source build)"
+        },
+        "trunk-bin": {
+            "definition": "packages/trunk-bin.json",
+            "type": "binary",
+            "description": "Build, bundle & ship your Rust WASM application to the web"
+        },
+        "trunk-src": {
+            "definition": "packages/trunk-src.json",
+            "type": "source",
+            "description": "Build, bundle & ship your Rust WASM application to the web (source build)"
+        },
+        "cargo-deny-bin": {
+            "definition": "packages/cargo-deny-bin.json",
+            "type": "binary",
+            "description": "Cargo plugin for linting your dependencies"
+        },
+        "cargo-deny-src": {
+            "definition": "packages/cargo-deny-src.json",
+            "type": "source",
+            "description": "Cargo plugin for linting your dependencies (source build)"
+        },
+        "cargo-audit-bin": {
+            "definition": "packages/cargo-audit-bin.json",
+            "type": "binary",
+            "description": "Audit Cargo.lock files for crates with security vulnerabilities"
+        },
+        "cargo-audit-src": {
+            "definition": "packages/cargo-audit-src.json",
+            "type": "source",
+            "description": "Audit Cargo.lock files for crates with security vulnerabilities (source build)"
+        },
+        "bob-bin": {
+            "definition": "packages/bob-bin.json",
+            "type": "binary",
+            "description": "A simple Neovim version manager"
+        },
+        "bob-src": {
+            "definition": "packages/bob-src.json",
+            "type": "source",
+            "description": "A simple Neovim version manager (source build)"
+        },
+        "fnm-bin": {
+            "definition": "packages/fnm-bin.json",
+            "type": "binary",
+            "description": "Fast and simple Node.js version manager, built in Rust"
+        },
+        "fnm-src": {
+            "definition": "packages/fnm-src.json",
+            "type": "source",
+            "description": "Fast and simple Node.js version manager, built in Rust (source build)"
+        },
+        "bun-bin": {
+            "definition": "packages/bun-bin.json",
+            "type": "binary",
+            "description": "Incredibly fast JavaScript frontend toolchain and runtime"
+        },
+        "deno-bin": {
+            "definition": "packages/deno-bin.json",
+            "type": "binary",
+            "description": "A modern runtime for JavaScript and TypeScript"
+        },
+        "deno-src": {
+            "definition": "packages/deno-src.json",
+            "type": "source",
+            "description": "A modern runtime for JavaScript and TypeScript (source build)"
+        },
+        "oxlint-bin": {
+            "definition": "packages/oxlint-bin.json",
+            "type": "binary",
+            "description": "Designed to catch erroneous or useless code without requiring any configuration"
+        },
+        "mise-bin": {
+            "definition": "packages/mise-bin.json",
+            "type": "binary",
+            "description": "dev tools, env vars, task runner"
+        },
+        "mise-src": {
+            "definition": "packages/mise-src.json",
+            "type": "source",
+            "description": "dev tools, env vars, task runner (source build)"
+        },
+        "direnv-bin": {
+            "definition": "packages/direnv-bin.json",
+            "type": "binary",
+            "description": "Unclutter your .profile - environment switcher for the shell"
+        },
+        "direnv-src": {
+            "definition": "packages/direnv-src.json",
+            "type": "source",
+            "description": "Unclutter your .profile - environment switcher for the shell (source build)"
+        },
+        "television-bin": {
+            "definition": "packages/television-bin.json",
+            "type": "binary",
+            "description": "A fast, customizable, and versatile fuzzy finder TUI"
+        },
+        "television-src": {
+            "definition": "packages/television-src.json",
+            "type": "source",
+            "description": "A fast, customizable, and versatile fuzzy finder TUI (source build)"
+        },
+        "jless-bin": {
+            "definition": "packages/jless-bin.json",
+            "type": "binary",
+            "description": "An interactive command-line JSON viewer"
+        },
+        "jless-src": {
+            "definition": "packages/jless-src.json",
+            "type": "source",
+            "description": "An interactive command-line JSON viewer (source build)"
+        },
+        "fq-bin": {
+            "definition": "packages/fq-bin.json",
+            "type": "binary",
+            "description": "jq for binary formats"
+        },
+        "fq-src": {
+            "definition": "packages/fq-src.json",
+            "type": "source",
+            "description": "jq for binary formats (source build)"
         }
     }
 }

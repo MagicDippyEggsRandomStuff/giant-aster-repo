@@ -1,0 +1,22 @@
+{
+    "schema_version": 1,
+    "id": "cargo-deny-src",
+    "name": "cargo-deny",
+    "version": "0.16.1",
+    "type": "source",
+    "description": "Cargo plugin for linting your dependencies (source build)",
+    "homepage": "https://github.com/EmbarkStudios/cargo-deny",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/EmbarkStudios/cargo-deny.git",
+        "ref": "0.16.1"
+    },
+    "build": {
+        "system": "cargo",
+        "release": true,
+        "locked": true
+    },
+    "executables": [
+        "cargo-deny"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "cosign-src",
+    "name": "cosign",
+    "version": "2.4.1",
+    "type": "source",
+    "description": "Container Signing, Verification and Storage in an OCI registry (source build)",
+    "homepage": "https://github.com/sigstore/cosign",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/sigstore/cosign.git",
+        "ref": "v2.4.1"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o cosign ./cmd/cosign"
+        ]
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "schema_version": 1,
+    "id": "trunk-src",
+    "name": "trunk",
+    "version": "0.21.4",
+    "type": "source",
+    "description": "Build, bundle & ship your Rust WASM application to the web (source build)",
+    "homepage": "https://trunkrs.dev",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/trunk-rs/trunk.git",
+        "ref": "v0.21.4"
+    },
+    "build": {
+        "system": "cargo",
+        "release": true,
+        "locked": true
+    },
+    "executables": [
+        "trunk"
+    ]
+}

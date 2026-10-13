@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "k3d-src",
+    "name": "k3d",
+    "version": "5.7.4",
+    "type": "source",
+    "description": "Little helper to run Rancher Lab's k3s in docker (source build)",
+    "homepage": "https://k3d.io",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/k3d-io/k3d.git",
+        "ref": "v5.7.4"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o k3d"
+        ]
+    }
+}

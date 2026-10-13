@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "direnv-bin",
+    "name": "direnv",
+    "version": "2.35.0",
+    "type": "binary",
+    "description": "Unclutter your .profile - environment switcher for the shell",
+    "homepage": "https://direnv.net",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/direnv/direnv/releases/download/v2.35.0/direnv.linux-amd64"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/direnv/direnv/releases/download/v2.35.0/direnv.linux-arm64"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

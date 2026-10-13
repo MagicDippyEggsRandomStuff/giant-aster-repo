@@ -1,0 +1,22 @@
+{
+    "schema_version": 1,
+    "id": "cargo-audit-src",
+    "name": "cargo-audit",
+    "version": "0.21.0",
+    "type": "source",
+    "description": "Audit Cargo.lock files for crates with security vulnerabilities (source build)",
+    "homepage": "https://github.com/rustsec/rustsec",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/rustsec/rustsec.git",
+        "ref": "cargo-audit/v0.21.0"
+    },
+    "build": {
+        "system": "cargo",
+        "release": true,
+        "locked": true
+    },
+    "executables": [
+        "cargo-audit"
+    ]
+}

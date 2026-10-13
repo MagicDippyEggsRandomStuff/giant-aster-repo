@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "bob-bin",
+    "name": "bob",
+    "version": "3.0.1",
+    "type": "binary",
+    "description": "A simple Neovim version manager",
+    "homepage": "https://github.com/MordechaiHadad/bob",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/MordechaiHadad/bob/releases/download/v3.0.1/bob-linux-x86_64.zip"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/MordechaiHadad/bob/releases/download/v3.0.1/bob-linux-arm64.zip"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

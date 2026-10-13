@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "argocd-bin",
+    "name": "argocd",
+    "version": "2.13.0",
+    "type": "binary",
+    "description": "Declarative GitOps CD tool for Kubernetes",
+    "homepage": "https://argo-cd.readthedocs.io",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/argoproj/argo-cd/releases/download/v2.13.0/argocd-linux-amd64"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/argoproj/argo-cd/releases/download/v2.13.0/argocd-linux-arm64"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

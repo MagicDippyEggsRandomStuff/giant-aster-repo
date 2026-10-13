@@ -1,0 +1,22 @@
+{
+    "schema_version": 1,
+    "id": "zola-src",
+    "name": "zola",
+    "version": "0.19.2",
+    "type": "source",
+    "description": "A fast static site generator in a single binary (source build)",
+    "homepage": "https://www.getzola.org",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/getzola/zola.git",
+        "ref": "v0.19.2"
+    },
+    "build": {
+        "system": "cargo",
+        "release": true,
+        "locked": true
+    },
+    "executables": [
+        "zola"
+    ]
+}
