@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "hugo-bin",
+    "name": "hugo",
+    "version": "0.139.3",
+    "type": "binary",
+    "description": "The world's fastest framework for building websites",
+    "homepage": "https://gohugo.io",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/gohugoio/hugo/releases/download/v0.139.3/hugo_0.139.3_linux-amd64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/gohugoio/hugo/releases/download/v0.139.3/hugo_0.139.3_linux-arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

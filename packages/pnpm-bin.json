@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "pnpm-bin",
+    "name": "pnpm",
+    "version": "9.14.4",
+    "type": "binary",
+    "description": "Fast, disk space efficient package manager",
+    "homepage": "https://pnpm.io",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/pnpm/pnpm/releases/download/v9.14.4/pnpm-linux-x64"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/pnpm/pnpm/releases/download/v9.14.4/pnpm-linux-arm64"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

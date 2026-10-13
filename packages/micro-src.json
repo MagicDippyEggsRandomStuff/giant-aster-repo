@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "micro-src",
+    "name": "micro",
+    "version": "2.0.14",
+    "type": "source",
+    "description": "A modern and intuitive terminal-based text editor (source build)",
+    "homepage": "https://micro-editor.github.io",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/zyedidia/micro.git",
+        "ref": "v2.0.14"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o micro ./cmd/micro"
+        ]
+    }
+}

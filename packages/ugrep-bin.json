@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "ugrep-bin",
+    "name": "ugrep",
+    "version": "7.0.0",
+    "type": "binary",
+    "description": "Ultra fast grep CLI with interactive query UI",
+    "homepage": "https://github.com/Genivia/ugrep",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/Genivia/ugrep/releases/download/v7.0.0/ugrep-7.0.0-x86_64-linux-gnu.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64"
+    ]
+}

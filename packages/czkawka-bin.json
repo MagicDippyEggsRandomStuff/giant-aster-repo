@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "czkawka-bin",
+    "name": "czkawka",
+    "version": "7.0.0",
+    "type": "binary",
+    "description": "Multi functional app to find duplicates, empty folders, similar images etc.",
+    "homepage": "https://github.com/qarmin/czkawka",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/qarmin/czkawka/releases/download/7.0.0/czkawka_cli"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64"
+    ]
+}

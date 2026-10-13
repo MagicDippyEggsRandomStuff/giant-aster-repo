@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "caddy-src",
+    "name": "caddy",
+    "version": "2.8.4",
+    "type": "source",
+    "description": "Fast and extensible multi-platform HTTP/2 web server with automatic HTTPS (source build)",
+    "homepage": "https://caddyserver.com",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/caddyserver/caddy.git",
+        "ref": "v2.8.4"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o caddy ./cmd/caddy"
+        ]
+    }
+}

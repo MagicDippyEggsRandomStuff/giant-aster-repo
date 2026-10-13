@@ -655,6 +655,196 @@
             "definition": "packages/existence-src.json",
             "type": "source",
             "description": "We are existing. (source build)"
+        },
+        "wine-src": {
+            "definition": "packages/wine-src.json",
+            "type": "source",
+            "description": "Compatibility layer capable of running Windows applications on Unix-like operating systems (source build)"
+        },
+        "neovim-bin": {
+            "definition": "packages/neovim-bin.json",
+            "type": "binary",
+            "description": "Vim-fork focused on extensibility and usability"
+        },
+        "neovim-src": {
+            "definition": "packages/neovim-src.json",
+            "type": "source",
+            "description": "Vim-fork focused on extensibility and usability (source build)"
+        },
+        "ffmpeg-src": {
+            "definition": "packages/ffmpeg-src.json",
+            "type": "source",
+            "description": "A complete, cross-platform solution to record, convert and stream audio and video (source build)"
+        },
+        "caddy-bin": {
+            "definition": "packages/caddy-bin.json",
+            "type": "binary",
+            "description": "Fast and extensible multi-platform HTTP/2 web server with automatic HTTPS"
+        },
+        "caddy-src": {
+            "definition": "packages/caddy-src.json",
+            "type": "source",
+            "description": "Fast and extensible multi-platform HTTP/2 web server with automatic HTTPS (source build)"
+        },
+        "k9s-bin": {
+            "definition": "packages/k9s-bin.json",
+            "type": "binary",
+            "description": "Kubernetes CLI To Manage Your Clusters In Style!"
+        },
+        "k9s-src": {
+            "definition": "packages/k9s-src.json",
+            "type": "source",
+            "description": "Kubernetes CLI To Manage Your Clusters In Style! (source build)"
+        },
+        "helm-bin": {
+            "definition": "packages/helm-bin.json",
+            "type": "binary",
+            "description": "The Kubernetes Package Manager"
+        },
+        "helm-src": {
+            "definition": "packages/helm-src.json",
+            "type": "source",
+            "description": "The Kubernetes Package Manager (source build)"
+        },
+        "hugo-bin": {
+            "definition": "packages/hugo-bin.json",
+            "type": "binary",
+            "description": "The world's fastest framework for building websites"
+        },
+        "hugo-src": {
+            "definition": "packages/hugo-src.json",
+            "type": "source",
+            "description": "The world's fastest framework for building websites (source build)"
+        },
+        "lazysql-bin": {
+            "definition": "packages/lazysql-bin.json",
+            "type": "binary",
+            "description": "A terminal UI for RDBMS written in Go"
+        },
+        "lazysql-src": {
+            "definition": "packages/lazysql-src.json",
+            "type": "source",
+            "description": "A terminal UI for RDBMS written in Go (source build)"
+        },
+        "dive-bin": {
+            "definition": "packages/dive-bin.json",
+            "type": "binary",
+            "description": "A tool for exploring a docker image, layer contents, and discovering ways to shrink your image size"
+        },
+        "dive-src": {
+            "definition": "packages/dive-src.json",
+            "type": "source",
+            "description": "A tool for exploring a docker image, layer contents, and discovering ways to shrink your image size (source build)"
+        },
+        "act-bin": {
+            "definition": "packages/act-bin.json",
+            "type": "binary",
+            "description": "Run your GitHub Actions locally!"
+        },
+        "act-src": {
+            "definition": "packages/act-src.json",
+            "type": "source",
+            "description": "Run your GitHub Actions locally! (source build)"
+        },
+        "czkawka-bin": {
+            "definition": "packages/czkawka-bin.json",
+            "type": "binary",
+            "description": "Multi functional app to find duplicates, empty folders, similar images etc."
+        },
+        "czkawka-src": {
+            "definition": "packages/czkawka-src.json",
+            "type": "source",
+            "description": "Multi functional app to find duplicates, empty folders, similar images etc. (source build)"
+        },
+        "micro-bin": {
+            "definition": "packages/micro-bin.json",
+            "type": "binary",
+            "description": "A modern and intuitive terminal-based text editor"
+        },
+        "micro-src": {
+            "definition": "packages/micro-src.json",
+            "type": "source",
+            "description": "A modern and intuitive terminal-based text editor (source build)"
+        },
+        "presenterm-bin": {
+            "definition": "packages/presenterm-bin.json",
+            "type": "binary",
+            "description": "A terminal-based presentation tool"
+        },
+        "presenterm-src": {
+            "definition": "packages/presenterm-src.json",
+            "type": "source",
+            "description": "A terminal-based presentation tool (source build)"
+        },
+        "hyfetch-bin": {
+            "definition": "packages/hyfetch-bin.json",
+            "type": "binary",
+            "description": "neofetch with pride flags"
+        },
+        "hyfetch-src": {
+            "definition": "packages/hyfetch-src.json",
+            "type": "source",
+            "description": "neofetch with pride flags (source build)"
+        },
+        "glab-bin": {
+            "definition": "packages/glab-bin.json",
+            "type": "binary",
+            "description": "An open-source GitLab command-line tool"
+        },
+        "glab-src": {
+            "definition": "packages/glab-src.json",
+            "type": "source",
+            "description": "An open-source GitLab command-line tool (source build)"
+        },
+        "curlie-bin": {
+            "definition": "packages/curlie-bin.json",
+            "type": "binary",
+            "description": "The power of curl, the ease of use of httpie"
+        },
+        "curlie-src": {
+            "definition": "packages/curlie-src.json",
+            "type": "source",
+            "description": "The power of curl, the ease of use of httpie (source build)"
+        },
+        "miniserve-bin": {
+            "definition": "packages/miniserve-bin.json",
+            "type": "binary",
+            "description": "For when you simply want to serve some files over HTTP"
+        },
+        "miniserve-src": {
+            "definition": "packages/miniserve-src.json",
+            "type": "source",
+            "description": "For when you simply want to serve some files over HTTP (source build)"
+        },
+        "oxipng-bin": {
+            "definition": "packages/oxipng-bin.json",
+            "type": "binary",
+            "description": "Multithreaded PNG optimizer written in Rust"
+        },
+        "oxipng-src": {
+            "definition": "packages/oxipng-src.json",
+            "type": "source",
+            "description": "Multithreaded PNG optimizer written in Rust (source build)"
+        },
+        "ugrep-bin": {
+            "definition": "packages/ugrep-bin.json",
+            "type": "binary",
+            "description": "Ultra fast grep CLI with interactive query UI"
+        },
+        "ugrep-src": {
+            "definition": "packages/ugrep-src.json",
+            "type": "source",
+            "description": "Ultra fast grep CLI with interactive query UI (source build)"
+        },
+        "pnpm-bin": {
+            "definition": "packages/pnpm-bin.json",
+            "type": "binary",
+            "description": "Fast, disk space efficient package manager"
+        },
+        "sysz-src": {
+            "definition": "packages/sysz-src.json",
+            "type": "source",
+            "description": "An interactive systemctl terminal UI (source build)"
         }
     }
 }

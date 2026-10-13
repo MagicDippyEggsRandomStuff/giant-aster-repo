@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "lazysql-bin",
+    "name": "lazysql",
+    "version": "0.2.7",
+    "type": "binary",
+    "description": "A terminal UI for RDBMS written in Go",
+    "homepage": "https://github.com/jorgerojas26/lazysql",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/jorgerojas26/lazysql/releases/download/v0.2.7/lazysql_Linux_x86_64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/jorgerojas26/lazysql/releases/download/v0.2.7/lazysql_Linux_arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

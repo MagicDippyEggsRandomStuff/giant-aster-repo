@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "act-bin",
+    "name": "act",
+    "version": "0.2.70",
+    "type": "binary",
+    "description": "Run your GitHub Actions locally!",
+    "homepage": "https://github.com/nektos/act",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/nektos/act/releases/download/v0.2.70/act_Linux_x86_64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/nektos/act/releases/download/v0.2.70/act_Linux_arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

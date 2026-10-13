@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "lazysql-src",
+    "name": "lazysql",
+    "version": "0.2.7",
+    "type": "source",
+    "description": "A terminal UI for RDBMS written in Go (source build)",
+    "homepage": "https://github.com/jorgerojas26/lazysql",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/jorgerojas26/lazysql.git",
+        "ref": "v0.2.7"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o lazysql"
+        ]
+    }
+}

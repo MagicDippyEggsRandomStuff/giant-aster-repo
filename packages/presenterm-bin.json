@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "presenterm-bin",
+    "name": "presenterm",
+    "version": "0.9.0",
+    "type": "binary",
+    "description": "A terminal-based presentation tool",
+    "homepage": "https://github.com/mfontanini/presenterm",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/mfontanini/presenterm/releases/download/v0.9.0/presenterm-v0.9.0-x86_64-unknown-linux-musl.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64"
+    ]
+}

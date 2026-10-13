@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "glab-src",
+    "name": "glab",
+    "version": "1.49.0",
+    "type": "source",
+    "description": "An open-source GitLab command-line tool (source build)",
+    "homepage": "https://gitlab.com/gitlab-org/cli",
+    "source": {
+        "type": "git",
+        "url": "https://gitlab.com/gitlab-org/cli.git",
+        "ref": "v1.49.0"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o glab ./cmd/glab"
+        ]
+    }
+}
