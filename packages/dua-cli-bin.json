@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "dua-cli-bin",
+    "name": "dua-cli",
+    "version": "2.29.0",
+    "type": "binary",
+    "description": "View disk space usage and delete unneeded data fast",
+    "homepage": "https://github.com/Byron/dua-cli",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/Byron/dua-cli/releases/download/v2.29.0/dua-v2.29.0-x86_64-unknown-linux-musl.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "rclone-bin",
+    "name": "rclone",
+    "version": "1.68.2",
+    "type": "binary",
+    "description": "rsync for cloud storage",
+    "homepage": "https://rclone.org",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/rclone/rclone/releases/download/v1.68.2/rclone-v1.68.2-linux-amd64.zip"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/rclone/rclone/releases/download/v1.68.2/rclone-v1.68.2-linux-arm64.zip"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "dbmate-src",
+    "name": "dbmate",
+    "version": "2.22.0",
+    "type": "source",
+    "description": "A lightweight, framework-agnostic database migration tool (source build)",
+    "homepage": "https://github.com/amacneil/dbmate",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/amacneil/dbmate.git",
+        "ref": "v2.22.0"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o dbmate"
+        ]
+    }
+}

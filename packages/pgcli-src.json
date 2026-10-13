@@ -1,0 +1,20 @@
+{
+    "schema_version": 1,
+    "id": "pgcli-src",
+    "name": "pgcli",
+    "version": "4.1.0",
+    "type": "source",
+    "description": "Postgres CLI with autocompletion and syntax highlighting (source build)",
+    "homepage": "https://www.pgcli.com",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/dbcli/pgcli.git",
+        "ref": "v4.1.0"
+    },
+    "build": {
+        "steps": [
+            "python3 -m venv .venv",
+            ".venv/bin/pip install ."
+        ]
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "ncdu-bin",
+    "name": "ncdu",
+    "version": "2.6",
+    "type": "binary",
+    "description": "NCurses Disk Usage",
+    "homepage": "https://dev.yorhel.nl/ncdu",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://dev.yorhel.nl/download/ncdu-2.6-linux-x86_64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://dev.yorhel.nl/download/ncdu-2.6-linux-aarch64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

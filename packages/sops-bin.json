@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "sops-bin",
+    "name": "sops",
+    "version": "3.9.1",
+    "type": "binary",
+    "description": "Simple and Flexible Tool for Managing Secrets",
+    "homepage": "https://github.com/getsops/sops",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/getsops/sops/releases/download/v3.9.1/sops-v3.9.1.linux.amd64"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/getsops/sops/releases/download/v3.9.1/sops-v3.9.1.linux.arm64"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "usql-bin",
+    "name": "usql",
+    "version": "0.19.3",
+    "type": "binary",
+    "description": "Universal command-line interface for SQL databases",
+    "homepage": "https://github.com/xo/usql",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/xo/usql/releases/download/v0.19.3/usql-0.19.3-linux-amd64.tar.bz2"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64"
+    ]
+}

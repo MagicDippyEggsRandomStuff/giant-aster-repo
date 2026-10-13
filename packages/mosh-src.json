@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "mosh-src",
+    "name": "mosh",
+    "version": "1.4.0",
+    "type": "source",
+    "description": "Mobile Shell: remote terminal application that allows roaming (source build)",
+    "homepage": "https://mosh.org",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/mobile-shell/mosh.git",
+        "ref": "mosh-1.4.0"
+    },
+    "build": {
+        "steps": [
+            "./autogen.sh",
+            "./configure",
+            "make"
+        ]
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "kakoune-src",
+    "name": "kakoune",
+    "version": "2024.05.18",
+    "type": "source",
+    "description": "Maw-driven text editor, modal edit on steroids (source build)",
+    "homepage": "https://kakoune.org",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/mawww/kakoune.git",
+        "ref": "v2024.05.18"
+    },
+    "build": {
+        "system": "make"
+    }
+}

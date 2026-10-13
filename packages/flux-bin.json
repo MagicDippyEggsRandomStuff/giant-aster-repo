@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "flux-bin",
+    "name": "flux",
+    "version": "2.4.0",
+    "type": "binary",
+    "description": "Open and extensible continuous delivery solution for Kubernetes",
+    "homepage": "https://fluxcd.io",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/fluxcd/flux2/releases/download/v2.4.0/flux_2.4.0_linux_amd64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/fluxcd/flux2/releases/download/v2.4.0/flux_2.4.0_linux_arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

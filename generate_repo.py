@@ -3206,6 +3206,1108 @@ APPS = [
                 ]
             }
         }
+    },
+    {
+        "name": "restic",
+        "version": "0.17.3",
+        "description": "Fast, secure, efficient backup program",
+        "homepage": "https://restic.net",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/restic/restic/releases/download/v0.17.3/restic_0.17.3_linux_amd64.bz2"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/restic/restic/releases/download/v0.17.3/restic_0.17.3_linux_arm64.bz2"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/restic/restic.git",
+                "ref": "v0.17.3"
+            },
+            "build": {
+                "steps": [
+                    "go run build.go"
+                ]
+            }
+        }
+    },
+    {
+        "name": "rclone",
+        "version": "1.68.2",
+        "description": "rsync for cloud storage",
+        "homepage": "https://rclone.org",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/rclone/rclone/releases/download/v1.68.2/rclone-v1.68.2-linux-amd64.zip"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/rclone/rclone/releases/download/v1.68.2/rclone-v1.68.2-linux-arm64.zip"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rclone/rclone.git",
+                "ref": "v1.68.2"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o rclone"
+                ]
+            }
+        }
+    },
+    {
+        "name": "yt-dlp",
+        "version": "2024.11.18",
+        "description": "A feature-rich command-line audio/video downloader",
+        "homepage": "https://github.com/yt-dlp/yt-dlp",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2024.11.18/yt-dlp"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yt-dlp/yt-dlp.git",
+                "ref": "2024.11.18"
+            },
+            "build": {
+                "steps": [
+                    "make"
+                ]
+            }
+        }
+    },
+    {
+        "name": "lf",
+        "version": "r33",
+        "description": "Terminal file manager written in Go",
+        "homepage": "https://github.com/gokcehan/lf",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/gokcehan/lf/releases/download/r33/lf-linux-amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/gokcehan/lf/releases/download/r33/lf-linux-arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gokcehan/lf.git",
+                "ref": "r33"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o lf"
+                ]
+            }
+        }
+    },
+    {
+        "name": "nnn",
+        "version": "5.0",
+        "description": "Tiny, lightning fast, feature-packed terminal file manager",
+        "homepage": "https://github.com/jarun/nnn",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/jarun/nnn/releases/download/v5.0/nnn-static-5.0.x86_64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jarun/nnn.git",
+                "ref": "v5.0"
+            },
+            "build": {
+                "system": "make"
+            }
+        }
+    },
+    {
+        "name": "gdu",
+        "version": "5.29.0",
+        "description": "Fast disk usage analyzer written in Go",
+        "homepage": "https://github.com/dundee/gdu",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/dundee/gdu/releases/download/v5.29.0/gdu_linux_amd64.tgz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/dundee/gdu/releases/download/v5.29.0/gdu_linux_arm64.tgz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dundee/gdu.git",
+                "ref": "v5.29.0"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o gdu ./cmd/gdu"
+                ]
+            }
+        }
+    },
+    {
+        "name": "ncdu",
+        "version": "2.6",
+        "description": "NCurses Disk Usage",
+        "homepage": "https://dev.yorhel.nl/ncdu",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://dev.yorhel.nl/download/ncdu-2.6-linux-x86_64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://dev.yorhel.nl/download/ncdu-2.6-linux-aarch64.tar.gz"
+                }
+            }
+        }
+    },
+    {
+        "name": "kakoune",
+        "version": "2024.05.18",
+        "description": "Maw-driven text editor, modal edit on steroids",
+        "homepage": "https://kakoune.org",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mawww/kakoune.git",
+                "ref": "v2024.05.18"
+            },
+            "build": {
+                "system": "make"
+            }
+        }
+    },
+    {
+        "name": "aria2",
+        "version": "1.37.0",
+        "description": "Ultra fast download utility with multi-protocol & multi-source support",
+        "homepage": "https://aria2.github.io",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aria2/aria2.git",
+                "ref": "release-1.37.0"
+            },
+            "build": {
+                "steps": [
+                    "autoreconf -i",
+                    "./configure",
+                    "make"
+                ]
+            }
+        }
+    },
+    {
+        "name": "httpie",
+        "version": "3.2.4",
+        "description": "User-friendly CLI HTTP client for the API era",
+        "homepage": "https://httpie.io",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/httpie/cli.git",
+                "ref": "3.2.4"
+            },
+            "build": {
+                "steps": [
+                    "python3 -m venv .venv",
+                    ".venv/bin/pip install ."
+                ]
+            }
+        }
+    },
+    {
+        "name": "opentofu",
+        "version": "1.8.6",
+        "description": "OpenTofu lets you declaratively manage your cloud infrastructure",
+        "homepage": "https://opentofu.org",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/opentofu/opentofu/releases/download/v1.8.6/tofu_1.8.6_linux_amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/opentofu/opentofu/releases/download/v1.8.6/tofu_1.8.6_linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/opentofu/opentofu.git",
+                "ref": "v1.8.6"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o tofu ./cmd/tofu"
+                ]
+            }
+        }
+    },
+    {
+        "name": "terragrunt",
+        "version": "0.69.1",
+        "description": "Thin wrapper for Terraform / OpenTofu that provides extra tools",
+        "homepage": "https://terragrunt.gruntwork.io",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/gruntwork-io/terragrunt/releases/download/v0.69.1/terragrunt_linux_amd64"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/gruntwork-io/terragrunt/releases/download/v0.69.1/terragrunt_linux_arm64"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gruntwork-io/terragrunt.git",
+                "ref": "v0.69.1"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o terragrunt"
+                ]
+            }
+        }
+    },
+    {
+        "name": "flux",
+        "version": "2.4.0",
+        "description": "Open and extensible continuous delivery solution for Kubernetes",
+        "homepage": "https://fluxcd.io",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/fluxcd/flux2/releases/download/v2.4.0/flux_2.4.0_linux_amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/fluxcd/flux2/releases/download/v2.4.0/flux_2.4.0_linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fluxcd/flux2.git",
+                "ref": "v2.4.0"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o flux ./cmd/flux"
+                ]
+            }
+        }
+    },
+    {
+        "name": "kubectx",
+        "version": "0.9.5",
+        "description": "Faster way to switch between clusters and namespaces in kubectl",
+        "homepage": "https://github.com/ahmetb/kubectx",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/ahmetb/kubectx/releases/download/v0.9.5/kubectx_v0.9.5_linux_x86_64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/ahmetb/kubectx/releases/download/v0.9.5/kubectx_v0.9.5_linux_arm64.tar.gz"
+                }
+            }
+        }
+    },
+    {
+        "name": "stern",
+        "version": "1.30.0",
+        "description": "Multi pod and container log tailing for Kubernetes",
+        "homepage": "https://github.com/stern/stern",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/stern/stern/releases/download/v1.30.0/stern_1.30.0_linux_amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/stern/stern/releases/download/v1.30.0/stern_1.30.0_linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stern/stern.git",
+                "ref": "v1.30.0"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o stern"
+                ]
+            }
+        }
+    },
+    {
+        "name": "skaffold",
+        "version": "2.13.2",
+        "description": "Easy and Repeatable Kubernetes Development",
+        "homepage": "https://skaffold.dev",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/GoogleContainerTools/skaffold/releases/download/v2.13.2/skaffold-linux-amd64"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/GoogleContainerTools/skaffold/releases/download/v2.13.2/skaffold-linux-arm64"
+                }
+            }
+        }
+    },
+    {
+        "name": "podman",
+        "version": "5.3.1",
+        "description": "A daemonless container engine for developing, managing, and running OCI Containers",
+        "homepage": "https://podman.io",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/containers/podman.git",
+                "ref": "v5.3.1"
+            },
+            "build": {
+                "steps": [
+                    "make podman"
+                ]
+            }
+        }
+    },
+    {
+        "name": "buildah",
+        "version": "1.38.0",
+        "description": "A tool that facilitates building OCI container images",
+        "homepage": "https://buildah.io",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/containers/buildah.git",
+                "ref": "v1.38.0"
+            },
+            "build": {
+                "steps": [
+                    "make buildah"
+                ]
+            }
+        }
+    },
+    {
+        "name": "skopeo",
+        "version": "1.17.0",
+        "description": "Work with remote images registries - retrieving information, images, signing content",
+        "homepage": "https://github.com/containers/skopeo",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/containers/skopeo.git",
+                "ref": "v1.17.0"
+            },
+            "build": {
+                "steps": [
+                    "make bin/skopeo"
+                ]
+            }
+        }
+    },
+    {
+        "name": "pandoc",
+        "version": "3.5",
+        "description": "Universal markup converter",
+        "homepage": "https://pandoc.org",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/jgm/pandoc/releases/download/3.5/pandoc-3.5-linux-amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/jgm/pandoc/releases/download/3.5/pandoc-3.5-linux-arm64.tar.gz"
+                }
+            }
+        }
+    },
+    {
+        "name": "exiftool",
+        "version": "13.00",
+        "description": "Read, Write and Edit Meta Information in a Wide Variety of Files",
+        "homepage": "https://exiftool.org",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/exiftool/exiftool.git",
+                "ref": "13.00"
+            },
+            "build": {
+                "steps": [
+                    "perl Makefile.PL",
+                    "make"
+                ]
+            }
+        }
+    },
+    {
+        "name": "go-task",
+        "version": "3.40.0",
+        "description": "A task runner / simpler Makefile alternative written in Go",
+        "homepage": "https://taskfile.dev",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/go-task/task/releases/download/v3.40.0/task_linux_amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/go-task/task/releases/download/v3.40.0/task_linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/go-task/task.git",
+                "ref": "v3.40.0"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o task ./cmd/task"
+                ]
+            }
+        }
+    },
+    {
+        "name": "cargo-nextest",
+        "version": "0.9.85",
+        "description": "Next-generation test runner for Rust projects",
+        "homepage": "https://nexte.st",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/nextest-rs/nextest/releases/download/cargo-nextest-0.9.85/cargo-nextest-0.9.85-x86_64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nextest-rs/nextest.git",
+                "ref": "cargo-nextest-0.9.85"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": [
+                "cargo-nextest"
+            ]
+        }
+    },
+    {
+        "name": "cargo-watch",
+        "version": "8.5.2",
+        "description": "Watches over your Cargo project's source",
+        "homepage": "https://github.com/watchexec/cargo-watch",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/watchexec/cargo-watch/releases/download/v8.5.2/cargo-watch-v8.5.2-x86_64-unknown-linux-gnu.tar.xz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/watchexec/cargo-watch.git",
+                "ref": "v8.5.2"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": [
+                "cargo-watch"
+            ]
+        }
+    },
+    {
+        "name": "cargo-expand",
+        "version": "1.0.95",
+        "description": "Subcommand to show result of macro expansion",
+        "homepage": "https://github.com/dtolnay/cargo-expand",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dtolnay/cargo-expand.git",
+                "ref": "1.0.95"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": [
+                "cargo-expand"
+            ]
+        }
+    },
+    {
+        "name": "cargo-edit",
+        "version": "0.13.0",
+        "description": "A cargo subcommand for managing dependencies",
+        "homepage": "https://github.com/killercup/cargo-edit",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/killercup/cargo-edit.git",
+                "ref": "v0.13.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": [
+                "cargo-add",
+                "cargo-rm",
+                "cargo-upgrade"
+            ]
+        }
+    },
+    {
+        "name": "atlas",
+        "version": "0.29.0",
+        "description": "A modern tool for managing database schemas",
+        "homepage": "https://atlasgo.io",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://release.ariga.io/atlas/atlas-linux-amd64-v0.29.0"
+                },
+                "linux-aarch64": {
+                    "url": "https://release.ariga.io/atlas/atlas-linux-arm64-v0.29.0"
+                }
+            }
+        }
+    },
+    {
+        "name": "dbmate",
+        "version": "2.22.0",
+        "description": "A lightweight, framework-agnostic database migration tool",
+        "homepage": "https://github.com/amacneil/dbmate",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/amacneil/dbmate/releases/download/v2.22.0/dbmate-linux-amd64"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/amacneil/dbmate/releases/download/v2.22.0/dbmate-linux-arm64"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amacneil/dbmate.git",
+                "ref": "v2.22.0"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o dbmate"
+                ]
+            }
+        }
+    },
+    {
+        "name": "usql",
+        "version": "0.19.3",
+        "description": "Universal command-line interface for SQL databases",
+        "homepage": "https://github.com/xo/usql",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/xo/usql/releases/download/v0.19.3/usql-0.19.3-linux-amd64.tar.bz2"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xo/usql.git",
+                "ref": "v0.19.3"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o usql"
+                ]
+            }
+        }
+    },
+    {
+        "name": "mycli",
+        "version": "1.27.2",
+        "description": "A Terminal Client for MySQL with AutoCompletion and Syntax Highlighting",
+        "homepage": "https://www.mycli.net",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dbcli/mycli.git",
+                "ref": "v1.27.2"
+            },
+            "build": {
+                "steps": [
+                    "python3 -m venv .venv",
+                    ".venv/bin/pip install ."
+                ]
+            }
+        }
+    },
+    {
+        "name": "pgcli",
+        "version": "4.1.0",
+        "description": "Postgres CLI with autocompletion and syntax highlighting",
+        "homepage": "https://www.pgcli.com",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dbcli/pgcli.git",
+                "ref": "v4.1.0"
+            },
+            "build": {
+                "steps": [
+                    "python3 -m venv .venv",
+                    ".venv/bin/pip install ."
+                ]
+            }
+        }
+    },
+    {
+        "name": "sops",
+        "version": "3.9.1",
+        "description": "Simple and Flexible Tool for Managing Secrets",
+        "homepage": "https://github.com/getsops/sops",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/getsops/sops/releases/download/v3.9.1/sops-v3.9.1.linux.amd64"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/getsops/sops/releases/download/v3.9.1/sops-v3.9.1.linux.arm64"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/getsops/sops.git",
+                "ref": "v3.9.1"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o sops ./cmd/sops"
+                ]
+            }
+        }
+    },
+    {
+        "name": "gopass",
+        "version": "1.15.15",
+        "description": "The slightly more awesome standard unix password manager for teams",
+        "homepage": "https://www.gopass.pw",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/gopasspw/gopass/releases/download/v1.15.15/gopass-1.15.15-linux-amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/gopasspw/gopass/releases/download/v1.15.15/gopass-1.15.15-linux-arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gopasspw/gopass.git",
+                "ref": "v1.15.15"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o gopass"
+                ]
+            }
+        }
+    },
+    {
+        "name": "pass",
+        "version": "1.7.4",
+        "description": "The standard unix password manager",
+        "homepage": "https://www.passwordstore.org",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://git.zx2c4.com/password-store",
+                "ref": "1.7.4"
+            },
+            "build": {
+                "system": "make"
+            }
+        }
+    },
+    {
+        "name": "bitwarden-cli",
+        "version": "2024.11.0",
+        "description": "The Bitwarden command-line interface (CLI)",
+        "homepage": "https://bitwarden.com",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/bitwarden/clients/releases/download/cli-v2024.11.0/bw-linux-2024.11.0.zip"
+                }
+            }
+        }
+    },
+    {
+        "name": "doppler",
+        "version": "3.69.0",
+        "description": "Official CLI for Doppler, the developer secret store",
+        "homepage": "https://doppler.com",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/DopplerHQ/cli/releases/download/v3.69.0/doppler_3.69.0_linux_amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/DopplerHQ/cli/releases/download/v3.69.0/doppler_3.69.0_linux_arm64.tar.gz"
+                }
+            }
+        }
+    },
+    {
+        "name": "pulumi",
+        "version": "3.141.0",
+        "description": "Pulumi - Infrastructure as Code in any programming language",
+        "homepage": "https://www.pulumi.com",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://get.pulumi.com/releases/sdk/pulumi-v3.141.0-linux-x64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://get.pulumi.com/releases/sdk/pulumi-v3.141.0-linux-arm64.tar.gz"
+                }
+            }
+        }
+    },
+    {
+        "name": "crossplane",
+        "version": "1.18.2",
+        "description": "The Cloud Native Control Plane Framework",
+        "homepage": "https://crossplane.io",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://releases.crossplane.io/stable/v1.18.2/bin/linux_amd64/crank"
+                },
+                "linux-aarch64": {
+                    "url": "https://releases.crossplane.io/stable/v1.18.2/bin/linux_arm64/crank"
+                }
+            }
+        }
+    },
+    {
+        "name": "fish",
+        "version": "3.7.1",
+        "description": "The user-friendly command line shell",
+        "homepage": "https://fishshell.com",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fish-shell/fish-shell.git",
+                "ref": "3.7.1"
+            },
+            "build": {
+                "system": "cmake"
+            }
+        }
+    },
+    {
+        "name": "zsh",
+        "version": "5.9",
+        "description": "Zsh is a shell designed for interactive use and scripting",
+        "homepage": "https://www.zsh.org",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zsh-users/zsh.git",
+                "ref": "zsh-5.9"
+            },
+            "build": {
+                "steps": [
+                    "Util/preconfig",
+                    "./configure",
+                    "make"
+                ]
+            }
+        }
+    },
+    {
+        "name": "mosh",
+        "version": "1.4.0",
+        "description": "Mobile Shell: remote terminal application that allows roaming",
+        "homepage": "https://mosh.org",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mobile-shell/mosh.git",
+                "ref": "mosh-1.4.0"
+            },
+            "build": {
+                "steps": [
+                    "./autogen.sh",
+                    "./configure",
+                    "make"
+                ]
+            }
+        }
+    },
+    {
+        "name": "asciinema",
+        "version": "2.4.0",
+        "description": "Terminal session recorder",
+        "homepage": "https://asciinema.org",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asciinema/asciinema.git",
+                "ref": "v2.4.0"
+            },
+            "build": {
+                "steps": [
+                    "python3 -m venv .venv",
+                    ".venv/bin/pip install ."
+                ]
+            }
+        }
+    },
+    {
+        "name": "dua-cli",
+        "version": "2.29.0",
+        "description": "View disk space usage and delete unneeded data fast",
+        "homepage": "https://github.com/Byron/dua-cli",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/Byron/dua-cli/releases/download/v2.29.0/dua-v2.29.0-x86_64-unknown-linux-musl.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Byron/dua-cli.git",
+                "ref": "v2.29.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": [
+                "dua"
+            ]
+        }
+    },
+    {
+        "name": "macchina",
+        "version": "6.1.0",
+        "description": "A fast, minimal and customizable system information fetcher",
+        "homepage": "https://github.com/Macchina-CLI/macchina",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/Macchina-CLI/macchina/releases/download/v6.1.0/macchina-linux-x86_64"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Macchina-CLI/macchina.git",
+                "ref": "v6.1.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": [
+                "macchina"
+            ]
+        }
+    },
+    {
+        "name": "pfetch",
+        "version": "0.7.0",
+        "description": "A pretty empty system information script written in POSIX sh",
+        "homepage": "https://github.com/dylanaraps/pfetch",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dylanaraps/pfetch.git",
+                "ref": "0.7.0"
+            },
+            "build": {
+                "steps": [
+                    "echo 'pfetch script ready'"
+                ]
+            }
+        }
+    },
+    {
+        "name": "inxi",
+        "version": "3.3.36-1",
+        "description": "Full featured CLI system information tool",
+        "homepage": "https://smxi.org/docs/inxi.htm",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smxi/inxi.git",
+                "ref": "3.3.36-1"
+            },
+            "build": {
+                "steps": [
+                    "echo 'inxi perl script ready'"
+                ]
+            }
+        }
+    },
+    {
+        "name": "hcloud",
+        "version": "1.48.0",
+        "description": "A command-line interface for Hetzner Cloud",
+        "homepage": "https://github.com/hetznercloud/cli",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/hetznercloud/cli/releases/download/v1.48.0/hcloud-linux-amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/hetznercloud/cli/releases/download/v1.48.0/hcloud-linux-arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hetznercloud/cli.git",
+                "ref": "v1.48.0"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o hcloud ./cmd/hcloud"
+                ]
+            }
+        }
+    },
+    {
+        "name": "doctl",
+        "version": "1.120.0",
+        "description": "Official command line interface for the DigitalOcean API",
+        "homepage": "https://github.com/digitalocean/doctl",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/digitalocean/doctl/releases/download/v1.120.0/doctl-1.120.0-linux-amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/digitalocean/doctl/releases/download/v1.120.0/doctl-1.120.0-linux-arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/digitalocean/doctl.git",
+                "ref": "v1.120.0"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o doctl ./cmd/doctl"
+                ]
+            }
+        }
+    },
+    {
+        "name": "glances",
+        "version": "4.2.1",
+        "description": "Glances an Eye on your system. A top/htop alternative for GNU/Linux",
+        "homepage": "https://nicolargo.github.io/glances/",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nicolargo/glances.git",
+                "ref": "v4.2.1"
+            },
+            "build": {
+                "steps": [
+                    "python3 -m venv .venv",
+                    ".venv/bin/pip install ."
+                ]
+            }
+        }
+    },
+    {
+        "name": "subfinder",
+        "version": "2.6.6",
+        "description": "Subdomain discovery tool that discovers valid subdomains for websites",
+        "homepage": "https://github.com/projectdiscovery/subfinder",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/projectdiscovery/subfinder/releases/download/v2.6.6/subfinder_2.6.6_linux_amd64.zip"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/projectdiscovery/subfinder/releases/download/v2.6.6/subfinder_2.6.6_linux_arm64.zip"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/projectdiscovery/subfinder.git",
+                "ref": "v2.6.6"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o subfinder ./cmd/subfinder"
+                ]
+            }
+        }
     }
 ]
 

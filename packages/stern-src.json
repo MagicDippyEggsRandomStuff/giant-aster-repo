@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "stern-src",
+    "name": "stern",
+    "version": "1.30.0",
+    "type": "source",
+    "description": "Multi pod and container log tailing for Kubernetes (source build)",
+    "homepage": "https://github.com/stern/stern",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/stern/stern.git",
+        "ref": "v1.30.0"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o stern"
+        ]
+    }
+}

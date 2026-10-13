@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "stern-bin",
+    "name": "stern",
+    "version": "1.30.0",
+    "type": "binary",
+    "description": "Multi pod and container log tailing for Kubernetes",
+    "homepage": "https://github.com/stern/stern",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/stern/stern/releases/download/v1.30.0/stern_1.30.0_linux_amd64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/stern/stern/releases/download/v1.30.0/stern_1.30.0_linux_arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

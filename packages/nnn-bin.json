@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "nnn-bin",
+    "name": "nnn",
+    "version": "5.0",
+    "type": "binary",
+    "description": "Tiny, lightning fast, feature-packed terminal file manager",
+    "homepage": "https://github.com/jarun/nnn",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/jarun/nnn/releases/download/v5.0/nnn-static-5.0.x86_64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64"
+    ]
+}

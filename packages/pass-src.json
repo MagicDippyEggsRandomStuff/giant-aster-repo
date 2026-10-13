@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "pass-src",
+    "name": "pass",
+    "version": "1.7.4",
+    "type": "source",
+    "description": "The standard unix password manager (source build)",
+    "homepage": "https://www.passwordstore.org",
+    "source": {
+        "type": "git",
+        "url": "https://git.zx2c4.com/password-store",
+        "ref": "1.7.4"
+    },
+    "build": {
+        "system": "make"
+    }
+}

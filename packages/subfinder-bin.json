@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "subfinder-bin",
+    "name": "subfinder",
+    "version": "2.6.6",
+    "type": "binary",
+    "description": "Subdomain discovery tool that discovers valid subdomains for websites",
+    "homepage": "https://github.com/projectdiscovery/subfinder",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/projectdiscovery/subfinder/releases/download/v2.6.6/subfinder_2.6.6_linux_amd64.zip"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/projectdiscovery/subfinder/releases/download/v2.6.6/subfinder_2.6.6_linux_arm64.zip"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

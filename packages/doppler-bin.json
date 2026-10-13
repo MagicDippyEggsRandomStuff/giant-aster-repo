@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "doppler-bin",
+    "name": "doppler",
+    "version": "3.69.0",
+    "type": "binary",
+    "description": "Official CLI for Doppler, the developer secret store",
+    "homepage": "https://doppler.com",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/DopplerHQ/cli/releases/download/v3.69.0/doppler_3.69.0_linux_amd64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/DopplerHQ/cli/releases/download/v3.69.0/doppler_3.69.0_linux_arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

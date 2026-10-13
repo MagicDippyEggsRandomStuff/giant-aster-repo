@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "yt-dlp-src",
+    "name": "yt-dlp",
+    "version": "2024.11.18",
+    "type": "source",
+    "description": "A feature-rich command-line audio/video downloader (source build)",
+    "homepage": "https://github.com/yt-dlp/yt-dlp",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/yt-dlp/yt-dlp.git",
+        "ref": "2024.11.18"
+    },
+    "build": {
+        "steps": [
+            "make"
+        ]
+    }
+}

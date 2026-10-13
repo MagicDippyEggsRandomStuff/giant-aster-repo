@@ -1,0 +1,20 @@
+{
+    "schema_version": 1,
+    "id": "glances-src",
+    "name": "glances",
+    "version": "4.2.1",
+    "type": "source",
+    "description": "Glances an Eye on your system. A top/htop alternative for GNU/Linux (source build)",
+    "homepage": "https://nicolargo.github.io/glances/",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/nicolargo/glances.git",
+        "ref": "v4.2.1"
+    },
+    "build": {
+        "steps": [
+            "python3 -m venv .venv",
+            ".venv/bin/pip install ."
+        ]
+    }
+}

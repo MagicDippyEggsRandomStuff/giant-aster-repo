@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "zsh-src",
+    "name": "zsh",
+    "version": "5.9",
+    "type": "source",
+    "description": "Zsh is a shell designed for interactive use and scripting (source build)",
+    "homepage": "https://www.zsh.org",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/zsh-users/zsh.git",
+        "ref": "zsh-5.9"
+    },
+    "build": {
+        "steps": [
+            "Util/preconfig",
+            "./configure",
+            "make"
+        ]
+    }
+}

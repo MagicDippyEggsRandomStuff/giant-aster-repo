@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "crossplane-bin",
+    "name": "crossplane",
+    "version": "1.18.2",
+    "type": "binary",
+    "description": "The Cloud Native Control Plane Framework",
+    "homepage": "https://crossplane.io",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://releases.crossplane.io/stable/v1.18.2/bin/linux_amd64/crank"
+        },
+        "linux-aarch64": {
+            "url": "https://releases.crossplane.io/stable/v1.18.2/bin/linux_arm64/crank"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

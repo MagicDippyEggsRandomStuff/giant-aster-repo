@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "opentofu-src",
+    "name": "opentofu",
+    "version": "1.8.6",
+    "type": "source",
+    "description": "OpenTofu lets you declaratively manage your cloud infrastructure (source build)",
+    "homepage": "https://opentofu.org",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/opentofu/opentofu.git",
+        "ref": "v1.8.6"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o tofu ./cmd/tofu"
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "skopeo-src",
+    "name": "skopeo",
+    "version": "1.17.0",
+    "type": "source",
+    "description": "Work with remote images registries - retrieving information, images, signing content (source build)",
+    "homepage": "https://github.com/containers/skopeo",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/containers/skopeo.git",
+        "ref": "v1.17.0"
+    },
+    "build": {
+        "steps": [
+            "make bin/skopeo"
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "rclone-src",
+    "name": "rclone",
+    "version": "1.68.2",
+    "type": "source",
+    "description": "rsync for cloud storage (source build)",
+    "homepage": "https://rclone.org",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/rclone/rclone.git",
+        "ref": "v1.68.2"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o rclone"
+        ]
+    }
+}

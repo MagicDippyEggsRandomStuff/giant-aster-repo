@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "pulumi-bin",
+    "name": "pulumi",
+    "version": "3.141.0",
+    "type": "binary",
+    "description": "Pulumi - Infrastructure as Code in any programming language",
+    "homepage": "https://www.pulumi.com",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://get.pulumi.com/releases/sdk/pulumi-v3.141.0-linux-x64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://get.pulumi.com/releases/sdk/pulumi-v3.141.0-linux-arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

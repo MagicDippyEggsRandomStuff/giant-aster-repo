@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "flux-src",
+    "name": "flux",
+    "version": "2.4.0",
+    "type": "source",
+    "description": "Open and extensible continuous delivery solution for Kubernetes (source build)",
+    "homepage": "https://fluxcd.io",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/fluxcd/flux2.git",
+        "ref": "v2.4.0"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o flux ./cmd/flux"
+        ]
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "terragrunt-bin",
+    "name": "terragrunt",
+    "version": "0.69.1",
+    "type": "binary",
+    "description": "Thin wrapper for Terraform / OpenTofu that provides extra tools",
+    "homepage": "https://terragrunt.gruntwork.io",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/gruntwork-io/terragrunt/releases/download/v0.69.1/terragrunt_linux_amd64"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/gruntwork-io/terragrunt/releases/download/v0.69.1/terragrunt_linux_arm64"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

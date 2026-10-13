@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "subfinder-src",
+    "name": "subfinder",
+    "version": "2.6.6",
+    "type": "source",
+    "description": "Subdomain discovery tool that discovers valid subdomains for websites (source build)",
+    "homepage": "https://github.com/projectdiscovery/subfinder",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/projectdiscovery/subfinder.git",
+        "ref": "v2.6.6"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o subfinder ./cmd/subfinder"
+        ]
+    }
+}

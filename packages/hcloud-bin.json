@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "hcloud-bin",
+    "name": "hcloud",
+    "version": "1.48.0",
+    "type": "binary",
+    "description": "A command-line interface for Hetzner Cloud",
+    "homepage": "https://github.com/hetznercloud/cli",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/hetznercloud/cli/releases/download/v1.48.0/hcloud-linux-amd64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/hetznercloud/cli/releases/download/v1.48.0/hcloud-linux-arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

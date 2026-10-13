@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "doctl-bin",
+    "name": "doctl",
+    "version": "1.120.0",
+    "type": "binary",
+    "description": "Official command line interface for the DigitalOcean API",
+    "homepage": "https://github.com/digitalocean/doctl",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/digitalocean/doctl/releases/download/v1.120.0/doctl-1.120.0-linux-amd64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/digitalocean/doctl/releases/download/v1.120.0/doctl-1.120.0-linux-arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

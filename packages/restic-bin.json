@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "restic-bin",
+    "name": "restic",
+    "version": "0.17.3",
+    "type": "binary",
+    "description": "Fast, secure, efficient backup program",
+    "homepage": "https://restic.net",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/restic/restic/releases/download/v0.17.3/restic_0.17.3_linux_amd64.bz2"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/restic/restic/releases/download/v0.17.3/restic_0.17.3_linux_arm64.bz2"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

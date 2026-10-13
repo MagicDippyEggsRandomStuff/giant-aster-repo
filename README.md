@@ -4,7 +4,7 @@ This repository contains a comprehensive set of packages for the [Aster](docs.md
 
 ## Repository Contents
 
-This repository hosts 217 package definitions covering popular CLI software, including:
+This repository hosts 289 package definitions covering popular CLI software, including:
 
 - **bat** (`bat-bin`, `bat-src`) - A cat clone with syntax highlighting and Git integration
 - **eza** (`eza-bin`, `eza-src`) - Modern replacement for `ls`

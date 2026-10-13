@@ -1,0 +1,22 @@
+{
+    "schema_version": 1,
+    "id": "cargo-nextest-src",
+    "name": "cargo-nextest",
+    "version": "0.9.85",
+    "type": "source",
+    "description": "Next-generation test runner for Rust projects (source build)",
+    "homepage": "https://nexte.st",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/nextest-rs/nextest.git",
+        "ref": "cargo-nextest-0.9.85"
+    },
+    "build": {
+        "system": "cargo",
+        "release": true,
+        "locked": true
+    },
+    "executables": [
+        "cargo-nextest"
+    ]
+}
