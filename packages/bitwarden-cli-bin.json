@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "bitwarden-cli-bin",
+    "name": "bitwarden-cli",
+    "version": "2024.11.0",
+    "type": "binary",
+    "description": "The Bitwarden command-line interface (CLI)",
+    "homepage": "https://bitwarden.com",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/bitwarden/clients/releases/download/cli-v2024.11.0/bw-linux-2024.11.0.zip"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64"
+    ]
+}

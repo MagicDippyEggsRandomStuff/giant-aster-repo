@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "skaffold-bin",
+    "name": "skaffold",
+    "version": "2.13.2",
+    "type": "binary",
+    "description": "Easy and Repeatable Kubernetes Development",
+    "homepage": "https://skaffold.dev",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/GoogleContainerTools/skaffold/releases/download/v2.13.2/skaffold-linux-amd64"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/GoogleContainerTools/skaffold/releases/download/v2.13.2/skaffold-linux-arm64"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

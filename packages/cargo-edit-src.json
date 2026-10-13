@@ -1,0 +1,24 @@
+{
+    "schema_version": 1,
+    "id": "cargo-edit-src",
+    "name": "cargo-edit",
+    "version": "0.13.0",
+    "type": "source",
+    "description": "A cargo subcommand for managing dependencies (source build)",
+    "homepage": "https://github.com/killercup/cargo-edit",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/killercup/cargo-edit.git",
+        "ref": "v0.13.0"
+    },
+    "build": {
+        "system": "cargo",
+        "release": true,
+        "locked": true
+    },
+    "executables": [
+        "cargo-add",
+        "cargo-rm",
+        "cargo-upgrade"
+    ]
+}

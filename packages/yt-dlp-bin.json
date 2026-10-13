@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "yt-dlp-bin",
+    "name": "yt-dlp",
+    "version": "2024.11.18",
+    "type": "binary",
+    "description": "A feature-rich command-line audio/video downloader",
+    "homepage": "https://github.com/yt-dlp/yt-dlp",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2024.11.18/yt-dlp"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64"
+    ]
+}

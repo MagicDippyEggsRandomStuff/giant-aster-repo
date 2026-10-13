@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "opentofu-bin",
+    "name": "opentofu",
+    "version": "1.8.6",
+    "type": "binary",
+    "description": "OpenTofu lets you declaratively manage your cloud infrastructure",
+    "homepage": "https://opentofu.org",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/opentofu/opentofu/releases/download/v1.8.6/tofu_1.8.6_linux_amd64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/opentofu/opentofu/releases/download/v1.8.6/tofu_1.8.6_linux_arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

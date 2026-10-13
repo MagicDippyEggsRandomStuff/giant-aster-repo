@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "fish-src",
+    "name": "fish",
+    "version": "3.7.1",
+    "type": "source",
+    "description": "The user-friendly command line shell (source build)",
+    "homepage": "https://fishshell.com",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/fish-shell/fish-shell.git",
+        "ref": "3.7.1"
+    },
+    "build": {
+        "system": "cmake"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "schema_version": 1,
+    "id": "exiftool-src",
+    "name": "exiftool",
+    "version": "13.00",
+    "type": "source",
+    "description": "Read, Write and Edit Meta Information in a Wide Variety of Files (source build)",
+    "homepage": "https://exiftool.org",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/exiftool/exiftool.git",
+        "ref": "13.00"
+    },
+    "build": {
+        "steps": [
+            "perl Makefile.PL",
+            "make"
+        ]
+    }
+}

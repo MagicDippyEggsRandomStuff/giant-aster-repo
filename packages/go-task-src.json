@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "go-task-src",
+    "name": "go-task",
+    "version": "3.40.0",
+    "type": "source",
+    "description": "A task runner / simpler Makefile alternative written in Go (source build)",
+    "homepage": "https://taskfile.dev",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/go-task/task.git",
+        "ref": "v3.40.0"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o task ./cmd/task"
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "inxi-src",
+    "name": "inxi",
+    "version": "3.3.36-1",
+    "type": "source",
+    "description": "Full featured CLI system information tool (source build)",
+    "homepage": "https://smxi.org/docs/inxi.htm",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/smxi/inxi.git",
+        "ref": "3.3.36-1"
+    },
+    "build": {
+        "steps": [
+            "echo 'inxi perl script ready'"
+        ]
+    }
+}

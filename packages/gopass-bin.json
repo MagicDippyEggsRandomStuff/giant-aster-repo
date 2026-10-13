@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "gopass-bin",
+    "name": "gopass",
+    "version": "1.15.15",
+    "type": "binary",
+    "description": "The slightly more awesome standard unix password manager for teams",
+    "homepage": "https://www.gopass.pw",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/gopasspw/gopass/releases/download/v1.15.15/gopass-1.15.15-linux-amd64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/gopasspw/gopass/releases/download/v1.15.15/gopass-1.15.15-linux-arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "cargo-watch-bin",
+    "name": "cargo-watch",
+    "version": "8.5.2",
+    "type": "binary",
+    "description": "Watches over your Cargo project's source",
+    "homepage": "https://github.com/watchexec/cargo-watch",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/watchexec/cargo-watch/releases/download/v8.5.2/cargo-watch-v8.5.2-x86_64-unknown-linux-gnu.tar.xz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64"
+    ]
+}

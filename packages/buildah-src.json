@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "buildah-src",
+    "name": "buildah",
+    "version": "1.38.0",
+    "type": "source",
+    "description": "A tool that facilitates building OCI container images (source build)",
+    "homepage": "https://buildah.io",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/containers/buildah.git",
+        "ref": "v1.38.0"
+    },
+    "build": {
+        "steps": [
+            "make buildah"
+        ]
+    }
+}

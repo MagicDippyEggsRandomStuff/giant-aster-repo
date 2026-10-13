@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "dbmate-bin",
+    "name": "dbmate",
+    "version": "2.22.0",
+    "type": "binary",
+    "description": "A lightweight, framework-agnostic database migration tool",
+    "homepage": "https://github.com/amacneil/dbmate",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/amacneil/dbmate/releases/download/v2.22.0/dbmate-linux-amd64"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/amacneil/dbmate/releases/download/v2.22.0/dbmate-linux-arm64"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

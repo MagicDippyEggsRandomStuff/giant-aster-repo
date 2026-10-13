@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "lf-bin",
+    "name": "lf",
+    "version": "r33",
+    "type": "binary",
+    "description": "Terminal file manager written in Go",
+    "homepage": "https://github.com/gokcehan/lf",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/gokcehan/lf/releases/download/r33/lf-linux-amd64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/gokcehan/lf/releases/download/r33/lf-linux-arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

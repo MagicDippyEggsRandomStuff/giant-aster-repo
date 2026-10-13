@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "gopass-src",
+    "name": "gopass",
+    "version": "1.15.15",
+    "type": "source",
+    "description": "The slightly more awesome standard unix password manager for teams (source build)",
+    "homepage": "https://www.gopass.pw",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/gopasspw/gopass.git",
+        "ref": "v1.15.15"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o gopass"
+        ]
+    }
+}

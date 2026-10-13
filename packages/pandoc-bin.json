@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "pandoc-bin",
+    "name": "pandoc",
+    "version": "3.5",
+    "type": "binary",
+    "description": "Universal markup converter",
+    "homepage": "https://pandoc.org",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/jgm/pandoc/releases/download/3.5/pandoc-3.5-linux-amd64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/jgm/pandoc/releases/download/3.5/pandoc-3.5-linux-arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "schema_version": 1,
+    "id": "httpie-src",
+    "name": "httpie",
+    "version": "3.2.4",
+    "type": "source",
+    "description": "User-friendly CLI HTTP client for the API era (source build)",
+    "homepage": "https://httpie.io",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/httpie/cli.git",
+        "ref": "3.2.4"
+    },
+    "build": {
+        "steps": [
+            "python3 -m venv .venv",
+            ".venv/bin/pip install ."
+        ]
+    }
+}

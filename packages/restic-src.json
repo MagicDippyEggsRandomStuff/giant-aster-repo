@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "restic-src",
+    "name": "restic",
+    "version": "0.17.3",
+    "type": "source",
+    "description": "Fast, secure, efficient backup program (source build)",
+    "homepage": "https://restic.net",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/restic/restic.git",
+        "ref": "v0.17.3"
+    },
+    "build": {
+        "steps": [
+            "go run build.go"
+        ]
+    }
+}

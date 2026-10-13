@@ -1,0 +1,20 @@
+{
+    "schema_version": 1,
+    "id": "mycli-src",
+    "name": "mycli",
+    "version": "1.27.2",
+    "type": "source",
+    "description": "A Terminal Client for MySQL with AutoCompletion and Syntax Highlighting (source build)",
+    "homepage": "https://www.mycli.net",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/dbcli/mycli.git",
+        "ref": "v1.27.2"
+    },
+    "build": {
+        "steps": [
+            "python3 -m venv .venv",
+            ".venv/bin/pip install ."
+        ]
+    }
+}

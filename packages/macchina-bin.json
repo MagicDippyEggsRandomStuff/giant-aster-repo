@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "macchina-bin",
+    "name": "macchina",
+    "version": "6.1.0",
+    "type": "binary",
+    "description": "A fast, minimal and customizable system information fetcher",
+    "homepage": "https://github.com/Macchina-CLI/macchina",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/Macchina-CLI/macchina/releases/download/v6.1.0/macchina-linux-x86_64"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64"
+    ]
+}

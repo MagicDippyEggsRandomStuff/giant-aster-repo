@@ -1,0 +1,20 @@
+{
+    "schema_version": 1,
+    "id": "asciinema-src",
+    "name": "asciinema",
+    "version": "2.4.0",
+    "type": "source",
+    "description": "Terminal session recorder (source build)",
+    "homepage": "https://asciinema.org",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/asciinema/asciinema.git",
+        "ref": "v2.4.0"
+    },
+    "build": {
+        "steps": [
+            "python3 -m venv .venv",
+            ".venv/bin/pip install ."
+        ]
+    }
+}

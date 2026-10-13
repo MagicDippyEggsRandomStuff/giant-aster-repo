@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "lf-src",
+    "name": "lf",
+    "version": "r33",
+    "type": "source",
+    "description": "Terminal file manager written in Go (source build)",
+    "homepage": "https://github.com/gokcehan/lf",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/gokcehan/lf.git",
+        "ref": "r33"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o lf"
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "sops-src",
+    "name": "sops",
+    "version": "3.9.1",
+    "type": "source",
+    "description": "Simple and Flexible Tool for Managing Secrets (source build)",
+    "homepage": "https://github.com/getsops/sops",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/getsops/sops.git",
+        "ref": "v3.9.1"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o sops ./cmd/sops"
+        ]
+    }
+}

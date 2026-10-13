@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "gdu-bin",
+    "name": "gdu",
+    "version": "5.29.0",
+    "type": "binary",
+    "description": "Fast disk usage analyzer written in Go",
+    "homepage": "https://github.com/dundee/gdu",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/dundee/gdu/releases/download/v5.29.0/gdu_linux_amd64.tgz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/dundee/gdu/releases/download/v5.29.0/gdu_linux_arm64.tgz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

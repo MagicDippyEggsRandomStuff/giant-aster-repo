@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "pfetch-src",
+    "name": "pfetch",
+    "version": "0.7.0",
+    "type": "source",
+    "description": "A pretty empty system information script written in POSIX sh (source build)",
+    "homepage": "https://github.com/dylanaraps/pfetch",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/dylanaraps/pfetch.git",
+        "ref": "0.7.0"
+    },
+    "build": {
+        "steps": [
+            "echo 'pfetch script ready'"
+        ]
+    }
+}

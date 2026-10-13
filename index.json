@@ -1087,6 +1087,366 @@
             "definition": "packages/fq-src.json",
             "type": "source",
             "description": "jq for binary formats (source build)"
+        },
+        "restic-bin": {
+            "definition": "packages/restic-bin.json",
+            "type": "binary",
+            "description": "Fast, secure, efficient backup program"
+        },
+        "restic-src": {
+            "definition": "packages/restic-src.json",
+            "type": "source",
+            "description": "Fast, secure, efficient backup program (source build)"
+        },
+        "rclone-bin": {
+            "definition": "packages/rclone-bin.json",
+            "type": "binary",
+            "description": "rsync for cloud storage"
+        },
+        "rclone-src": {
+            "definition": "packages/rclone-src.json",
+            "type": "source",
+            "description": "rsync for cloud storage (source build)"
+        },
+        "yt-dlp-bin": {
+            "definition": "packages/yt-dlp-bin.json",
+            "type": "binary",
+            "description": "A feature-rich command-line audio/video downloader"
+        },
+        "yt-dlp-src": {
+            "definition": "packages/yt-dlp-src.json",
+            "type": "source",
+            "description": "A feature-rich command-line audio/video downloader (source build)"
+        },
+        "lf-bin": {
+            "definition": "packages/lf-bin.json",
+            "type": "binary",
+            "description": "Terminal file manager written in Go"
+        },
+        "lf-src": {
+            "definition": "packages/lf-src.json",
+            "type": "source",
+            "description": "Terminal file manager written in Go (source build)"
+        },
+        "nnn-bin": {
+            "definition": "packages/nnn-bin.json",
+            "type": "binary",
+            "description": "Tiny, lightning fast, feature-packed terminal file manager"
+        },
+        "nnn-src": {
+            "definition": "packages/nnn-src.json",
+            "type": "source",
+            "description": "Tiny, lightning fast, feature-packed terminal file manager (source build)"
+        },
+        "gdu-bin": {
+            "definition": "packages/gdu-bin.json",
+            "type": "binary",
+            "description": "Fast disk usage analyzer written in Go"
+        },
+        "gdu-src": {
+            "definition": "packages/gdu-src.json",
+            "type": "source",
+            "description": "Fast disk usage analyzer written in Go (source build)"
+        },
+        "ncdu-bin": {
+            "definition": "packages/ncdu-bin.json",
+            "type": "binary",
+            "description": "NCurses Disk Usage"
+        },
+        "kakoune-src": {
+            "definition": "packages/kakoune-src.json",
+            "type": "source",
+            "description": "Maw-driven text editor, modal edit on steroids (source build)"
+        },
+        "aria2-src": {
+            "definition": "packages/aria2-src.json",
+            "type": "source",
+            "description": "Ultra fast download utility with multi-protocol & multi-source support (source build)"
+        },
+        "httpie-src": {
+            "definition": "packages/httpie-src.json",
+            "type": "source",
+            "description": "User-friendly CLI HTTP client for the API era (source build)"
+        },
+        "opentofu-bin": {
+            "definition": "packages/opentofu-bin.json",
+            "type": "binary",
+            "description": "OpenTofu lets you declaratively manage your cloud infrastructure"
+        },
+        "opentofu-src": {
+            "definition": "packages/opentofu-src.json",
+            "type": "source",
+            "description": "OpenTofu lets you declaratively manage your cloud infrastructure (source build)"
+        },
+        "terragrunt-bin": {
+            "definition": "packages/terragrunt-bin.json",
+            "type": "binary",
+            "description": "Thin wrapper for Terraform / OpenTofu that provides extra tools"
+        },
+        "terragrunt-src": {
+            "definition": "packages/terragrunt-src.json",
+            "type": "source",
+            "description": "Thin wrapper for Terraform / OpenTofu that provides extra tools (source build)"
+        },
+        "flux-bin": {
+            "definition": "packages/flux-bin.json",
+            "type": "binary",
+            "description": "Open and extensible continuous delivery solution for Kubernetes"
+        },
+        "flux-src": {
+            "definition": "packages/flux-src.json",
+            "type": "source",
+            "description": "Open and extensible continuous delivery solution for Kubernetes (source build)"
+        },
+        "kubectx-bin": {
+            "definition": "packages/kubectx-bin.json",
+            "type": "binary",
+            "description": "Faster way to switch between clusters and namespaces in kubectl"
+        },
+        "stern-bin": {
+            "definition": "packages/stern-bin.json",
+            "type": "binary",
+            "description": "Multi pod and container log tailing for Kubernetes"
+        },
+        "stern-src": {
+            "definition": "packages/stern-src.json",
+            "type": "source",
+            "description": "Multi pod and container log tailing for Kubernetes (source build)"
+        },
+        "skaffold-bin": {
+            "definition": "packages/skaffold-bin.json",
+            "type": "binary",
+            "description": "Easy and Repeatable Kubernetes Development"
+        },
+        "podman-src": {
+            "definition": "packages/podman-src.json",
+            "type": "source",
+            "description": "A daemonless container engine for developing, managing, and running OCI Containers (source build)"
+        },
+        "buildah-src": {
+            "definition": "packages/buildah-src.json",
+            "type": "source",
+            "description": "A tool that facilitates building OCI container images (source build)"
+        },
+        "skopeo-src": {
+            "definition": "packages/skopeo-src.json",
+            "type": "source",
+            "description": "Work with remote images registries - retrieving information, images, signing content (source build)"
+        },
+        "pandoc-bin": {
+            "definition": "packages/pandoc-bin.json",
+            "type": "binary",
+            "description": "Universal markup converter"
+        },
+        "exiftool-src": {
+            "definition": "packages/exiftool-src.json",
+            "type": "source",
+            "description": "Read, Write and Edit Meta Information in a Wide Variety of Files (source build)"
+        },
+        "go-task-bin": {
+            "definition": "packages/go-task-bin.json",
+            "type": "binary",
+            "description": "A task runner / simpler Makefile alternative written in Go"
+        },
+        "go-task-src": {
+            "definition": "packages/go-task-src.json",
+            "type": "source",
+            "description": "A task runner / simpler Makefile alternative written in Go (source build)"
+        },
+        "cargo-nextest-bin": {
+            "definition": "packages/cargo-nextest-bin.json",
+            "type": "binary",
+            "description": "Next-generation test runner for Rust projects"
+        },
+        "cargo-nextest-src": {
+            "definition": "packages/cargo-nextest-src.json",
+            "type": "source",
+            "description": "Next-generation test runner for Rust projects (source build)"
+        },
+        "cargo-watch-bin": {
+            "definition": "packages/cargo-watch-bin.json",
+            "type": "binary",
+            "description": "Watches over your Cargo project's source"
+        },
+        "cargo-watch-src": {
+            "definition": "packages/cargo-watch-src.json",
+            "type": "source",
+            "description": "Watches over your Cargo project's source (source build)"
+        },
+        "cargo-expand-src": {
+            "definition": "packages/cargo-expand-src.json",
+            "type": "source",
+            "description": "Subcommand to show result of macro expansion (source build)"
+        },
+        "cargo-edit-src": {
+            "definition": "packages/cargo-edit-src.json",
+            "type": "source",
+            "description": "A cargo subcommand for managing dependencies (source build)"
+        },
+        "atlas-bin": {
+            "definition": "packages/atlas-bin.json",
+            "type": "binary",
+            "description": "A modern tool for managing database schemas"
+        },
+        "dbmate-bin": {
+            "definition": "packages/dbmate-bin.json",
+            "type": "binary",
+            "description": "A lightweight, framework-agnostic database migration tool"
+        },
+        "dbmate-src": {
+            "definition": "packages/dbmate-src.json",
+            "type": "source",
+            "description": "A lightweight, framework-agnostic database migration tool (source build)"
+        },
+        "usql-bin": {
+            "definition": "packages/usql-bin.json",
+            "type": "binary",
+            "description": "Universal command-line interface for SQL databases"
+        },
+        "usql-src": {
+            "definition": "packages/usql-src.json",
+            "type": "source",
+            "description": "Universal command-line interface for SQL databases (source build)"
+        },
+        "mycli-src": {
+            "definition": "packages/mycli-src.json",
+            "type": "source",
+            "description": "A Terminal Client for MySQL with AutoCompletion and Syntax Highlighting (source build)"
+        },
+        "pgcli-src": {
+            "definition": "packages/pgcli-src.json",
+            "type": "source",
+            "description": "Postgres CLI with autocompletion and syntax highlighting (source build)"
+        },
+        "sops-bin": {
+            "definition": "packages/sops-bin.json",
+            "type": "binary",
+            "description": "Simple and Flexible Tool for Managing Secrets"
+        },
+        "sops-src": {
+            "definition": "packages/sops-src.json",
+            "type": "source",
+            "description": "Simple and Flexible Tool for Managing Secrets (source build)"
+        },
+        "gopass-bin": {
+            "definition": "packages/gopass-bin.json",
+            "type": "binary",
+            "description": "The slightly more awesome standard unix password manager for teams"
+        },
+        "gopass-src": {
+            "definition": "packages/gopass-src.json",
+            "type": "source",
+            "description": "The slightly more awesome standard unix password manager for teams (source build)"
+        },
+        "pass-src": {
+            "definition": "packages/pass-src.json",
+            "type": "source",
+            "description": "The standard unix password manager (source build)"
+        },
+        "bitwarden-cli-bin": {
+            "definition": "packages/bitwarden-cli-bin.json",
+            "type": "binary",
+            "description": "The Bitwarden command-line interface (CLI)"
+        },
+        "doppler-bin": {
+            "definition": "packages/doppler-bin.json",
+            "type": "binary",
+            "description": "Official CLI for Doppler, the developer secret store"
+        },
+        "pulumi-bin": {
+            "definition": "packages/pulumi-bin.json",
+            "type": "binary",
+            "description": "Pulumi - Infrastructure as Code in any programming language"
+        },
+        "crossplane-bin": {
+            "definition": "packages/crossplane-bin.json",
+            "type": "binary",
+            "description": "The Cloud Native Control Plane Framework"
+        },
+        "fish-src": {
+            "definition": "packages/fish-src.json",
+            "type": "source",
+            "description": "The user-friendly command line shell (source build)"
+        },
+        "zsh-src": {
+            "definition": "packages/zsh-src.json",
+            "type": "source",
+            "description": "Zsh is a shell designed for interactive use and scripting (source build)"
+        },
+        "mosh-src": {
+            "definition": "packages/mosh-src.json",
+            "type": "source",
+            "description": "Mobile Shell: remote terminal application that allows roaming (source build)"
+        },
+        "asciinema-src": {
+            "definition": "packages/asciinema-src.json",
+            "type": "source",
+            "description": "Terminal session recorder (source build)"
+        },
+        "dua-cli-bin": {
+            "definition": "packages/dua-cli-bin.json",
+            "type": "binary",
+            "description": "View disk space usage and delete unneeded data fast"
+        },
+        "dua-cli-src": {
+            "definition": "packages/dua-cli-src.json",
+            "type": "source",
+            "description": "View disk space usage and delete unneeded data fast (source build)"
+        },
+        "macchina-bin": {
+            "definition": "packages/macchina-bin.json",
+            "type": "binary",
+            "description": "A fast, minimal and customizable system information fetcher"
+        },
+        "macchina-src": {
+            "definition": "packages/macchina-src.json",
+            "type": "source",
+            "description": "A fast, minimal and customizable system information fetcher (source build)"
+        },
+        "pfetch-src": {
+            "definition": "packages/pfetch-src.json",
+            "type": "source",
+            "description": "A pretty empty system information script written in POSIX sh (source build)"
+        },
+        "inxi-src": {
+            "definition": "packages/inxi-src.json",
+            "type": "source",
+            "description": "Full featured CLI system information tool (source build)"
+        },
+        "hcloud-bin": {
+            "definition": "packages/hcloud-bin.json",
+            "type": "binary",
+            "description": "A command-line interface for Hetzner Cloud"
+        },
+        "hcloud-src": {
+            "definition": "packages/hcloud-src.json",
+            "type": "source",
+            "description": "A command-line interface for Hetzner Cloud (source build)"
+        },
+        "doctl-bin": {
+            "definition": "packages/doctl-bin.json",
+            "type": "binary",
+            "description": "Official command line interface for the DigitalOcean API"
+        },
+        "doctl-src": {
+            "definition": "packages/doctl-src.json",
+            "type": "source",
+            "description": "Official command line interface for the DigitalOcean API (source build)"
+        },
+        "glances-src": {
+            "definition": "packages/glances-src.json",
+            "type": "source",
+            "description": "Glances an Eye on your system. A top/htop alternative for GNU/Linux (source build)"
+        },
+        "subfinder-bin": {
+            "definition": "packages/subfinder-bin.json",
+            "type": "binary",
+            "description": "Subdomain discovery tool that discovers valid subdomains for websites"
+        },
+        "subfinder-src": {
+            "definition": "packages/subfinder-src.json",
+            "type": "source",
+            "description": "Subdomain discovery tool that discovers valid subdomains for websites (source build)"
         }
     }
 }
