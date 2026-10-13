@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "terraform-bin",
+    "name": "terraform",
+    "version": "1.9.8",
+    "type": "binary",
+    "description": "Terraform enables you to safely and predictably create, change, and improve infrastructure",
+    "homepage": "https://www.terraform.io",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://releases.hashicorp.com/terraform/1.9.8/terraform_1.9.8_linux_amd64.zip"
+        },
+        "linux-aarch64": {
+            "url": "https://releases.hashicorp.com/terraform/1.9.8/terraform_1.9.8_linux_arm64.zip"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

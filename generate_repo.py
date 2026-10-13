@@ -30,7 +30,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["bat"]
+            "executables": [
+                "bat"
+            ]
         }
     },
     {
@@ -59,7 +61,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["eza"]
+            "executables": [
+                "eza"
+            ]
         }
     },
     {
@@ -110,7 +114,9 @@ APPS = [
                 "ref": "v2.0.0"
             },
             "build": {
-                "steps": ["go build -v -o glow"]
+                "steps": [
+                    "go build -v -o glow"
+                ]
             }
         }
     },
@@ -156,7 +162,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["rg"]
+            "executables": [
+                "rg"
+            ]
         }
     },
     {
@@ -185,7 +193,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["fd"]
+            "executables": [
+                "fd"
+            ]
         }
     },
     {
@@ -214,7 +224,10 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["yazi", "ya"]
+            "executables": [
+                "yazi",
+                "ya"
+            ]
         }
     },
     {
@@ -243,7 +256,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["starship"]
+            "executables": [
+                "starship"
+            ]
         }
     },
     {
@@ -272,7 +287,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["zoxide"]
+            "executables": [
+                "zoxide"
+            ]
         }
     },
     {
@@ -301,7 +318,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["delta"]
+            "executables": [
+                "delta"
+            ]
         }
     },
     {
@@ -330,7 +349,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["dust"]
+            "executables": [
+                "dust"
+            ]
         }
     },
     {
@@ -359,7 +380,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["btm"]
+            "executables": [
+                "btm"
+            ]
         }
     },
     {
@@ -388,7 +411,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["procs"]
+            "executables": [
+                "procs"
+            ]
         }
     },
     {
@@ -417,7 +442,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["tldr"]
+            "executables": [
+                "tldr"
+            ]
         }
     },
     {
@@ -446,7 +473,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["hyperfine"]
+            "executables": [
+                "hyperfine"
+            ]
         }
     },
     {
@@ -475,7 +504,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["tokei"]
+            "executables": [
+                "tokei"
+            ]
         }
     },
     {
@@ -504,7 +535,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["zellij"]
+            "executables": [
+                "zellij"
+            ]
         }
     },
     {
@@ -529,7 +562,9 @@ APPS = [
                 "ref": "v0.44.1"
             },
             "build": {
-                "steps": ["go build -v -o lazygit"]
+                "steps": [
+                    "go build -v -o lazygit"
+                ]
             }
         }
     },
@@ -555,14 +590,16 @@ APPS = [
                 "ref": "v0.23.1"
             },
             "build": {
-                "steps": ["go build -v -o lazydocker"]
+                "steps": [
+                    "go build -v -o lazydocker"
+                ]
             }
         }
     },
     {
         "name": "gh",
         "version": "2.61.0",
-        "description": "GitHub’s official command line tool",
+        "description": "GitHub\u2019s official command line tool",
         "homepage": "https://cli.github.com",
         "bin": {
             "downloads": {
@@ -581,7 +618,9 @@ APPS = [
                 "ref": "v2.61.0"
             },
             "build": {
-                "steps": ["make"]
+                "steps": [
+                    "make"
+                ]
             }
         }
     },
@@ -607,7 +646,9 @@ APPS = [
                 "ref": "v0.56.0"
             },
             "build": {
-                "steps": ["go build -v -o fzf"]
+                "steps": [
+                    "go build -v -o fzf"
+                ]
             }
         }
     },
@@ -633,7 +674,9 @@ APPS = [
                 "ref": "v4.44.5"
             },
             "build": {
-                "steps": ["go build -v -o yq"]
+                "steps": [
+                    "go build -v -o yq"
+                ]
             }
         }
     },
@@ -659,7 +702,9 @@ APPS = [
                 "ref": "v0.14.5"
             },
             "build": {
-                "steps": ["go build -v -o gum"]
+                "steps": [
+                    "go build -v -o gum"
+                ]
             }
         }
     },
@@ -685,7 +730,9 @@ APPS = [
                 "ref": "v0.8.0"
             },
             "build": {
-                "steps": ["go build -v -o vhs"]
+                "steps": [
+                    "go build -v -o vhs"
+                ]
             }
         }
     },
@@ -715,7 +762,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["lsd"]
+            "executables": [
+                "lsd"
+            ]
         }
     },
     {
@@ -740,7 +789,10 @@ APPS = [
                 "ref": "v1.2.0"
             },
             "build": {
-                "steps": ["go build -v -o age ./cmd/age", "go build -v -o age-keygen ./cmd/age-keygen"]
+                "steps": [
+                    "go build -v -o age ./cmd/age",
+                    "go build -v -o age-keygen ./cmd/age-keygen"
+                ]
             }
         }
     },
@@ -766,7 +818,9 @@ APPS = [
                 "ref": "v3.3.5"
             },
             "build": {
-                "steps": ["go build -v -o scc"]
+                "steps": [
+                    "go build -v -o scc"
+                ]
             }
         }
     },
@@ -792,7 +846,9 @@ APPS = [
                 "ref": "v0.8.1"
             },
             "build": {
-                "steps": ["go build -v -o duf"]
+                "steps": [
+                    "go build -v -o duf"
+                ]
             }
         }
     },
@@ -818,7 +874,9 @@ APPS = [
                 "ref": "v10.0.12"
             },
             "build": {
-                "steps": ["go build -v -o croc"]
+                "steps": [
+                    "go build -v -o croc"
+                ]
             }
         }
     },
@@ -848,7 +906,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["navi"]
+            "executables": [
+                "navi"
+            ]
         }
     },
     {
@@ -877,7 +937,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["watchexec"]
+            "executables": [
+                "watchexec"
+            ]
         }
     },
     {
@@ -906,7 +968,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["typst"]
+            "executables": [
+                "typst"
+            ]
         }
     },
     {
@@ -935,7 +999,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["ruff"]
+            "executables": [
+                "ruff"
+            ]
         }
     },
     {
@@ -964,7 +1030,10 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["uv", "uvx"]
+            "executables": [
+                "uv",
+                "uvx"
+            ]
         }
     },
     {
@@ -993,7 +1062,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["just"]
+            "executables": [
+                "just"
+            ]
         }
     },
     {
@@ -1022,7 +1093,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["hx"]
+            "executables": [
+                "hx"
+            ]
         }
     },
     {
@@ -1051,7 +1124,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["nu"]
+            "executables": [
+                "nu"
+            ]
         }
     },
     {
@@ -1080,7 +1155,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["git-cliff"]
+            "executables": [
+                "git-cliff"
+            ]
         }
     },
     {
@@ -1109,7 +1186,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["bandwhich"]
+            "executables": [
+                "bandwhich"
+            ]
         }
     },
     {
@@ -1138,7 +1217,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["grex"]
+            "executables": [
+                "grex"
+            ]
         }
     },
     {
@@ -1167,7 +1248,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["xh"]
+            "executables": [
+                "xh"
+            ]
         }
     },
     {
@@ -1192,7 +1275,9 @@ APPS = [
                 "ref": "v1.0.5"
             },
             "build": {
-                "steps": ["go build -v -o doggo ./cmd/doggo"]
+                "steps": [
+                    "go build -v -o doggo ./cmd/doggo"
+                ]
             }
         }
     },
@@ -1208,7 +1293,11 @@ APPS = [
                 "ref": "3.3.0"
             },
             "build": {
-                "steps": ["./autogen.sh", "./configure", "make"]
+                "steps": [
+                    "./autogen.sh",
+                    "./configure",
+                    "make"
+                ]
             }
         }
     },
@@ -1224,7 +1313,11 @@ APPS = [
                 "ref": "3.5a"
             },
             "build": {
-                "steps": ["autogen.sh", "./configure", "make"]
+                "steps": [
+                    "autogen.sh",
+                    "./configure",
+                    "make"
+                ]
             }
         }
     },
@@ -1250,7 +1343,11 @@ APPS = [
                 "ref": "jq-1.7.1"
             },
             "build": {
-                "steps": ["./autoreconf -i", "./configure", "make"]
+                "steps": [
+                    "./autoreconf -i",
+                    "./configure",
+                    "make"
+                ]
             }
         }
     },
@@ -1299,7 +1396,7 @@ APPS = [
     {
         "name": "gitui",
         "version": "0.26.3",
-        "description": "Blazing 🚀 fast terminal-ui for git written in rust 🦀",
+        "description": "Blazing \ud83d\ude80 fast terminal-ui for git written in rust \ud83e\udd80",
         "homepage": "https://github.com/extrawurst/gitui",
         "bin": {
             "downloads": {
@@ -1322,7 +1419,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["gitui"]
+            "executables": [
+                "gitui"
+            ]
         }
     },
     {
@@ -1351,7 +1450,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["atuin"]
+            "executables": [
+                "atuin"
+            ]
         }
     },
     {
@@ -1377,7 +1478,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["sd"]
+            "executables": [
+                "sd"
+            ]
         }
     },
     {
@@ -1403,7 +1506,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["choose"]
+            "executables": [
+                "choose"
+            ]
         }
     },
     {
@@ -1432,7 +1537,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["onefetch"]
+            "executables": [
+                "onefetch"
+            ]
         }
     },
     {
@@ -1458,7 +1565,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["bacon"]
+            "executables": [
+                "bacon"
+            ]
         }
     },
     {
@@ -1487,7 +1596,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["trip"]
+            "executables": [
+                "trip"
+            ]
         }
     },
     {
@@ -1516,7 +1627,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["gping"]
+            "executables": [
+                "gping"
+            ]
         }
     },
     {
@@ -1542,7 +1655,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["numbat"]
+            "executables": [
+                "numbat"
+            ]
         }
     },
     {
@@ -1571,7 +1686,10 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["ast-grep", "sg"]
+            "executables": [
+                "ast-grep",
+                "sg"
+            ]
         }
     },
     {
@@ -1600,7 +1718,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["biome"]
+            "executables": [
+                "biome"
+            ]
         }
     },
     {
@@ -1626,7 +1746,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["taplo"]
+            "executables": [
+                "taplo"
+            ]
         }
     },
     {
@@ -1651,7 +1773,9 @@ APPS = [
                 "ref": "v3.10.0"
             },
             "build": {
-                "steps": ["go build -v -o shfmt ./cmd/shfmt"]
+                "steps": [
+                    "go build -v -o shfmt ./cmd/shfmt"
+                ]
             }
         }
     },
@@ -1694,7 +1818,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["difft"]
+            "executables": [
+                "difft"
+            ]
         }
     },
     {
@@ -1720,7 +1846,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["silicon"]
+            "executables": [
+                "silicon"
+            ]
         }
     },
     {
@@ -1738,7 +1866,9 @@ APPS = [
                 "system": "cargo",
                 "release": True
             },
-            "executables": ["zellij"]
+            "executables": [
+                "zellij"
+            ]
         }
     },
     {
@@ -1753,7 +1883,9 @@ APPS = [
                 "ref": "v4.44.5"
             },
             "build": {
-                "steps": ["go build -v -o yq"]
+                "steps": [
+                    "go build -v -o yq"
+                ]
             }
         }
     },
@@ -1779,7 +1911,9 @@ APPS = [
                 "ref": "v1.7.4"
             },
             "build": {
-                "steps": ["go build -v -o actionlint ./cmd/actionlint"]
+                "steps": [
+                    "go build -v -o actionlint ./cmd/actionlint"
+                ]
             }
         }
     },
@@ -1802,7 +1936,9 @@ APPS = [
                 "ref": "v1.6.0"
             },
             "build": {
-                "steps": ["go build -v -o spf"]
+                "steps": [
+                    "go build -v -o spf"
+                ]
             }
         }
     },
@@ -1845,7 +1981,10 @@ APPS = [
                 "ref": "wine-9.0"
             },
             "build": {
-                "steps": ["./configure", "make"]
+                "steps": [
+                    "./configure",
+                    "make"
+                ]
             }
         }
     },
@@ -1887,7 +2026,10 @@ APPS = [
                 "ref": "n7.1"
             },
             "build": {
-                "steps": ["./configure", "make"]
+                "steps": [
+                    "./configure",
+                    "make"
+                ]
             }
         }
     },
@@ -1913,7 +2055,9 @@ APPS = [
                 "ref": "v2.8.4"
             },
             "build": {
-                "steps": ["go build -v -o caddy ./cmd/caddy"]
+                "steps": [
+                    "go build -v -o caddy ./cmd/caddy"
+                ]
             }
         }
     },
@@ -1939,7 +2083,9 @@ APPS = [
                 "ref": "v0.32.7"
             },
             "build": {
-                "steps": ["go build -v -o k9s"]
+                "steps": [
+                    "go build -v -o k9s"
+                ]
             }
         }
     },
@@ -1965,7 +2111,9 @@ APPS = [
                 "ref": "v3.16.3"
             },
             "build": {
-                "steps": ["go build -v -o helm ./cmd/helm"]
+                "steps": [
+                    "go build -v -o helm ./cmd/helm"
+                ]
             }
         }
     },
@@ -1991,7 +2139,9 @@ APPS = [
                 "ref": "v0.139.3"
             },
             "build": {
-                "steps": ["go build -v -o hugo"]
+                "steps": [
+                    "go build -v -o hugo"
+                ]
             }
         }
     },
@@ -2017,7 +2167,9 @@ APPS = [
                 "ref": "v0.2.7"
             },
             "build": {
-                "steps": ["go build -v -o lazysql"]
+                "steps": [
+                    "go build -v -o lazysql"
+                ]
             }
         }
     },
@@ -2043,7 +2195,9 @@ APPS = [
                 "ref": "v0.12.0"
             },
             "build": {
-                "steps": ["go build -v -o dive"]
+                "steps": [
+                    "go build -v -o dive"
+                ]
             }
         }
     },
@@ -2069,7 +2223,9 @@ APPS = [
                 "ref": "v0.2.70"
             },
             "build": {
-                "steps": ["go build -v -o act"]
+                "steps": [
+                    "go build -v -o act"
+                ]
             }
         }
     },
@@ -2096,7 +2252,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["czkawka_cli"]
+            "executables": [
+                "czkawka_cli"
+            ]
         }
     },
     {
@@ -2121,7 +2279,9 @@ APPS = [
                 "ref": "v2.0.14"
             },
             "build": {
-                "steps": ["go build -v -o micro ./cmd/micro"]
+                "steps": [
+                    "go build -v -o micro ./cmd/micro"
+                ]
             }
         }
     },
@@ -2148,7 +2308,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["presenterm"]
+            "executables": [
+                "presenterm"
+            ]
         }
     },
     {
@@ -2199,7 +2361,9 @@ APPS = [
                 "ref": "v1.49.0"
             },
             "build": {
-                "steps": ["go build -v -o glab ./cmd/glab"]
+                "steps": [
+                    "go build -v -o glab ./cmd/glab"
+                ]
             }
         }
     },
@@ -2225,7 +2389,9 @@ APPS = [
                 "ref": "v1.7.2"
             },
             "build": {
-                "steps": ["go build -v -o curlie"]
+                "steps": [
+                    "go build -v -o curlie"
+                ]
             }
         }
     },
@@ -2252,7 +2418,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["miniserve"]
+            "executables": [
+                "miniserve"
+            ]
         }
     },
     {
@@ -2278,7 +2446,9 @@ APPS = [
                 "release": True,
                 "locked": True
             },
-            "executables": ["oxipng"]
+            "executables": [
+                "oxipng"
+            ]
         }
     },
     {
@@ -2300,7 +2470,9 @@ APPS = [
                 "ref": "v7.0.0"
             },
             "build": {
-                "steps": ["./build.sh"]
+                "steps": [
+                    "./build.sh"
+                ]
             }
         }
     },
@@ -2332,7 +2504,706 @@ APPS = [
                 "ref": "v1.0.0"
             },
             "build": {
-                "steps": ["cp sysz /usr/local/bin/sysz"]
+                "steps": [
+                    "cp sysz /usr/local/bin/sysz"
+                ]
+            }
+        }
+    },
+    {
+        "name": "terraform",
+        "version": "1.9.8",
+        "description": "Terraform enables you to safely and predictably create, change, and improve infrastructure",
+        "homepage": "https://www.terraform.io",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://releases.hashicorp.com/terraform/1.9.8/terraform_1.9.8_linux_amd64.zip"
+                },
+                "linux-aarch64": {
+                    "url": "https://releases.hashicorp.com/terraform/1.9.8/terraform_1.9.8_linux_arm64.zip"
+                }
+            }
+        }
+    },
+    {
+        "name": "packer",
+        "version": "1.11.2",
+        "description": "Packer is a tool for creating identical machine images for multiple platforms",
+        "homepage": "https://www.packer.io",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://releases.hashicorp.com/packer/1.11.2/packer_1.11.2_linux_amd64.zip"
+                },
+                "linux-aarch64": {
+                    "url": "https://releases.hashicorp.com/packer/1.11.2/packer_1.11.2_linux_arm64.zip"
+                }
+            }
+        }
+    },
+    {
+        "name": "vault",
+        "version": "1.18.1",
+        "description": "A tool for managing secrets, keys, and sensitive data",
+        "homepage": "https://www.vaultproject.io",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://releases.hashicorp.com/vault/1.18.1/vault_1.18.1_linux_amd64.zip"
+                },
+                "linux-aarch64": {
+                    "url": "https://releases.hashicorp.com/vault/1.18.1/vault_1.18.1_linux_arm64.zip"
+                }
+            }
+        }
+    },
+    {
+        "name": "kubectl",
+        "version": "1.31.2",
+        "description": "Production-Grade Container Scheduling and Management CLI",
+        "homepage": "https://kubernetes.io/docs/reference/kubectl/",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://dl.k8s.io/release/v1.31.2/bin/linux/amd64/kubectl"
+                },
+                "linux-aarch64": {
+                    "url": "https://dl.k8s.io/release/v1.31.2/bin/linux/arm64/kubectl"
+                }
+            }
+        }
+    },
+    {
+        "name": "k3d",
+        "version": "5.7.4",
+        "description": "Little helper to run Rancher Lab's k3s in docker",
+        "homepage": "https://k3d.io",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/k3d-io/k3d/releases/download/v5.7.4/k3d-linux-amd64"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/k3d-io/k3d/releases/download/v5.7.4/k3d-linux-arm64"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/k3d-io/k3d.git",
+                "ref": "v5.7.4"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o k3d"
+                ]
+            }
+        }
+    },
+    {
+        "name": "kind",
+        "version": "0.25.0",
+        "description": "Kubernetes IN Docker - local clusters for testing Kubernetes",
+        "homepage": "https://kind.sigs.k8s.io",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/kubernetes-sigs/kind/releases/download/v0.25.0/kind-linux-amd64"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/kubernetes-sigs/kind/releases/download/v0.25.0/kind-linux-arm64"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kubernetes-sigs/kind.git",
+                "ref": "v0.25.0"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o kind"
+                ]
+            }
+        }
+    },
+    {
+        "name": "minikube",
+        "version": "1.34.0",
+        "description": "Run Kubernetes locally",
+        "homepage": "https://minikube.sigs.k8s.io",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/kubernetes/minikube/releases/download/v1.34.0/minikube-linux-amd64"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/kubernetes/minikube/releases/download/v1.34.0/minikube-linux-arm64"
+                }
+            }
+        }
+    },
+    {
+        "name": "argocd",
+        "version": "2.13.0",
+        "description": "Declarative GitOps CD tool for Kubernetes",
+        "homepage": "https://argo-cd.readthedocs.io",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/argoproj/argo-cd/releases/download/v2.13.0/argocd-linux-amd64"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/argoproj/argo-cd/releases/download/v2.13.0/argocd-linux-arm64"
+                }
+            }
+        }
+    },
+    {
+        "name": "cosign",
+        "version": "2.4.1",
+        "description": "Container Signing, Verification and Storage in an OCI registry",
+        "homepage": "https://github.com/sigstore/cosign",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/sigstore/cosign/releases/download/v2.4.1/cosign-linux-amd64"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/sigstore/cosign/releases/download/v2.4.1/cosign-linux-arm64"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sigstore/cosign.git",
+                "ref": "v2.4.1"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o cosign ./cmd/cosign"
+                ]
+            }
+        }
+    },
+    {
+        "name": "syft",
+        "version": "1.16.0",
+        "description": "CLI tool for generating a Software Bill of Materials (SBOM)",
+        "homepage": "https://github.com/anchore/syft",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/anchore/syft/releases/download/v1.16.0/syft_1.16.0_linux_amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/anchore/syft/releases/download/v1.16.0/syft_1.16.0_linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/anchore/syft.git",
+                "ref": "v1.16.0"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o syft ./cmd/syft"
+                ]
+            }
+        }
+    },
+    {
+        "name": "grype",
+        "version": "0.84.0",
+        "description": "A vulnerability scanner for container images and filesystems",
+        "homepage": "https://github.com/anchore/grype",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/anchore/grype/releases/download/v0.84.0/grype_0.84.0_linux_amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/anchore/grype/releases/download/v0.84.0/grype_0.84.0_linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/anchore/grype.git",
+                "ref": "v0.84.0"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o grype ./cmd/grype"
+                ]
+            }
+        }
+    },
+    {
+        "name": "trivy",
+        "version": "0.57.1",
+        "description": "Comprehensive security scanner for vulnerabilities and misconfigurations",
+        "homepage": "https://trivy.dev",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/aquasecurity/trivy/releases/download/v0.57.1/trivy_0.57.1_Linux-64bit.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/aquasecurity/trivy/releases/download/v0.57.1/trivy_0.57.1_Linux-ARM64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aquasecurity/trivy.git",
+                "ref": "v0.57.1"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o trivy ./cmd/trivy"
+                ]
+            }
+        }
+    },
+    {
+        "name": "zola",
+        "version": "0.19.2",
+        "description": "A fast static site generator in a single binary",
+        "homepage": "https://www.getzola.org",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/getzola/zola/releases/download/v0.19.2/zola-v0.19.2-x86_64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/getzola/zola.git",
+                "ref": "v0.19.2"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": [
+                "zola"
+            ]
+        }
+    },
+    {
+        "name": "mdbook",
+        "version": "0.4.40",
+        "description": "Create book from markdown files",
+        "homepage": "https://rust-lang.github.io/mdBook/",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/rust-lang/mdBook/releases/download/v0.4.40/mdbook-v0.4.40-x86_64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rust-lang/mdBook.git",
+                "ref": "v0.4.40"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": [
+                "mdbook"
+            ]
+        }
+    },
+    {
+        "name": "wasm-pack",
+        "version": "0.13.1",
+        "description": "Your favorite rust -> wasm workflow tool",
+        "homepage": "https://rustwasm.github.io/wasm-pack/",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/rustwasm/wasm-pack/releases/download/v0.13.1/wasm-pack-v0.13.1-x86_64-unknown-linux-musl.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rustwasm/wasm-pack.git",
+                "ref": "v0.13.1"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": [
+                "wasm-pack"
+            ]
+        }
+    },
+    {
+        "name": "trunk",
+        "version": "0.21.4",
+        "description": "Build, bundle & ship your Rust WASM application to the web",
+        "homepage": "https://trunkrs.dev",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/trunk-rs/trunk/releases/download/v0.21.4/trunk-x86_64-unknown-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/trunk-rs/trunk.git",
+                "ref": "v0.21.4"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": [
+                "trunk"
+            ]
+        }
+    },
+    {
+        "name": "cargo-deny",
+        "version": "0.16.1",
+        "description": "Cargo plugin for linting your dependencies",
+        "homepage": "https://github.com/EmbarkStudios/cargo-deny",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/EmbarkStudios/cargo-deny/releases/download/0.16.1/cargo-deny-0.16.1-x86_64-unknown-linux-musl.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EmbarkStudios/cargo-deny.git",
+                "ref": "0.16.1"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": [
+                "cargo-deny"
+            ]
+        }
+    },
+    {
+        "name": "cargo-audit",
+        "version": "0.21.0",
+        "description": "Audit Cargo.lock files for crates with security vulnerabilities",
+        "homepage": "https://github.com/rustsec/rustsec",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/rustsec/rustsec/releases/download/cargo-audit%2Fv0.21.0/cargo-audit-x86_64-unknown-linux-musl-v0.21.0.tgz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rustsec/rustsec.git",
+                "ref": "cargo-audit/v0.21.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": [
+                "cargo-audit"
+            ]
+        }
+    },
+    {
+        "name": "bob",
+        "version": "3.0.1",
+        "description": "A simple Neovim version manager",
+        "homepage": "https://github.com/MordechaiHadad/bob",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/MordechaiHadad/bob/releases/download/v3.0.1/bob-linux-x86_64.zip"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/MordechaiHadad/bob/releases/download/v3.0.1/bob-linux-arm64.zip"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MordechaiHadad/bob.git",
+                "ref": "v3.0.1"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": [
+                "bob"
+            ]
+        }
+    },
+    {
+        "name": "fnm",
+        "version": "1.38.1",
+        "description": "Fast and simple Node.js version manager, built in Rust",
+        "homepage": "https://github.com/Schniz/fnm",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/Schniz/fnm/releases/download/v1.38.1/fnm-linux.zip"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Schniz/fnm.git",
+                "ref": "v1.38.1"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": [
+                "fnm"
+            ]
+        }
+    },
+    {
+        "name": "bun",
+        "version": "1.1.38",
+        "description": "Incredibly fast JavaScript frontend toolchain and runtime",
+        "homepage": "https://bun.sh",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/oven-sh/bun/releases/download/bun-v1.1.38/bun-linux-x64.zip"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/oven-sh/bun/releases/download/bun-v1.1.38/bun-linux-aarch64.zip"
+                }
+            }
+        }
+    },
+    {
+        "name": "deno",
+        "version": "2.1.2",
+        "description": "A modern runtime for JavaScript and TypeScript",
+        "homepage": "https://deno.com",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/denoland/deno/releases/download/v2.1.2/deno-x86_64-unknown-linux-gnu.zip"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/denoland/deno/releases/download/v2.1.2/deno-aarch64-unknown-linux-gnu.zip"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/denoland/deno.git",
+                "ref": "v2.1.2"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": [
+                "deno"
+            ]
+        }
+    },
+    {
+        "name": "oxlint",
+        "version": "0.11.0",
+        "description": "Designed to catch erroneous or useless code without requiring any configuration",
+        "homepage": "https://oxc.rs",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/oxc-project/oxc/releases/download/oxlint_v0.11.0/oxlint-linux-x64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/oxc-project/oxc/releases/download/oxlint_v0.11.0/oxlint-linux-arm64.tar.gz"
+                }
+            }
+        }
+    },
+    {
+        "name": "mise",
+        "version": "2024.11.23",
+        "description": "dev tools, env vars, task runner",
+        "homepage": "https://mise.jdx.dev",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/jdx/mise/releases/download/v2024.11.23/mise-v2024.11.23-linux-x64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/jdx/mise/releases/download/v2024.11.23/mise-v2024.11.23-linux-arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jdx/mise.git",
+                "ref": "v2024.11.23"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": [
+                "mise"
+            ]
+        }
+    },
+    {
+        "name": "direnv",
+        "version": "2.35.0",
+        "description": "Unclutter your .profile - environment switcher for the shell",
+        "homepage": "https://direnv.net",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/direnv/direnv/releases/download/v2.35.0/direnv.linux-amd64"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/direnv/direnv/releases/download/v2.35.0/direnv.linux-arm64"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/direnv/direnv.git",
+                "ref": "v2.35.0"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o direnv"
+                ]
+            }
+        }
+    },
+    {
+        "name": "television",
+        "version": "0.8.2",
+        "description": "A fast, customizable, and versatile fuzzy finder TUI",
+        "homepage": "https://github.com/alexpasmantier/television",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/alexpasmantier/television/releases/download/0.8.2/tv-0.8.2-x86_64-unknown-linux-musl.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alexpasmantier/television.git",
+                "ref": "0.8.2"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": [
+                "tv"
+            ]
+        }
+    },
+    {
+        "name": "jless",
+        "version": "0.9.0",
+        "description": "An interactive command-line JSON viewer",
+        "homepage": "https://jless.io",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/PaulJuliusMartinez/jless/releases/download/v0.9.0/jless-v0.9.0-x86_64-unknown-linux-gnu.zip"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PaulJuliusMartinez/jless.git",
+                "ref": "v0.9.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": [
+                "jless"
+            ]
+        }
+    },
+    {
+        "name": "fq",
+        "version": "0.13.0",
+        "description": "jq for binary formats",
+        "homepage": "https://github.com/wader/fq",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/wader/fq/releases/download/v0.13.0/fq_0.13.0_linux_amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/wader/fq/releases/download/v0.13.0/fq_0.13.0_linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wader/fq.git",
+                "ref": "v0.13.0"
+            },
+            "build": {
+                "steps": [
+                    "go build -v -o fq"
+                ]
             }
         }
     }

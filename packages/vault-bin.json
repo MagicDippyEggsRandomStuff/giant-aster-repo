@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "vault-bin",
+    "name": "vault",
+    "version": "1.18.1",
+    "type": "binary",
+    "description": "A tool for managing secrets, keys, and sensitive data",
+    "homepage": "https://www.vaultproject.io",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://releases.hashicorp.com/vault/1.18.1/vault_1.18.1_linux_amd64.zip"
+        },
+        "linux-aarch64": {
+            "url": "https://releases.hashicorp.com/vault/1.18.1/vault_1.18.1_linux_arm64.zip"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

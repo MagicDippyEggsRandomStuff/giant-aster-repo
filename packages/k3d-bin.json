@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "k3d-bin",
+    "name": "k3d",
+    "version": "5.7.4",
+    "type": "binary",
+    "description": "Little helper to run Rancher Lab's k3s in docker",
+    "homepage": "https://k3d.io",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/k3d-io/k3d/releases/download/v5.7.4/k3d-linux-amd64"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/k3d-io/k3d/releases/download/v5.7.4/k3d-linux-arm64"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

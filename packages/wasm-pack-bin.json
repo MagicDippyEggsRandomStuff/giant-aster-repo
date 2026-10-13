@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "wasm-pack-bin",
+    "name": "wasm-pack",
+    "version": "0.13.1",
+    "type": "binary",
+    "description": "Your favorite rust -> wasm workflow tool",
+    "homepage": "https://rustwasm.github.io/wasm-pack/",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/rustwasm/wasm-pack/releases/download/v0.13.1/wasm-pack-v0.13.1-x86_64-unknown-linux-musl.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64"
+    ]
+}

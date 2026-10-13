@@ -4,7 +4,7 @@ This repository contains a comprehensive set of packages for the [Aster](docs.md
 
 ## Repository Contents
 
-This repository hosts 128 package definitions covering popular CLI software, including:
+This repository hosts 217 package definitions covering popular CLI software, including:
 
 - **bat** (`bat-bin`, `bat-src`) - A cat clone with syntax highlighting and Git integration
 - **eza** (`eza-bin`, `eza-src`) - Modern replacement for `ls`
@@ -28,6 +28,11 @@ This repository hosts 128 package definitions covering popular CLI software, inc
 - **silicon** (`silicon-bin`, `silicon-src`) - Code screenshot CLI tool
 - **actionlint** (`actionlint-bin`, `actionlint-src`) - GitHub Actions workflow linter
 - **superfile** (`superfile-bin`, `superfile-src`) - Modern terminal file manager
+- **terraform** (`terraform-bin`), **packer** (`packer-bin`), **vault** (`vault-bin`) - HashiCorp DevOps tools
+- **kubectl** (`kubectl-bin`), **k3d** (`k3d-bin`, `k3d-src`), **kind** (`kind-bin`, `kind-src`), **minikube** (`minikube-bin`), **argocd** (`argocd-bin`) - Kubernetes orchestration & GitOps tools
+- **cosign** (`cosign-bin`, `cosign-src`), **syft** (`syft-bin`, `syft-src`), **grype** (`grype-bin`, `grype-src`), **trivy** (`trivy-bin`, `trivy-src`) - Security & SBOM utilities
+- **bun** (`bun-bin`), **deno** (`deno-bin`, `deno-src`), **fnm** (`fnm-bin`, `fnm-src`), **mise** (`mise-bin`, `mise-src`) - JS runtimes & dev tool managers
+- **zola** (`zola-bin`, `zola-src`), **mdbook** (`mdbook-bin`, `mdbook-src`), **wasm-pack** (`wasm-pack-bin`, `wasm-pack-src`), **trunk** (`trunk-bin`, `trunk-src`) - Static site & Rust WASM tools
 - ...and many more!
 
 ## Usage Instructions

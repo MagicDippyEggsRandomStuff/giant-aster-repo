@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "trivy-bin",
+    "name": "trivy",
+    "version": "0.57.1",
+    "type": "binary",
+    "description": "Comprehensive security scanner for vulnerabilities and misconfigurations",
+    "homepage": "https://trivy.dev",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/aquasecurity/trivy/releases/download/v0.57.1/trivy_0.57.1_Linux-64bit.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/aquasecurity/trivy/releases/download/v0.57.1/trivy_0.57.1_Linux-ARM64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

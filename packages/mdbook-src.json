@@ -1,0 +1,22 @@
+{
+    "schema_version": 1,
+    "id": "mdbook-src",
+    "name": "mdbook",
+    "version": "0.4.40",
+    "type": "source",
+    "description": "Create book from markdown files (source build)",
+    "homepage": "https://rust-lang.github.io/mdBook/",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/rust-lang/mdBook.git",
+        "ref": "v0.4.40"
+    },
+    "build": {
+        "system": "cargo",
+        "release": true,
+        "locked": true
+    },
+    "executables": [
+        "mdbook"
+    ]
+}

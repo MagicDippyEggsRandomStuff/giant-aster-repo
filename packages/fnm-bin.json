@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "fnm-bin",
+    "name": "fnm",
+    "version": "1.38.1",
+    "type": "binary",
+    "description": "Fast and simple Node.js version manager, built in Rust",
+    "homepage": "https://github.com/Schniz/fnm",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/Schniz/fnm/releases/download/v1.38.1/fnm-linux.zip"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64"
+    ]
+}

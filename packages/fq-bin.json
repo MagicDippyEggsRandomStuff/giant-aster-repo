@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "fq-bin",
+    "name": "fq",
+    "version": "0.13.0",
+    "type": "binary",
+    "description": "jq for binary formats",
+    "homepage": "https://github.com/wader/fq",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/wader/fq/releases/download/v0.13.0/fq_0.13.0_linux_amd64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/wader/fq/releases/download/v0.13.0/fq_0.13.0_linux_arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}
