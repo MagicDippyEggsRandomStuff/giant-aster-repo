@@ -1832,6 +1832,509 @@ APPS = [
                 ]
             }
         }
+    },
+    {
+        "name": "wine",
+        "version": "9.0",
+        "description": "Compatibility layer capable of running Windows applications on Unix-like operating systems",
+        "homepage": "https://www.winehq.org",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.winehq.org/wine/wine.git",
+                "ref": "wine-9.0"
+            },
+            "build": {
+                "steps": ["./configure", "make"]
+            }
+        }
+    },
+    {
+        "name": "neovim",
+        "version": "0.10.3",
+        "description": "Vim-fork focused on extensibility and usability",
+        "homepage": "https://neovim.io",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/neovim/neovim/releases/download/v0.10.3/nvim-linux-x86_64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/neovim/neovim/releases/download/v0.10.3/nvim-linux-arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/neovim/neovim.git",
+                "ref": "v0.10.3"
+            },
+            "build": {
+                "system": "cmake"
+            }
+        }
+    },
+    {
+        "name": "ffmpeg",
+        "version": "7.1",
+        "description": "A complete, cross-platform solution to record, convert and stream audio and video",
+        "homepage": "https://ffmpeg.org",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://git.ffmpeg.org/ffmpeg.git",
+                "ref": "n7.1"
+            },
+            "build": {
+                "steps": ["./configure", "make"]
+            }
+        }
+    },
+    {
+        "name": "caddy",
+        "version": "2.8.4",
+        "description": "Fast and extensible multi-platform HTTP/2 web server with automatic HTTPS",
+        "homepage": "https://caddyserver.com",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/caddyserver/caddy/releases/download/v2.8.4/caddy_2.8.4_linux_amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/caddyserver/caddy/releases/download/v2.8.4/caddy_2.8.4_linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caddyserver/caddy.git",
+                "ref": "v2.8.4"
+            },
+            "build": {
+                "steps": ["go build -v -o caddy ./cmd/caddy"]
+            }
+        }
+    },
+    {
+        "name": "k9s",
+        "version": "0.32.7",
+        "description": "Kubernetes CLI To Manage Your Clusters In Style!",
+        "homepage": "https://k9scli.io",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/derailed/k9s/releases/download/v0.32.7/k9s_Linux_amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/derailed/k9s/releases/download/v0.32.7/k9s_Linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/derailed/k9s.git",
+                "ref": "v0.32.7"
+            },
+            "build": {
+                "steps": ["go build -v -o k9s"]
+            }
+        }
+    },
+    {
+        "name": "helm",
+        "version": "3.16.3",
+        "description": "The Kubernetes Package Manager",
+        "homepage": "https://helm.sh",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://get.helm.sh/helm-v3.16.3-linux-amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://get.helm.sh/helm-v3.16.3-linux-arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/helm/helm.git",
+                "ref": "v3.16.3"
+            },
+            "build": {
+                "steps": ["go build -v -o helm ./cmd/helm"]
+            }
+        }
+    },
+    {
+        "name": "hugo",
+        "version": "0.139.3",
+        "description": "The world's fastest framework for building websites",
+        "homepage": "https://gohugo.io",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/gohugoio/hugo/releases/download/v0.139.3/hugo_0.139.3_linux-amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/gohugoio/hugo/releases/download/v0.139.3/hugo_0.139.3_linux-arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gohugoio/hugo.git",
+                "ref": "v0.139.3"
+            },
+            "build": {
+                "steps": ["go build -v -o hugo"]
+            }
+        }
+    },
+    {
+        "name": "lazysql",
+        "version": "0.2.7",
+        "description": "A terminal UI for RDBMS written in Go",
+        "homepage": "https://github.com/jorgerojas26/lazysql",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/jorgerojas26/lazysql/releases/download/v0.2.7/lazysql_Linux_x86_64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/jorgerojas26/lazysql/releases/download/v0.2.7/lazysql_Linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jorgerojas26/lazysql.git",
+                "ref": "v0.2.7"
+            },
+            "build": {
+                "steps": ["go build -v -o lazysql"]
+            }
+        }
+    },
+    {
+        "name": "dive",
+        "version": "0.12.0",
+        "description": "A tool for exploring a docker image, layer contents, and discovering ways to shrink your image size",
+        "homepage": "https://github.com/wagoodman/dive",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/wagoodman/dive/releases/download/v0.12.0/dive_0.12.0_linux_amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/wagoodman/dive/releases/download/v0.12.0/dive_0.12.0_linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wagoodman/dive.git",
+                "ref": "v0.12.0"
+            },
+            "build": {
+                "steps": ["go build -v -o dive"]
+            }
+        }
+    },
+    {
+        "name": "act",
+        "version": "0.2.70",
+        "description": "Run your GitHub Actions locally!",
+        "homepage": "https://github.com/nektos/act",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/nektos/act/releases/download/v0.2.70/act_Linux_x86_64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/nektos/act/releases/download/v0.2.70/act_Linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nektos/act.git",
+                "ref": "v0.2.70"
+            },
+            "build": {
+                "steps": ["go build -v -o act"]
+            }
+        }
+    },
+    {
+        "name": "czkawka",
+        "version": "7.0.0",
+        "description": "Multi functional app to find duplicates, empty folders, similar images etc.",
+        "homepage": "https://github.com/qarmin/czkawka",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/qarmin/czkawka/releases/download/7.0.0/czkawka_cli"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/qarmin/czkawka.git",
+                "ref": "7.0.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["czkawka_cli"]
+        }
+    },
+    {
+        "name": "micro",
+        "version": "2.0.14",
+        "description": "A modern and intuitive terminal-based text editor",
+        "homepage": "https://micro-editor.github.io",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/zyedidia/micro/releases/download/v2.0.14/micro-2.0.14-linux64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/zyedidia/micro/releases/download/v2.0.14/micro-2.0.14-linux-arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zyedidia/micro.git",
+                "ref": "v2.0.14"
+            },
+            "build": {
+                "steps": ["go build -v -o micro ./cmd/micro"]
+            }
+        }
+    },
+    {
+        "name": "presenterm",
+        "version": "0.9.0",
+        "description": "A terminal-based presentation tool",
+        "homepage": "https://github.com/mfontanini/presenterm",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/mfontanini/presenterm/releases/download/v0.9.0/presenterm-v0.9.0-x86_64-unknown-linux-musl.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mfontanini/presenterm.git",
+                "ref": "v0.9.0"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["presenterm"]
+        }
+    },
+    {
+        "name": "hyfetch",
+        "version": "1.99.0",
+        "description": "neofetch with pride flags",
+        "homepage": "https://github.com/hykilpikonna/hyfetch",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/hykilpikonna/hyfetch/releases/download/1.99.0/hyfetch-1.99.0-linux-x86_64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hykilpikonna/hyfetch.git",
+                "ref": "1.99.0"
+            },
+            "build": {
+                "steps": [
+                    "python3 -m venv .venv",
+                    ".venv/bin/pip install ."
+                ]
+            }
+        }
+    },
+    {
+        "name": "glab",
+        "version": "1.49.0",
+        "description": "An open-source GitLab command-line tool",
+        "homepage": "https://gitlab.com/gitlab-org/cli",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://gitlab.com/gitlab-org/cli/-/releases/v1.49.0/downloads/glab_1.49.0_Linux_x86_64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://gitlab.com/gitlab-org/cli/-/releases/v1.49.0/downloads/glab_1.49.0_Linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/gitlab-org/cli.git",
+                "ref": "v1.49.0"
+            },
+            "build": {
+                "steps": ["go build -v -o glab ./cmd/glab"]
+            }
+        }
+    },
+    {
+        "name": "curlie",
+        "version": "1.7.2",
+        "description": "The power of curl, the ease of use of httpie",
+        "homepage": "https://curlie.io",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/rs/curlie/releases/download/v1.7.2/curlie_1.7.2_linux_amd64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/rs/curlie/releases/download/v1.7.2/curlie_1.7.2_linux_arm64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rs/curlie.git",
+                "ref": "v1.7.2"
+            },
+            "build": {
+                "steps": ["go build -v -o curlie"]
+            }
+        }
+    },
+    {
+        "name": "miniserve",
+        "version": "0.27.1",
+        "description": "For when you simply want to serve some files over HTTP",
+        "homepage": "https://github.com/svenstaro/miniserve",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/svenstaro/miniserve/releases/download/v0.27.1/miniserve-0.27.1-x86_64-unknown-linux-gnu"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/svenstaro/miniserve.git",
+                "ref": "v0.27.1"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["miniserve"]
+        }
+    },
+    {
+        "name": "oxipng",
+        "version": "9.1.2",
+        "description": "Multithreaded PNG optimizer written in Rust",
+        "homepage": "https://github.com/shssoichiro/oxipng",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/shssoichiro/oxipng/releases/download/v9.1.2/oxipng-9.1.2-x86_64-unknown-linux-musl.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/shssoichiro/oxipng.git",
+                "ref": "v9.1.2"
+            },
+            "build": {
+                "system": "cargo",
+                "release": True,
+                "locked": True
+            },
+            "executables": ["oxipng"]
+        }
+    },
+    {
+        "name": "ugrep",
+        "version": "7.0.0",
+        "description": "Ultra fast grep CLI with interactive query UI",
+        "homepage": "https://github.com/Genivia/ugrep",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/Genivia/ugrep/releases/download/v7.0.0/ugrep-7.0.0-x86_64-linux-gnu.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Genivia/ugrep.git",
+                "ref": "v7.0.0"
+            },
+            "build": {
+                "steps": ["./build.sh"]
+            }
+        }
+    },
+    {
+        "name": "pnpm",
+        "version": "9.14.4",
+        "description": "Fast, disk space efficient package manager",
+        "homepage": "https://pnpm.io",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/pnpm/pnpm/releases/download/v9.14.4/pnpm-linux-x64"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/pnpm/pnpm/releases/download/v9.14.4/pnpm-linux-arm64"
+                }
+            }
+        }
+    },
+    {
+        "name": "sysz",
+        "version": "1.0.0",
+        "description": "An interactive systemctl terminal UI",
+        "homepage": "https://github.com/joehillen/sysz",
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/joehillen/sysz.git",
+                "ref": "v1.0.0"
+            },
+            "build": {
+                "steps": ["cp sysz /usr/local/bin/sysz"]
+            }
+        }
     }
 ]
 

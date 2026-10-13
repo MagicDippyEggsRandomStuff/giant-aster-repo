@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "curlie-bin",
+    "name": "curlie",
+    "version": "1.7.2",
+    "type": "binary",
+    "description": "The power of curl, the ease of use of httpie",
+    "homepage": "https://curlie.io",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/rs/curlie/releases/download/v1.7.2/curlie_1.7.2_linux_amd64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/rs/curlie/releases/download/v1.7.2/curlie_1.7.2_linux_arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

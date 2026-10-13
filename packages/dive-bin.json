@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "dive-bin",
+    "name": "dive",
+    "version": "0.12.0",
+    "type": "binary",
+    "description": "A tool for exploring a docker image, layer contents, and discovering ways to shrink your image size",
+    "homepage": "https://github.com/wagoodman/dive",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/wagoodman/dive/releases/download/v0.12.0/dive_0.12.0_linux_amd64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/wagoodman/dive/releases/download/v0.12.0/dive_0.12.0_linux_arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

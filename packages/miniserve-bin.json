@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "miniserve-bin",
+    "name": "miniserve",
+    "version": "0.27.1",
+    "type": "binary",
+    "description": "For when you simply want to serve some files over HTTP",
+    "homepage": "https://github.com/svenstaro/miniserve",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/svenstaro/miniserve/releases/download/v0.27.1/miniserve-0.27.1-x86_64-unknown-linux-gnu"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64"
+    ]
+}

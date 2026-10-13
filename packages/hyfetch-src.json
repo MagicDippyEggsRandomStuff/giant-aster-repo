@@ -1,0 +1,20 @@
+{
+    "schema_version": 1,
+    "id": "hyfetch-src",
+    "name": "hyfetch",
+    "version": "1.99.0",
+    "type": "source",
+    "description": "neofetch with pride flags (source build)",
+    "homepage": "https://github.com/hykilpikonna/hyfetch",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/hykilpikonna/hyfetch.git",
+        "ref": "1.99.0"
+    },
+    "build": {
+        "steps": [
+            "python3 -m venv .venv",
+            ".venv/bin/pip install ."
+        ]
+    }
+}

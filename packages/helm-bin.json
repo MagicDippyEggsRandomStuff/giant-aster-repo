@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "helm-bin",
+    "name": "helm",
+    "version": "3.16.3",
+    "type": "binary",
+    "description": "The Kubernetes Package Manager",
+    "homepage": "https://helm.sh",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://get.helm.sh/helm-v3.16.3-linux-amd64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://get.helm.sh/helm-v3.16.3-linux-arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

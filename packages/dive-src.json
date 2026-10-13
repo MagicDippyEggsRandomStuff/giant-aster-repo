@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "dive-src",
+    "name": "dive",
+    "version": "0.12.0",
+    "type": "source",
+    "description": "A tool for exploring a docker image, layer contents, and discovering ways to shrink your image size (source build)",
+    "homepage": "https://github.com/wagoodman/dive",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/wagoodman/dive.git",
+        "ref": "v0.12.0"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o dive"
+        ]
+    }
+}

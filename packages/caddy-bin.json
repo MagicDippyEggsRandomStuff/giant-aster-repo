@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "caddy-bin",
+    "name": "caddy",
+    "version": "2.8.4",
+    "type": "binary",
+    "description": "Fast and extensible multi-platform HTTP/2 web server with automatic HTTPS",
+    "homepage": "https://caddyserver.com",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/caddyserver/caddy/releases/download/v2.8.4/caddy_2.8.4_linux_amd64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/caddyserver/caddy/releases/download/v2.8.4/caddy_2.8.4_linux_arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

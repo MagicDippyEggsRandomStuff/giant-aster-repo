@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "neovim-src",
+    "name": "neovim",
+    "version": "0.10.3",
+    "type": "source",
+    "description": "Vim-fork focused on extensibility and usability (source build)",
+    "homepage": "https://neovim.io",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/neovim/neovim.git",
+        "ref": "v0.10.3"
+    },
+    "build": {
+        "system": "cmake"
+    }
+}

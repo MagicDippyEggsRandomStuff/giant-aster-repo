@@ -1,0 +1,21 @@
+{
+    "schema_version": 1,
+    "id": "micro-bin",
+    "name": "micro",
+    "version": "2.0.14",
+    "type": "binary",
+    "description": "A modern and intuitive terminal-based text editor",
+    "homepage": "https://micro-editor.github.io",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/zyedidia/micro/releases/download/v2.0.14/micro-2.0.14-linux64.tar.gz"
+        },
+        "linux-aarch64": {
+            "url": "https://github.com/zyedidia/micro/releases/download/v2.0.14/micro-2.0.14-linux-arm64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64",
+        "linux-aarch64"
+    ]
+}

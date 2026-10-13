@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "id": "helm-src",
+    "name": "helm",
+    "version": "3.16.3",
+    "type": "source",
+    "description": "The Kubernetes Package Manager (source build)",
+    "homepage": "https://helm.sh",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/helm/helm.git",
+        "ref": "v3.16.3"
+    },
+    "build": {
+        "steps": [
+            "go build -v -o helm ./cmd/helm"
+        ]
+    }
+}

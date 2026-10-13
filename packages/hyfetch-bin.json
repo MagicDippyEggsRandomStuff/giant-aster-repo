@@ -1,0 +1,17 @@
+{
+    "schema_version": 1,
+    "id": "hyfetch-bin",
+    "name": "hyfetch",
+    "version": "1.99.0",
+    "type": "binary",
+    "description": "neofetch with pride flags",
+    "homepage": "https://github.com/hykilpikonna/hyfetch",
+    "downloads": {
+        "linux-x86_64": {
+            "url": "https://github.com/hykilpikonna/hyfetch/releases/download/1.99.0/hyfetch-1.99.0-linux-x86_64.tar.gz"
+        }
+    },
+    "supported_platforms": [
+        "linux-x86_64"
+    ]
+}
