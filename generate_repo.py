@@ -2410,7 +2410,7 @@ def main():
 
     index_data = {
         "schema_version": 2,
-        "description": "A gaint Aster repo full of mostly untested packages, some work though.",
+        "description": "A giant Aster repo full of mostly untested packages, some work though.",
         "homepage": "https://github.com/MagicDippyEggsRandomStuff/giant-aster-repo",
         "packages": index_packages
     }
