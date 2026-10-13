@@ -17,8 +17,9 @@ def validate():
         errors.append(f"Invalid index.json JSON syntax: {e}")
         return errors
 
-    if index.get("schema_version") != 1:
-        errors.append("index.json schema_version must be 1")
+    schema_ver = index.get("schema_version")
+    if schema_ver not in [1, 2]:
+        errors.append("index.json schema_version must be 1 or 2")
 
     packages = index.get("packages")
     if not isinstance(packages, dict):
