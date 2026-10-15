@@ -1447,6 +1447,16 @@
             "definition": "packages/subfinder-src.json",
             "type": "source",
             "description": "Subdomain discovery tool that discovers valid subdomains for websites (source build)"
+        },
+        "zsign-bin": {
+            "definition": "packages/zsign-bin.json",
+            "type": "binary",
+            "description": "Fast Cross-Platform iOS Code Signing Tool"
+        },
+        "zsign-src": {
+            "definition": "packages/zsign-src.json",
+            "type": "source",
+            "description": "Fast Cross-Platform iOS Code Signing Tool (source build)"
         }
     }
 }

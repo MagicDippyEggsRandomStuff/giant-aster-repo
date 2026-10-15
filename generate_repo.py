@@ -4308,6 +4308,35 @@ APPS = [
                 ]
             }
         }
+    },
+    {
+        "name": "zsign",
+        "version": "1.1.2",
+        "description": "Fast Cross-Platform iOS Code Signing Tool",
+        "homepage": "https://github.com/zhlynn/zsign",
+        "bin": {
+            "downloads": {
+                "linux-x86_64": {
+                    "url": "https://github.com/zhlynn/zsign/releases/download/v1.1.2/zsign-linux-x86_64.tar.gz"
+                },
+                "linux-aarch64": {
+                    "url": "https://github.com/zhlynn/zsign/releases/download/v1.1.2/zsign-linux-aarch64.tar.gz"
+                }
+            }
+        },
+        "src": {
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zhlynn/zsign.git",
+                "ref": "v1.1.2"
+            },
+            "build": {
+                "steps": [
+                    "cd build/linux",
+                    "make"
+                ]
+            }
+        }
     }
 ]
 
