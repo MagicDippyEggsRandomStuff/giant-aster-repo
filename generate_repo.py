@@ -4332,8 +4332,7 @@ APPS = [
             },
             "build": {
                 "steps": [
-                    "cd build/linux",
-                    "make"
+                    "make -C build/linux"
                 ]
             }
         }
